@@ -12,7 +12,8 @@ choco install wget
 3. Add Msbuild to PATH variable: path to Msbuild {Visual Studio Install Folder}\2019\Community\MSBuild\Current\Bin
 4. Install 7-Zip and add instalation folder to PATH variable
 5. Run ./deploywin.sh in Bash console - i used GIT Bash
-6. Run a .sln file you want by executing this command : msbuild {your file name}.sln
+6. Add new Enviromental Variable: wxwin with path {path to yagit main folder}\gi-yagit-master\wxWidgets
+7. Run a .sln file you want by executing this command : msbuild {your file name}.sln
 
 
 For all the details concerning the yAGIT project please see the [documentation](http://gi-yagit.readthedocs.io/en/latest/).
