@@ -32,16 +32,6 @@ function(find_c_and_cpp_files path found_files)
 
 endfunction()
 
-function(find_ui_files path found_files)
-
-	file(GLOB_RECURSE found_files_internal RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
-		"${path}/*.ui"
-	)
-
-	set(${found_files} ${found_files_internal} PARENT_SCOPE)
-
-endfunction()
-
 function(set_default_output_directories proj_name)
 
 	set_target_properties(${proj_name} PROPERTIES
