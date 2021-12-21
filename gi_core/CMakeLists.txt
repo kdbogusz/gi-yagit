@@ -85,4 +85,4 @@ add_subdirectory(tests)
 add_subdirectory(performance_analysis)
 
 set(CPACK_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION OFF)
-install(TARGETS gi_core ARCHIVE DESTINATION libs COMPONENT libraries)
+install(TARGETS gi_core ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/libs COMPONENT libraries)
