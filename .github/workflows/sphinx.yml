@@ -58,10 +58,6 @@ jobs:
           git add .
           
           git commit -am "Updating Docs for commit ${GITHUB_SHA}"
-          
-          git push deploy gh-pages --force
-          popd
-          exit 0
         shell: bash
         
       - name: Push changes
