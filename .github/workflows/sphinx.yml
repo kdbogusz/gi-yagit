@@ -57,10 +57,15 @@ jobs:
           
           git add .
           
-          msg="Updating Docs for commit ${GITHUB_SHA}"
-          git commit -am "${msg}"
+          git commit -am "Updating Docs for commit ${GITHUB_SHA}"
           
           git push deploy gh-pages --force
           popd
           exit 0
         shell: bash
+        
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
