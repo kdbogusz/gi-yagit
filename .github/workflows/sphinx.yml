@@ -30,12 +30,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          
+                  
       - name: Build and Commit
         uses: sphinx-notes/pages@2.0
         with:
           documentation_path: docs/source
-          requirements_path: docs/source/requirements.txt
+          requirements_path: docs/requirements.txt
         
       - name: Push changes
         uses: ad-m/github-push-action@master
