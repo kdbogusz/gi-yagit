@@ -31,33 +31,11 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Run build script for Sphinx pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          rm -f .gitignore
-          cd docs/
-          pip3 install -r requirements.txt
-          make clean
-          mkdir build
-          cd source/
-          doxygen
-          cd ../
-          make html
-          
-          cp -R build/html .
-          rm -rf build/html
-                    
-          touch .nojekyll
-          
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          
-          git status
-          git add .
-          
-          git commit -am "Updating Docs for commit ${GITHUB_SHA}"
-        shell: bash
+      - name: Build and Commit
+        uses: sphinx-notes/pages@2.0
+        with:
+          documentation_path: docs/source
+          requirements_path: docs/source/requirements.txt
         
       - name: Push changes
         uses: ad-m/github-push-action@master
