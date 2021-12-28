@@ -40,7 +40,6 @@ jobs:
           cd source/
           doxygen
           cd ../
-          make html
         shell: bash
                   
       - name: Build and Commit
