@@ -143,10 +143,10 @@ htmlhelp_basename = 'gamma-indexdoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'gamma-index.tex', 'gamma-index Documentation',
-     'gamma-index-team', 'manual'),
-]
+# latex_documents = [
+#     (master_doc, 'gamma-index.tex', 'gamma-index Documentation',
+#      'gamma-index-team', 'manual'),
+# ]
 
 
 # -- Options for manual page output ------------------------------------------
