@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_966e361514890ced7bc70dd277f551e3" kind="dir">
+    <compoundname>gi_core</compoundname>
+    <innerdir refid="dir_ccd685d4117889122576e1169fcf948b">compat</innerdir>
+    <innerdir refid="dir_d16b4a78cf3fe8ecaaf7d1591fc149dc">dispatch</innerdir>
+    <innerdir refid="dir_3915e60ab7ec95403c46cebc92ee494e">include</innerdir>
+    <innerdir refid="dir_46b343005c0325c0813940b8a1ec9a3d">performance_analysis</innerdir>
+    <innerdir refid="dir_e8f86655736af208c095658ebbb7d002">src</innerdir>
+    <innerdir refid="dir_d678871cc52b97b0bf516d10825e5750">tests</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/"/>
+  </compounddef>
+</doxygen>

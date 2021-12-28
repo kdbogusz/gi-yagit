@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dicom__tags_8h" kind="file" language="C++">
+    <compoundname>dicom_tags.h</compoundname>
+    <includedby refid="dicom__reader_8cpp" local="yes">dicom_reader.cpp</includedby>
+    <includedby refid="dicom__tag__strategies_8cpp" local="yes">dicom_tag_strategies.cpp</includedby>
+    <includedby refid="dicom__writer_8cpp" local="yes">dicom_writer.cpp</includedby>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dicom__tags_8h_1aa9748af64e02a7dce93332119d3a6c8d" prot="public" static="no">
+        <name>DCM_MODALITY</name>
+        <initializer>0x0008,0x0060</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="25" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a7e3c2d9fe47f754dfc5f14f29e8355d6" prot="public" static="no">
+        <name>DCM_SPACING_BETWEEN_SLICES</name>
+        <initializer>0x0018,0x0088</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="27" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a3a2aefed7c59ac7cec6c01df0e986cf0" prot="public" static="no">
+        <name>DCM_IMAGE_POSITION</name>
+        <initializer>0x0020,0x0032</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="29" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1ab5453e885f7d2ac159fa5aa2eac20f2a" prot="public" static="no">
+        <name>DCM_PIXEL_SPACING</name>
+        <initializer>0x0028,0x0030</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="31" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a2e9bd47f660fa85cf8722a8a025e24ba" prot="public" static="no">
+        <name>DCM_RESCALE_INTERCEPT</name>
+        <initializer>0x0028,0x1052</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="33" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a689e1a769ca72bb5cd7c13d0ed2adc7d" prot="public" static="no">
+        <name>DCM_RESCALE_SLOPE</name>
+        <initializer>0x0028,0x1053</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="34" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a78dcc249474843b162372bfd3b47a4ce" prot="public" static="no">
+        <name>DCM_GRID_FRAME_OFFSET_VECTOR</name>
+        <initializer>0x3004,0x000C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="36" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a14d33a9b15d42f10fb0105eaee37e138" prot="public" static="no">
+        <name>DCM_DOSE_GRID_SCALING</name>
+        <initializer>0x3004,0x000E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="38" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1a7cc727e226cc1c8742b19cf6fde6d02e" prot="public" static="no">
+        <name>PIXEL_DATA</name>
+        <initializer>0x7FE0,0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="40" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dicom__tags_8h_1affd965a38ad22ab56f892768f8a4fbd6" prot="public" static="no">
+        <name>DCM_GROUP_PIXEL_DATA</name>
+        <initializer>0x7FE0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" line="43" column="9" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GIYAGIT_DICOM_TAGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GIYAGIT_DICOM_TAGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[CS]<sp/>type<sp/>of<sp/>equipment<sp/>used<sp/>to<sp/>acquire<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_MODALITY<sp/>0x0008,0x0060</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[DS]<sp/>distance<sp/>between<sp/>centers<sp/>of<sp/>slices<sp/>in<sp/>mm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_SPACING_BETWEEN_SLICES<sp/>0x0018,0x0088</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[DS]<sp/>x,<sp/>y,<sp/>z<sp/>coordinates<sp/>of<sp/>the<sp/>center<sp/>of<sp/>the<sp/>first<sp/>voxel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_IMAGE_POSITION<sp/>0x0020,0x0032</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[DS]<sp/>row,<sp/>column<sp/>distance<sp/>in<sp/>mm<sp/>between<sp/>centers<sp/>of<sp/>pixels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_PIXEL_SPACING<sp/>0x0028,0x0030</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[DS]<sp/>b<sp/>and<sp/>m<sp/>respectively<sp/>in<sp/>equation<sp/>output<sp/>=<sp/>m<sp/>*<sp/>(value<sp/>in<sp/>pixel<sp/>data)<sp/>+<sp/>b</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_RESCALE_INTERCEPT<sp/>0x0028,0x1052</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_RESCALE_SLOPE<sp/>0x0028,0x1053</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[DS]<sp/>vector<sp/>of<sp/>offsets<sp/>between<sp/>planes<sp/>in<sp/>multi-frame<sp/>doses<sp/>in<sp/>mm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_GRID_FRAME_OFFSET_VECTOR<sp/>0x3004,0x000C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[DS]<sp/>factor<sp/>that<sp/>when<sp/>multiplied<sp/>by<sp/>values<sp/>in<sp/>pixel<sp/>data<sp/>yields<sp/>grid<sp/>dose<sp/>in<sp/>specified<sp/>dose<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_DOSE_GRID_SCALING<sp/>0x3004,0x000E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[OB|OW]<sp/>pixel<sp/>data<sp/>when<sp/>in<sp/>bytes<sp/>or<sp/>words<sp/>(integers)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIXEL_DATA<sp/>0x7FE0,0010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>tag<sp/>group<sp/>with<sp/>various<sp/>pixel<sp/>data<sp/>representations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCM_GROUP_PIXEL_DATA<sp/>0x7FE0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tags.h"/>
+  </compounddef>
+</doxygen>

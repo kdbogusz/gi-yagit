@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1data_1_1offsets" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::data::offsets</compoundname>
+    <includes local="no">common.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>Dimensions</declname>
+        <defname>Dimensions</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1data_1_1offsets_1ae823e2fb2146709ecd106e50c4c0a527" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t yagit::core::data::offsets&lt; Dimensions &gt;::offset[Dimensions]</definition>
+        <argsstring>[Dimensions]</argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="109" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><emphasis>Dimensions</emphasis> -dimensional index offset </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Dimensions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimensionality of the index offset</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="108" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="107" bodyend="110"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1data_1_1offsets_1ae823e2fb2146709ecd106e50c4c0a527" prot="public" virt="non-virtual"><scope>yagit::core::data::offsets</scope><name>offset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

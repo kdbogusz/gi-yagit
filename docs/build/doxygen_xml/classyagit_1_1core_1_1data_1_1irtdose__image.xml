@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classyagit_1_1core_1_1data_1_1irtdose__image" kind="class" language="C++" prot="public">
+    <compoundname>yagit::core::data::irtdose_image</compoundname>
+    <basecompoundref refid="classyagit_1_1core_1_1data_1_1irtdose__image__region" prot="public" virt="virtual">yagit::core::data::irtdose_image_region&lt; ElementType, Dimensions &gt;</basecompoundref>
+    <basecompoundref refid="classyagit_1_1core_1_1data_1_1iimage" prot="public" virt="non-virtual">yagit::core::data::iimage&lt; ElementType, Dimensions &gt;</basecompoundref>
+    <includes local="no">irtdose_image.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ElementType</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>Dimensions</declname>
+        <defname>Dimensions</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1irtdose__image_1ad06d51cfe03f44d3662b4ff5cd52c649" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual yagit::core::data::irtdose_image&lt; ElementType, Dimensions &gt;::~irtdose_image</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~irtdose_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/rtdose/irtdose_image.hpp" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface extending iimage functionality. Represents RTDOSE dicom image. </para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ElementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data point element type</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Dimensions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimensionality of image data point storage</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="121">
+        <label>yagit::core::data::irtdose_image_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1irtdose__image__region"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage__region"/>
+      </node>
+      <node id="120">
+        <label>yagit::core::data::irtdose_image&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1irtdose__image"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>yagit::core::data::iimage&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="125">
+        <label>yagit::core::data::irtdose_image_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1irtdose__image__region"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage__region"/>
+      </node>
+      <node id="124">
+        <label>yagit::core::data::irtdose_image&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1irtdose__image"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>yagit::core::data::iimage&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/rtdose/irtdose_image.hpp" line="19" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/rtdose/irtdose_image.hpp" bodystart="16" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a435b45bc06115a45e272af7a655556cc" prot="protected" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>allocate_at_least_for_image_data</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ac855d305661842317fc92fbda6578480" prot="protected" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>create_subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a8373fb474ffb60815265fdb477e1ed79" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a931e544c67357bfbe36af6f73b58328e" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1af7f747edd5681de4588f1a81e6596749" prot="protected" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1addeba8aec2101281feec3c0f08531444" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>load_coordinates</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1a7ac0d52e12c5b5a0e22c8d30e3d81148" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>load_coordinates</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ac7e49318d3150251d8f9eb6721c4b9fe" prot="protected" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>load_coordinates</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ab1f798276c8fc2fb50ab9ed1ca592421" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>preferred_coordinates_format</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1a4b7ce3361db1f609ed451937270ed54d" prot="protected" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>preferred_coordinates_format</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a5edf59e72af5e2a0573592b4b6b93317" prot="public" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>preferred_data_format</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" prot="public" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>region</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage_1a00534ea6696c539542fbc72b7850e655" prot="public" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>size</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1abed1b3b06d1e677cb15be8613eeb2213" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a24539a2dd775ffad080b91781cacc63f" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab035f6185847a9528001ecd72277b82e" prot="protected" virt="pure-virtual"><scope>yagit::core::data::irtdose_image</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1a8e5146db73a7b92f49ade7c2b6694f1e" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1adc4ec74b7fc6e40b59c98a4234bc774a" prot="public" virt="non-virtual"><scope>yagit::core::data::irtdose_image</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage_1a969207242fb00065370b29c2f18b1aa3" prot="public" virt="virtual"><scope>yagit::core::data::irtdose_image</scope><name>~iimage</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a9d37f613f04dc4183fc6d891ba71cb22" prot="public" virt="virtual"><scope>yagit::core::data::irtdose_image</scope><name>~iimage_region</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image_1ad06d51cfe03f44d3662b4ff5cd52c649" prot="public" virt="virtual"><scope>yagit::core::data::irtdose_image</scope><name>~irtdose_image</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ac62350a849ea3226b14acfe6fe88b65b" prot="public" virt="virtual"><scope>yagit::core::data::irtdose_image</scope><name>~irtdose_image_region</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

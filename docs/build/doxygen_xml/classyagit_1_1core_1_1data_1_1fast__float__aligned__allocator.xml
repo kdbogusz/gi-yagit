@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kind="class" language="C++" prot="public">
+    <compoundname>yagit::core::data::fast_float_aligned_allocator</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">std::allocator&lt; Type &gt;</basecompoundref>
+    <includes local="no">fast_float_aligned_allocator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Type</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>Allocator providing a mean to allocate memory for storing float32/64 data in such a way that math operations made on them will not suffer from its memory placement. If supplied type is not of float32/float64 type it default to std::allocator </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Underlying type</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="18" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classstd_1_1allocator_1a55f88dab1194d6b8a34e46017c4dfd79" prot="private" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator</scope><name>elements</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

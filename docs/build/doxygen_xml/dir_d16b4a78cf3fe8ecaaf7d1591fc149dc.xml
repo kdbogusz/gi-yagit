@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d16b4a78cf3fe8ecaaf7d1591fc149dc" kind="dir">
+    <compoundname>dispatch</compoundname>
+    <innerdir refid="dir_75d2925a8562d0a6efd8508ef74d1670">data</innerdir>
+    <innerdir refid="dir_6d5efe9d1d591ad691efb072343214a5">math</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/dispatch/"/>
+  </compounddef>
+</doxygen>

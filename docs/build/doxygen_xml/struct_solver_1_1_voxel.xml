@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct_solver_1_1_voxel" kind="struct" language="C++" prot="public">
+    <compoundname>Solver::Voxel</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_solver_1_1_voxel_1a7b9abae59ad6dce2473795e92c141955" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Solver::Voxel::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="124" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_solver_1_1_voxel_1ac7fed376325fa959ab73dd7b0a6a812e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Solver::Voxel::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="124" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_solver_1_1_voxel_1a8a9c1bb7802df99cde668065dbc0cb34" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Solver::Voxel::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="124" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_solver_1_1_voxel_1afadb75bd78c1fbd0880ba96406a49e0a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Solver::Voxel::dist</definition>
+        <argsstring></argsstring>
+        <name>dist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="125" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_solver_1_1_voxel_1aee0bcfbb57e05071c90f6e474c2ae9ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solver::Voxel::Voxel</definition>
+        <argsstring>()</argsstring>
+        <name>Voxel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="127" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_solver_1_1_voxel_1a73eb2364091303d05299087a5ee56382" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Solver::Voxel::Voxel</definition>
+        <argsstring>(double dist_, int x_, int y_=0, int z_=0)</argsstring>
+        <name>Voxel</name>
+        <param>
+          <type>double</type>
+          <declname>dist_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="129" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_solver_1_1_voxel_1a50bf2569a924b89e83bb6a3b6edad3fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Solver::Voxel::compare</definition>
+        <argsstring>(Voxel a, Voxel b)</argsstring>
+        <name>compare</name>
+        <param>
+          <type>Voxel</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>Voxel</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="131" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="123" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="122" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct_solver_1_1_voxel_1a50bf2569a924b89e83bb6a3b6edad3fb" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>compare</name></member>
+      <member refid="struct_solver_1_1_voxel_1afadb75bd78c1fbd0880ba96406a49e0a" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>dist</name></member>
+      <member refid="struct_solver_1_1_voxel_1aee0bcfbb57e05071c90f6e474c2ae9ad" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>Voxel</name></member>
+      <member refid="struct_solver_1_1_voxel_1a73eb2364091303d05299087a5ee56382" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>Voxel</name></member>
+      <member refid="struct_solver_1_1_voxel_1a7b9abae59ad6dce2473795e92c141955" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>x</name></member>
+      <member refid="struct_solver_1_1_voxel_1ac7fed376325fa959ab73dd7b0a6a812e" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>y</name></member>
+      <member refid="struct_solver_1_1_voxel_1a8a9c1bb7802df99cde668065dbc0cb34" prot="public" virt="non-virtual"><scope>Solver::Voxel</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

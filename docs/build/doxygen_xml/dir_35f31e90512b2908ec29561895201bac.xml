@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_35f31e90512b2908ec29561895201bac" kind="dir">
+    <compoundname>image</compoundname>
+    <innerdir refid="dir_8ccaa536cb5fa72ff8a92ee011d5f91a">rtdose</innerdir>
+    <innerfile refid="iimage_8hpp">iimage.hpp</innerfile>
+    <innerfile refid="iimage__region_8hpp">iimage_region.hpp</innerfile>
+    <innerfile refid="image__data_8hpp">image_data.hpp</innerfile>
+    <innerfile refid="iwritable__image_8hpp">iwritable_image.hpp</innerfile>
+    <innerfile refid="iwritable__image__region_8hpp">iwritable_image_region.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/"/>
+  </compounddef>
+</doxygen>

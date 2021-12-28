@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_7aadfafb516d5fd91c86ae496949bb2f" kind="dir">
+    <compoundname>data</compoundname>
+    <innerdir refid="dir_15f5d2052270d216aabef213a04b8dd7">allocation</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/src/data/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_dicom_writer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>DicomWriter</compoundname>
+    <derivedcompoundref refid="class_dicom_writer2_d" prot="public" virt="non-virtual">DicomWriter2D</derivedcompoundref>
+    <derivedcompoundref refid="class_dicom_writer3_d" prot="public" virt="non-virtual">DicomWriter3D</derivedcompoundref>
+    <derivedcompoundref refid="class_dicom_writer3_d_slice_x_y" prot="public" virt="non-virtual">DicomWriter3DSliceXY</derivedcompoundref>
+    <derivedcompoundref refid="class_dicom_writer3_d_slice_x_z" prot="public" virt="non-virtual">DicomWriter3DSliceXZ</derivedcompoundref>
+    <derivedcompoundref refid="class_dicom_writer3_d_slice_y_z" prot="public" virt="non-virtual">DicomWriter3DSliceYZ</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dicom_writer_1aea1291bd4a5ded738562eaaf0cac8d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DicomWriter::DicomWriter</definition>
+        <argsstring>()</argsstring>
+        <name>DicomWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="37" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dicom_writer_1a0638f50fea749128668a8e69f6922d9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>DicomWriter::~DicomWriter</definition>
+        <argsstring>()</argsstring>
+        <name>~DicomWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="39" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dicom_writer_1a05a765b74a2dbd49a7b8fb4d1e2102ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DicomWriter::saveImage</definition>
+        <argsstring>(std::string filepath, gdcm::File &amp;oldFile, double *gamma, int xNumber, int yNumber, int zNumber, int precision, double fillValue, int rewriteTagsStrategyId, std::set&lt; std::pair&lt; int, int &gt; &gt; tags=(std::set&lt; std::pair&lt; int, int &gt; &gt;()), int slice=-1)</argsstring>
+        <name>saveImage</name>
+        <param>
+          <type>std::string</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>gdcm::File &amp;</type>
+          <declname>oldFile</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>zNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fillValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rewriteTagsStrategyId</declname>
+        </param>
+        <param>
+          <type>std::set&lt; std::pair&lt; int, int &gt; &gt;</type>
+          <declname>tags</declname>
+          <defval>(std::set&lt; std::pair&lt; int, int &gt; &gt;())</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slice</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Saves Gamma Index array and all necessary tags to a DICOM file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Values of parameters: dims, refXNumber, refYNumber, refZNumber, plane, refSlice should be the same as those passed to <ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma()</ref> function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path where the output DICOM file will be saved. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oldFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the object in which GDCM library stored parsed reference DICOM file. The reference returned by <ref refid="wrapper_8h_1a71224bfcc6cb661a94706f42468df573" kindref="member">loadDicom()</ref> function. Used while transferring tags to the output DICOM file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The calculated gamma array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along x axis in the gamma image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along y axis in the gamma image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along z axis in the gamma image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of digits after the decimal point in the resulting Gamma Index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fillValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that will be assigned to voxels for which the GI comparison was not performed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rewriteTagsStrategyId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the strategy of transferring tags from reference DICOM to output DICOM file:<itemizedlist>
+<listitem><para>5 - rewrite all tags, except these specified in tags parameter</para></listitem><listitem><para>4 - rewrite only these specified in tags parameter</para></listitem><listitem><para>3 - rewrite only not private tags</para></listitem><listitem><para>2 - rewrite no tags</para></listitem><listitem><para>1 or other integer values - rewrite all tags </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only rewriteTagsStrategy dims is greater than 3. The set specifying which exactly tags (not) to transfer. For more information on how to construct this set see <ref refid="dicom__tag__strategies_8h_1ac6755e4dac2bd9435b2c987350ab5432" kindref="member">applyDicomTagsRewriteStrategy()</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only when GI comparison was performed in 2.5D od 2dfrom3D version. Specifies for which slice (in the given orientation) the GI comparison was performed. First slice has number 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="69" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="47" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_dicom_writer_1aa2906b4f4963dbe8c9167fe6b9a68950" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DicomWriter::insertFrames</definition>
+        <argsstring>(gdcm::File &amp;newFile, gdcm::PixelFormat pf, gdcm::PhotometricInterpretation pi, double *gamma, int xNumber, int yNumber, int zNumber, int rescale, double fillValue, int slice)=0</argsstring>
+        <name>insertFrames</name>
+        <param>
+          <type>gdcm::File &amp;</type>
+          <declname>newFile</declname>
+        </param>
+        <param>
+          <type>gdcm::PixelFormat</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>gdcm::PhotometricInterpretation</type>
+          <declname>pi</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>zNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rescale</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fillValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>slice</declname>
+        </param>
+        <briefdescription>
+<para>Copies Gamma Index array to a DICOM matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Values of parameters: xNumber, yNumber, zNumber, plane, slice should be the same as those passed to <ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma()</ref> function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object in which the new DICOM is constructed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pixel format of DICOM image (GDCM parameter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The photometric interpretation of DICOM image (GDCM parameter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The calculated gamma array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along x axis in the gamma image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along y axis in the gamma image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along z axis in the gamma image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rescale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value by which the GI values are rescaled before inserting into DICOM, in order to preserve the precision. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fillValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that will be assigned to voxels for which the GI comparison was not performed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only when GI comparison was performed in 2.5D od 2dfrom3D version. Specifies for which slice (in the given orientation) the GI comparison was performed. First slice has number 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="96" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dicom_writer_1a6ab105bf3cc30a4e79408b79eaedc8ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DicomWriter::setDicomRescaleTags</definition>
+        <argsstring>(gdcm::DataSet &amp;newDataSet, int rescale)</argsstring>
+        <name>setDicomRescaleTags</name>
+        <param>
+          <type>gdcm::DataSet &amp;</type>
+          <declname>newDataSet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rescale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="100" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="81" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="35" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" bodystart="34" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_dicom_writer_1aea1291bd4a5ded738562eaaf0cac8d2e" prot="public" virt="non-virtual"><scope>DicomWriter</scope><name>DicomWriter</name></member>
+      <member refid="class_dicom_writer_1aa2906b4f4963dbe8c9167fe6b9a68950" prot="protected" virt="pure-virtual"><scope>DicomWriter</scope><name>insertFrames</name></member>
+      <member refid="class_dicom_writer_1a05a765b74a2dbd49a7b8fb4d1e2102ae" prot="public" virt="non-virtual"><scope>DicomWriter</scope><name>saveImage</name></member>
+      <member refid="class_dicom_writer_1a6ab105bf3cc30a4e79408b79eaedc8ad" prot="private" virt="non-virtual"><scope>DicomWriter</scope><name>setDicomRescaleTags</name></member>
+      <member refid="class_dicom_writer_1a0638f50fea749128668a8e69f6922d9a" prot="public" virt="virtual"><scope>DicomWriter</scope><name>~DicomWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

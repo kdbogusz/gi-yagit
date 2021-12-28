@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>unsigned</type>
+        <declname>VectorSize</declname>
+        <defname>VectorSize</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1acad246b8fca5a5a47189911caf1893f2" prot="public" static="no">
+        <type>float</type>
+        <definition>using yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;::value_type =  float</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="15" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a5351e54776c5b3941f8cf60c76dc45d8" prot="public" static="no">
+        <type>simdpp::float32&lt; VectorSize &gt;</type>
+        <definition>using yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;::vector_type =  simdpp::float32&lt;VectorSize&gt;</definition>
+        <argsstring></argsstring>
+        <name>vector_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="16" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1af1ebc99c53dc50585fedb74424afed3e" prot="public" static="yes" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;::vector_size</definition>
+        <argsstring></argsstring>
+        <name>vector_size</name>
+        <initializer>= VectorSize</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="17" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1ad0e30f5a8df71e9512732796236911be" prot="public" static="no" mutable="no">
+        <type>vector_type</type>
+        <definition>vector_type yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;::percentage</definition>
+        <argsstring></argsstring>
+        <name>percentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="25" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a598ec43079470c6ea28a8b7fa6167448" prot="public" static="no" mutable="no">
+        <type>vector_type</type>
+        <definition>vector_type yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;::distance_to_agreement_squared</definition>
+        <argsstring></argsstring>
+        <name>distance_to_agreement_squared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="26" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a919dadc0ec5f2b3541004f3b6602fb3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;::vlocal_gamma_index_params</definition>
+        <argsstring>(const local_gamma_index_params&lt; value_type &gt; &amp;params)</argsstring>
+        <name>vlocal_gamma_index_params</name>
+        <param>
+          <type>const local_gamma_index_params&lt; value_type &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="19" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="14" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="13" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a598ec43079470c6ea28a8b7fa6167448" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</scope><name>distance_to_agreement_squared</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1ad0e30f5a8df71e9512732796236911be" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</scope><name>percentage</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1acad246b8fca5a5a47189911caf1893f2" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</scope><name>value_type</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1af1ebc99c53dc50585fedb74424afed3e" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</scope><name>vector_size</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a5351e54776c5b3941f8cf60c76dc45d8" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</scope><name>vector_type</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a919dadc0ec5f2b3541004f3b6602fb3c" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</scope><name>vlocal_gamma_index_params</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

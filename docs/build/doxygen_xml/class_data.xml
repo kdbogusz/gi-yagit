@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_data" kind="class" language="C++" prot="public">
+    <compoundname>Data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_data_1ad01ed6400c6996adaf252c0fed60275f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Data::startX</definition>
+        <argsstring></argsstring>
+        <name>startX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="22" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1a21eb39409b9398a372db75149ad19183" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Data::spacingX</definition>
+        <argsstring></argsstring>
+        <name>spacingX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="23" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1af0a4a2bfd05cac03c38659eca8a55fa9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Data::numberX</definition>
+        <argsstring></argsstring>
+        <name>numberX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="24" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1aae9c33ab50636dd7230bcfd6c083bbf3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Data::startY</definition>
+        <argsstring></argsstring>
+        <name>startY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="26" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1afb8fdc58edf59c02ef0445a7e3319d90" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Data::spacingY</definition>
+        <argsstring></argsstring>
+        <name>spacingY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="27" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1a3b7be7d7d10bd78232e8f47e507dba4e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Data::numberY</definition>
+        <argsstring></argsstring>
+        <name>numberY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="28" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1a3fe7278df8b3932f799321244f9873c7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Data::startZ</definition>
+        <argsstring></argsstring>
+        <name>startZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="30" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1a819a90acb02c3ea900b3b6409a38d347" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Data::spacingZ</definition>
+        <argsstring></argsstring>
+        <name>spacingZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="31" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1a6719000b83b3ba490323315b0a89cf0f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Data::numberZ</definition>
+        <argsstring></argsstring>
+        <name>numberZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="32" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_1a568d655689088d026cddd47f814d4eb4" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* Data::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="34" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_1add00ac9902acc8b6e506d83fbf24c819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data::printData</definition>
+        <argsstring>()</argsstring>
+        <name>printData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="36" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.cpp" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1ae297a2423886ca12e03a4e2c6ef7a397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Data::printInfo</definition>
+        <argsstring>()</argsstring>
+        <name>printInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="37" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.cpp" bodystart="23" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1a1dcd4af2a319ad53b89a5fb9475e8fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Data::getDataSize</definition>
+        <argsstring>()</argsstring>
+        <name>getDataSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="38" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.cpp" bodystart="46" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1aab31956423290f0d62dcca47ab4d16dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Data::~Data</definition>
+        <argsstring>()</argsstring>
+        <name>~Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="40" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_tests/data.h" line="20" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/data.h" bodystart="19" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_data_1a568d655689088d026cddd47f814d4eb4" prot="public" virt="non-virtual"><scope>Data</scope><name>data</name></member>
+      <member refid="class_data_1a1dcd4af2a319ad53b89a5fb9475e8fea" prot="public" virt="non-virtual"><scope>Data</scope><name>getDataSize</name></member>
+      <member refid="class_data_1af0a4a2bfd05cac03c38659eca8a55fa9" prot="public" virt="non-virtual"><scope>Data</scope><name>numberX</name></member>
+      <member refid="class_data_1a3b7be7d7d10bd78232e8f47e507dba4e" prot="public" virt="non-virtual"><scope>Data</scope><name>numberY</name></member>
+      <member refid="class_data_1a6719000b83b3ba490323315b0a89cf0f" prot="public" virt="non-virtual"><scope>Data</scope><name>numberZ</name></member>
+      <member refid="class_data_1add00ac9902acc8b6e506d83fbf24c819" prot="public" virt="non-virtual"><scope>Data</scope><name>printData</name></member>
+      <member refid="class_data_1ae297a2423886ca12e03a4e2c6ef7a397" prot="public" virt="non-virtual"><scope>Data</scope><name>printInfo</name></member>
+      <member refid="class_data_1a21eb39409b9398a372db75149ad19183" prot="public" virt="non-virtual"><scope>Data</scope><name>spacingX</name></member>
+      <member refid="class_data_1afb8fdc58edf59c02ef0445a7e3319d90" prot="public" virt="non-virtual"><scope>Data</scope><name>spacingY</name></member>
+      <member refid="class_data_1a819a90acb02c3ea900b3b6409a38d347" prot="public" virt="non-virtual"><scope>Data</scope><name>spacingZ</name></member>
+      <member refid="class_data_1ad01ed6400c6996adaf252c0fed60275f" prot="public" virt="non-virtual"><scope>Data</scope><name>startX</name></member>
+      <member refid="class_data_1aae9c33ab50636dd7230bcfd6c083bbf3" prot="public" virt="non-virtual"><scope>Data</scope><name>startY</name></member>
+      <member refid="class_data_1a3fe7278df8b3932f799321244f9873c7" prot="public" virt="non-virtual"><scope>Data</scope><name>startZ</name></member>
+      <member refid="class_data_1aab31956423290f0d62dcca47ab4d16dd" prot="public" virt="non-virtual"><scope>Data</scope><name>~Data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

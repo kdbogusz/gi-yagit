@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_0ff5accfe16b543cd7677ccf38529453" kind="dir">
+    <compoundname>gi_tests</compoundname>
+    <innerfile refid="comparator_8h">comparator.h</innerfile>
+    <innerfile refid="data_8cpp">data.cpp</innerfile>
+    <innerfile refid="data_8h">data.h</innerfile>
+    <innerfile refid="generate_config_8py">generateConfig.py</innerfile>
+    <innerfile refid="generate_test_suit_8py">generateTestSuit.py</innerfile>
+    <innerfile refid="gprcomparator_8cpp">gprcomparator.cpp</innerfile>
+    <innerfile refid="main_test_8cpp">mainTest.cpp</innerfile>
+    <innerfile refid="manage_compressing_suits_8py">manageCompressingSuits.py</innerfile>
+    <innerfile refid="onetoonecomparator_8cpp">onetoonecomparator.cpp</innerfile>
+    <innerfile refid="parameters_8cpp">parameters.cpp</innerfile>
+    <innerfile refid="parameters_8h">parameters.h</innerfile>
+    <innerfile refid="parse_data_8cpp">parseData.cpp</innerfile>
+    <innerfile refid="parse_data_8h">parseData.h</innerfile>
+    <innerfile refid="parse_parameters_8cpp">parseParameters.cpp</innerfile>
+    <innerfile refid="parse_parameters_8h">parseParameters.h</innerfile>
+    <innerfile refid="parser_8cpp">parser.cpp</innerfile>
+    <innerfile refid="parser_8h">parser.h</innerfile>
+    <innerfile refid="transformer_8cpp">transformer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_tests/"/>
+  </compounddef>
+</doxygen>

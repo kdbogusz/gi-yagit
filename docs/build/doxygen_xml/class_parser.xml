@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_parser" kind="class" language="C++" prot="public">
+    <compoundname>Parser</compoundname>
+    <derivedcompoundref refid="class_parse_data" prot="public" virt="non-virtual">ParseData</derivedcompoundref>
+    <derivedcompoundref refid="class_parse_parameters" prot="public" virt="non-virtual">ParseParameters</derivedcompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_parser_1aa5918b64d11e92cb71b38e22ddba4160" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Parser::startsWith</definition>
+        <argsstring>(string, string)</argsstring>
+        <name>startsWith</name>
+        <param>
+          <type>string</type>
+          <defname>source</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>prefix</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" line="28" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/parser.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_parser_1aec743373efde22a5338fb1889cfd5155" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Parser::getDoubleAttribute</definition>
+        <argsstring>(string, string)</argsstring>
+        <name>getDoubleAttribute</name>
+        <param>
+          <type>string</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>attributeName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" line="29" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/parser.cpp" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_parser_1a3f45aa36576e4e5a4a37cd89294f8348" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Parser::getIntAttribute</definition>
+        <argsstring>(string, string)</argsstring>
+        <name>getIntAttribute</name>
+        <param>
+          <type>string</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>attributeName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" line="30" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/parser.cpp" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_parser_1a31a68a8c5769b56d263ab5789c6344d1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Parser::getIsLocalAttribute</definition>
+        <argsstring>(string, string)</argsstring>
+        <name>getIsLocalAttribute</name>
+        <param>
+          <type>string</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>keyword</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" line="31" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/parser.cpp" bodystart="57" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_parser_1a4f3e80712d9e25ecc2dc8a6b82923629" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Comparator *</type>
+        <definition>Comparator * Parser::getComparator</definition>
+        <argsstring>(string, string)</argsstring>
+        <name>getComparator</name>
+        <param>
+          <type>string</type>
+          <defname>line</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>keyword</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" line="32" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/parser.cpp" bodystart="78" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" line="26" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/parser.h" bodystart="26" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_parser_1a4f3e80712d9e25ecc2dc8a6b82923629" prot="protected" virt="non-virtual"><scope>Parser</scope><name>getComparator</name></member>
+      <member refid="class_parser_1aec743373efde22a5338fb1889cfd5155" prot="protected" virt="non-virtual"><scope>Parser</scope><name>getDoubleAttribute</name></member>
+      <member refid="class_parser_1a3f45aa36576e4e5a4a37cd89294f8348" prot="protected" virt="non-virtual"><scope>Parser</scope><name>getIntAttribute</name></member>
+      <member refid="class_parser_1a31a68a8c5769b56d263ab5789c6344d1" prot="protected" virt="non-virtual"><scope>Parser</scope><name>getIsLocalAttribute</name></member>
+      <member refid="class_parser_1aa5918b64d11e92cb71b38e22ddba4160" prot="protected" virt="non-virtual"><scope>Parser</scope><name>startsWith</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

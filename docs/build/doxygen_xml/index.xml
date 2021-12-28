@@ -1,0 +1,1363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="class_classic_solver1_d" kind="class"><name>ClassicSolver1D</name>
+    <member refid="class_classic_solver1_d_1acf0a0bd9c359c27c68c3d3e190669cc5" kind="function"><name>ClassicSolver1D</name></member>
+    <member refid="class_classic_solver1_d_1a6ecb78de7df69e305af5cc42a3d3c2a4" kind="function"><name>calculateGamma</name></member>
+  </compound>
+  <compound refid="class_classic_solver2_d" kind="class"><name>ClassicSolver2D</name>
+    <member refid="class_classic_solver2_d_1af7320466b0c0938f2293ab5100120ed7" kind="function"><name>ClassicSolver2D</name></member>
+    <member refid="class_classic_solver2_d_1a2d0da1cab821c158128bd23e1c035a2e" kind="function"><name>calculateGamma</name></member>
+  </compound>
+  <compound refid="class_classic_solver3_d" kind="class"><name>ClassicSolver3D</name>
+    <member refid="class_classic_solver3_d_1acff04a768d94409cb99d8a15d42c189f" kind="function"><name>ClassicSolver3D</name></member>
+    <member refid="class_classic_solver3_d_1a916750d582fe1ea212aed93b7a601037" kind="function"><name>calculateGamma</name></member>
+    <member refid="class_classic_solver3_d_1a6ed9dd9f8b4bd9fb3f7c7c4a5b348e4b" kind="function"><name>calculateGamma2_5D</name></member>
+    <member refid="class_classic_solver3_d_1a76554f979b2a022c6cf669eb70419235" kind="function"><name>calculateGamma2_5DSliceXY</name></member>
+    <member refid="class_classic_solver3_d_1a2fac73af6789058732d7bdd13ebe2e7d" kind="function"><name>calculateGamma2_5DSliceXZ</name></member>
+    <member refid="class_classic_solver3_d_1ab2e46542a75fd30ffbea8f60ddf8c5e8" kind="function"><name>calculateGamma2_5DSliceYZ</name></member>
+  </compound>
+  <compound refid="class_comparator" kind="class"><name>Comparator</name>
+    <member refid="class_comparator_1a7d991fecd0c1b134d2aab47d56a83848" kind="function"><name>compare</name></member>
+    <member refid="class_comparator_1a6122bbb2f230f712677be2b5c2e01033" kind="function"><name>name</name></member>
+  </compound>
+  <compound refid="class_data" kind="class"><name>Data</name>
+    <member refid="class_data_1ad01ed6400c6996adaf252c0fed60275f" kind="variable"><name>startX</name></member>
+    <member refid="class_data_1a21eb39409b9398a372db75149ad19183" kind="variable"><name>spacingX</name></member>
+    <member refid="class_data_1af0a4a2bfd05cac03c38659eca8a55fa9" kind="variable"><name>numberX</name></member>
+    <member refid="class_data_1aae9c33ab50636dd7230bcfd6c083bbf3" kind="variable"><name>startY</name></member>
+    <member refid="class_data_1afb8fdc58edf59c02ef0445a7e3319d90" kind="variable"><name>spacingY</name></member>
+    <member refid="class_data_1a3b7be7d7d10bd78232e8f47e507dba4e" kind="variable"><name>numberY</name></member>
+    <member refid="class_data_1a3fe7278df8b3932f799321244f9873c7" kind="variable"><name>startZ</name></member>
+    <member refid="class_data_1a819a90acb02c3ea900b3b6409a38d347" kind="variable"><name>spacingZ</name></member>
+    <member refid="class_data_1a6719000b83b3ba490323315b0a89cf0f" kind="variable"><name>numberZ</name></member>
+    <member refid="class_data_1a568d655689088d026cddd47f814d4eb4" kind="variable"><name>data</name></member>
+    <member refid="class_data_1add00ac9902acc8b6e506d83fbf24c819" kind="function"><name>printData</name></member>
+    <member refid="class_data_1ae297a2423886ca12e03a4e2c6ef7a397" kind="function"><name>printInfo</name></member>
+    <member refid="class_data_1a1dcd4af2a319ad53b89a5fb9475e8fea" kind="function"><name>getDataSize</name></member>
+    <member refid="class_data_1aab31956423290f0d62dcca47ab4d16dd" kind="function"><name>~Data</name></member>
+  </compound>
+  <compound refid="class_dicom_reader" kind="class"><name>DicomReader</name>
+    <member refid="class_dicom_reader_1ae4a47f34255cab88bd6224e35536eaec" kind="function"><name>DicomReader</name></member>
+    <member refid="class_dicom_reader_1aca971aed3cdd35eddee49cb548c805f1" kind="function"><name>acquireImage</name></member>
+    <member refid="class_dicom_reader_1a4f33f3b96796c500a0d2130bbb938365" kind="function"><name>acquireStart</name></member>
+    <member refid="class_dicom_reader_1a4e87e4ae71cab0a10c03c67f352f06ff" kind="function"><name>acquireSpacing</name></member>
+  </compound>
+  <compound refid="class_dicom_writer" kind="class"><name>DicomWriter</name>
+    <member refid="class_dicom_writer_1aea1291bd4a5ded738562eaaf0cac8d2e" kind="function"><name>DicomWriter</name></member>
+    <member refid="class_dicom_writer_1a0638f50fea749128668a8e69f6922d9a" kind="function"><name>~DicomWriter</name></member>
+    <member refid="class_dicom_writer_1a05a765b74a2dbd49a7b8fb4d1e2102ae" kind="function"><name>saveImage</name></member>
+    <member refid="class_dicom_writer_1aa2906b4f4963dbe8c9167fe6b9a68950" kind="function"><name>insertFrames</name></member>
+    <member refid="class_dicom_writer_1a6ab105bf3cc30a4e79408b79eaedc8ad" kind="function"><name>setDicomRescaleTags</name></member>
+  </compound>
+  <compound refid="class_dicom_writer2_d" kind="class"><name>DicomWriter2D</name>
+    <member refid="class_dicom_writer2_d_1a2f2570f53e385c44d2fc21339934325a" kind="function"><name>DicomWriter2D</name></member>
+    <member refid="class_dicom_writer2_d_1a79c56b63f9c75b87af90698b9b24cd45" kind="function"><name>~DicomWriter2D</name></member>
+    <member refid="class_dicom_writer2_d_1a1658bc12d89047fa38b264b33b8d7c5a" kind="function"><name>insertFrames</name></member>
+  </compound>
+  <compound refid="class_dicom_writer3_d" kind="class"><name>DicomWriter3D</name>
+    <member refid="class_dicom_writer3_d_1a4d714017f09f9c5bbe20529149265e69" kind="function"><name>DicomWriter3D</name></member>
+    <member refid="class_dicom_writer3_d_1a8d6cdfd034c72e12e9a8a7371a08ac86" kind="function"><name>~DicomWriter3D</name></member>
+    <member refid="class_dicom_writer3_d_1abebfb056ec45e17910afaeb79494ba7e" kind="function"><name>insertFrames</name></member>
+  </compound>
+  <compound refid="class_dicom_writer3_d_slice_x_y" kind="class"><name>DicomWriter3DSliceXY</name>
+    <member refid="class_dicom_writer3_d_slice_x_y_1a6fe8ae2a702cd736a500f673de586ff2" kind="function"><name>DicomWriter3DSliceXY</name></member>
+    <member refid="class_dicom_writer3_d_slice_x_y_1a9c4f01229b52727845d9d7b0c398deed" kind="function"><name>~DicomWriter3DSliceXY</name></member>
+    <member refid="class_dicom_writer3_d_slice_x_y_1ae9a4c453fac2fd135c8734eaf25cc0b5" kind="function"><name>insertFrames</name></member>
+  </compound>
+  <compound refid="class_dicom_writer3_d_slice_x_z" kind="class"><name>DicomWriter3DSliceXZ</name>
+    <member refid="class_dicom_writer3_d_slice_x_z_1a3c18d2acd94cf3bcb4293eb96ea60b22" kind="function"><name>DicomWriter3DSliceXZ</name></member>
+    <member refid="class_dicom_writer3_d_slice_x_z_1a0276ea7688c8fdd1464f8cb04b0cacd1" kind="function"><name>~DicomWriter3DSliceXZ</name></member>
+    <member refid="class_dicom_writer3_d_slice_x_z_1aa8fb1fc28d67116a03a915a86c577720" kind="function"><name>insertFrames</name></member>
+  </compound>
+  <compound refid="class_dicom_writer3_d_slice_y_z" kind="class"><name>DicomWriter3DSliceYZ</name>
+    <member refid="class_dicom_writer3_d_slice_y_z_1a1c65487787d214458ae0bd40b1c66f4d" kind="function"><name>DicomWriter3DSliceYZ</name></member>
+    <member refid="class_dicom_writer3_d_slice_y_z_1aff7afde08c58b2c1c443fc71464526f6" kind="function"><name>~DicomWriter3DSliceYZ</name></member>
+    <member refid="class_dicom_writer3_d_slice_y_z_1af097efad4aedb16a6245e22f0ed90e2d" kind="function"><name>insertFrames</name></member>
+  </compound>
+  <compound refid="class_g_p_r_comparator" kind="class"><name>GPRComparator</name>
+    <member refid="class_g_p_r_comparator_1a4975f573b6ef842e900febd35c684ac7" kind="function"><name>compare</name></member>
+    <member refid="class_g_p_r_comparator_1a169544b061d5bccebd17f6a5449d2865" kind="function"><name>name</name></member>
+  </compound>
+  <compound refid="class_image" kind="class"><name>Image</name>
+    <member refid="class_image_1a32abcd6a6834acfb72fcfffefeff04d2" kind="variable"><name>start_</name></member>
+    <member refid="class_image_1a322b2901c1d58e24dd18bed40f4e08e0" kind="variable"><name>spacing_</name></member>
+    <member refid="class_image_1a702d7cdf5b661a5224ae3d2e45d6571d" kind="variable"><name>end_</name></member>
+    <member refid="class_image_1a5d6108eb995c0f20f87e570e7f414b25" kind="variable"><name>coordinates_</name></member>
+    <member refid="class_image_1a7496453efb36b08b2205a4b620532354" kind="function"><name>Image</name></member>
+    <member refid="class_image_1a0294f63700543e11c0f0da85601c7ae5" kind="function"><name>~Image</name></member>
+    <member refid="class_image_1a98c3e4cf3b5426bf197b4579aba7c39f" kind="function"><name>start</name></member>
+    <member refid="class_image_1a6c8949631eb3293f9284b653ea6334e6" kind="function"><name>spacing</name></member>
+    <member refid="class_image_1a35f203beefc4884964d9f650601c996b" kind="function"><name>end</name></member>
+    <member refid="class_image_1a14f1773eb16da222fc22143be1a078e9" kind="function"><name>coordinates</name></member>
+    <member refid="class_image_1a6717fcaf21fdf0bdc8096a0a358e9059" kind="function"><name>getCorresponding</name></member>
+    <member refid="class_image_1aaf5ac1f8f7c3120bd3a3809174dc4489" kind="function"><name>isPointInside</name></member>
+    <member refid="class_image_1a754a939349d570d677e317776994341c" kind="function"><name>getNdim</name></member>
+    <member refid="class_image_1ad5dc706eb49bd1de115a2bc291a8a31f" kind="function"><name>getNelems</name></member>
+    <member refid="class_image_1a9fdbf526ee3fdef04c330e4c2f5bbdab" kind="function"><name>getMaxValue</name></member>
+    <member refid="class_image_1ac4902e4884957026171fa18789920443" kind="function"><name>getShape</name></member>
+    <member refid="class_image_1a67467363df1c53918e278870f0814ca6" kind="function"><name>getReversedShape</name></member>
+    <member refid="class_image_1a05c89c5725c1b3b8ce9be690d256d096" kind="function"><name>print</name></member>
+    <member refid="class_image_1ab225c9625722c3f861592adb218a168d" kind="function"><name>dataToArray</name></member>
+  </compound>
+  <compound refid="class_image1_d" kind="class"><name>Image1D</name>
+    <member refid="class_image1_d_1ab78bcce647119c87fb57a1c27fd40c87" kind="variable"><name>data_</name></member>
+    <member refid="class_image1_d_1ac4f25683f2098782a9b046364d094572" kind="function"><name>Image1D</name></member>
+    <member refid="class_image1_d_1aa60098e59cd7bf662199cc01377d430a" kind="function"><name>~Image1D</name></member>
+    <member refid="class_image1_d_1a2fc07bdc9a6bd223e3f114b40c6b2a59" kind="function"><name>getNdim</name></member>
+    <member refid="class_image1_d_1a9acc4b8a0730bc710746688a2463b7d7" kind="function"><name>getNelems</name></member>
+    <member refid="class_image1_d_1a77e4ac545831e1070c9af9606589eae3" kind="function"><name>getMaxValue</name></member>
+    <member refid="class_image1_d_1acf040f834e2d641e79a4c178903957ae" kind="function"><name>getShape</name></member>
+    <member refid="class_image1_d_1a7bd9239d5b0aa5558c15594cafa141a1" kind="function"><name>getReversedShape</name></member>
+    <member refid="class_image1_d_1a45ecdcfb28d0ab8507854aaf8fb4c7c3" kind="function"><name>print</name></member>
+    <member refid="class_image1_d_1a8355a68443d121c2432b6bfb90270a00" kind="function"><name>dataToArray</name></member>
+    <member refid="class_image1_d_1ab0131b54467a826149e14730810ff6d7" kind="function"><name>isIndexInside</name></member>
+    <member refid="class_image1_d_1a40358d73a0b9e19f0c55625cafc9e9a5" kind="function"><name>data</name></member>
+  </compound>
+  <compound refid="class_image2_d" kind="class"><name>Image2D</name>
+    <member refid="class_image2_d_1a29635f91d5e80c0f5bf17e46824c37dc" kind="variable"><name>data_</name></member>
+    <member refid="class_image2_d_1add37bf29483568fbf81011ff07415db2" kind="function"><name>Image2D</name></member>
+    <member refid="class_image2_d_1aadda3425778789fc16a9ac8ab0434162" kind="function"><name>~Image2D</name></member>
+    <member refid="class_image2_d_1a90769d8cbef01c8b5a6a439ef63c4947" kind="function"><name>getNdim</name></member>
+    <member refid="class_image2_d_1aad2c9b0d1f8cef9f3f27a9b57ef3f5a6" kind="function"><name>getNelems</name></member>
+    <member refid="class_image2_d_1ac1b6787c2ceb1dd17ac5f19df88122ee" kind="function"><name>getMaxValue</name></member>
+    <member refid="class_image2_d_1a26a1183ce9f3daa4df313ae59f99edbb" kind="function"><name>getShape</name></member>
+    <member refid="class_image2_d_1a09b819568c5c9dc98d4dbbc9163f3da0" kind="function"><name>getReversedShape</name></member>
+    <member refid="class_image2_d_1a43034ad4c509f1edeb55d528d8eca9ff" kind="function"><name>print</name></member>
+    <member refid="class_image2_d_1aa53c93ec68d7d818fcd72b638133bd7f" kind="function"><name>dataToArray</name></member>
+    <member refid="class_image2_d_1a539e07926614e733069b2378f60d9c16" kind="function"><name>isIndexInside</name></member>
+    <member refid="class_image2_d_1a8bd93d1c0381fc23d6193d0217bd1390" kind="function"><name>data</name></member>
+  </compound>
+  <compound refid="class_image3_d" kind="class"><name>Image3D</name>
+    <member refid="class_image3_d_1a1b2735bbf1bf3b04ef63db14fd322364" kind="variable"><name>data_</name></member>
+    <member refid="class_image3_d_1a1ff3941aa46eab3bbe353346d2ad3469" kind="function"><name>Image3D</name></member>
+    <member refid="class_image3_d_1a6ab58c2c43fe90c435f5a940a3d3254f" kind="function"><name>~Image3D</name></member>
+    <member refid="class_image3_d_1ac9e5f2a79ce684dac5d8cf7ede4148f6" kind="function"><name>getNdim</name></member>
+    <member refid="class_image3_d_1af5466176225cc8f9864da63b2da5c5c7" kind="function"><name>getNelems</name></member>
+    <member refid="class_image3_d_1af930b61a3e037848c36db96707a10853" kind="function"><name>getMaxValue</name></member>
+    <member refid="class_image3_d_1a69d51f3a86b0070f04e1db7386ff93e5" kind="function"><name>getShape</name></member>
+    <member refid="class_image3_d_1a4e5ed7220964e1cc5b27c9e81d67b838" kind="function"><name>getReversedShape</name></member>
+    <member refid="class_image3_d_1a4fb31db527233120a45172e346de99c8" kind="function"><name>print</name></member>
+    <member refid="class_image3_d_1a68bd73ce605d9a616a25094d9aad3720" kind="function"><name>dataToArray</name></member>
+    <member refid="class_image3_d_1aacc89fc0872ac23d6493fc9276796e24" kind="function"><name>isIndexInside</name></member>
+    <member refid="class_image3_d_1a9697ac14dc9e6b8a2bf5ee091c72fcbe" kind="function"><name>data</name></member>
+  </compound>
+  <compound refid="classmemory__based__image__region" kind="class"><name>memory_based_image_region</name>
+    <member refid="classmemory__based__image__region_1a892a180c0354288b68acc56cc42aacfe" kind="variable"><name>_data</name></member>
+    <member refid="classmemory__based__image__region_1aa4e6a5d322d884ab53532afa10bb230b" kind="variable"><name>_size</name></member>
+    <member refid="classmemory__based__image__region_1a44db2d0a953e96233e767ddb9dda2fa1" kind="variable"><name>_region</name></member>
+    <member refid="classmemory__based__image__region_1a991586887ab98af073a10f9738784633" kind="function"><name>memory_based_image_region</name></member>
+    <member refid="classmemory__based__image__region_1a99f0df912de9beefd9f846370a867e44" kind="function"><name>load</name></member>
+    <member refid="classmemory__based__image__region_1a5e5a30428fc766647d8f4715437df32d" kind="function"><name>load_coordinates</name></member>
+    <member refid="classmemory__based__image__region_1a00e95a4bb620ca9d8be51bc78c90cc11" kind="function"><name>slice</name></member>
+    <member refid="classmemory__based__image__region_1a56ee4f339653f13144f0de0b1a379fc2" kind="function"><name>make_error_code</name></member>
+    <member refid="classmemory__based__image__region_1af2bface3a6431abc9a684dd3df1f53b6" kind="function"><name>~memory_based_image_region</name></member>
+    <member refid="classmemory__based__image__region_1af45fac4bd64d32648030b267a1297ffc" kind="function"><name>preferred_data_format</name></member>
+    <member refid="classmemory__based__image__region_1a04b556fb80bf9d6c95229b02a71cb525" kind="function"><name>preferred_coordinates_format</name></member>
+    <member refid="classmemory__based__image__region_1a058d79be892d07ddc1c26e1bff295bce" kind="function"><name>subregion</name></member>
+    <member refid="classmemory__based__image__region_1a485190f2e58312e0148268ebd736eb28" kind="function"><name>region</name></member>
+    <member refid="classmemory__based__image__region_1ac4dbfb8afc7eaf2906e7bfe6d5c3a051" kind="function"><name>save</name></member>
+  </compound>
+  <compound refid="class_one_to_one_comparator" kind="class"><name>OneToOneComparator</name>
+    <member refid="class_one_to_one_comparator_1ac0b2a3a5e2bdab63244fd06da8f06b87" kind="function"><name>compare</name></member>
+    <member refid="class_one_to_one_comparator_1aba222bd9d2ed34226245dbe01f0cc20b" kind="function"><name>name</name></member>
+  </compound>
+  <compound refid="class_parameters" kind="class"><name>Parameters</name>
+    <member refid="class_parameters_1a022f258f3655bf27f26cd3c43c04d19e" kind="variable"><name>noDimentions</name></member>
+    <member refid="class_parameters_1a0348e82c0fd02688f16f486eab2c7712" kind="variable"><name>perc</name></member>
+    <member refid="class_parameters_1accd7848753f766b08e79e5b208b07840" kind="variable"><name>dta</name></member>
+    <member refid="class_parameters_1a66b21237800829eb6e65be92040e1845" kind="variable"><name>local</name></member>
+    <member refid="class_parameters_1adb90e833a16802146176274d1fcae860" kind="variable"><name>refval</name></member>
+    <member refid="class_parameters_1a193e382e7b676e86e2b41829fa7d15d1" kind="variable"><name>limit</name></member>
+    <member refid="class_parameters_1afee6f9ea9e883d24b2dc7d4d3de6674f" kind="variable"><name>plane</name></member>
+    <member refid="class_parameters_1a23a05792fc83db05b23e15f997f87fd2" kind="variable"><name>refslice</name></member>
+    <member refid="class_parameters_1a6bda4682260cef818c8b07c17b764d99" kind="variable"><name>tarslice</name></member>
+    <member refid="class_parameters_1ac0e5df69a46b6e3badc1e9588de8c953" kind="variable"><name>epsilon</name></member>
+    <member refid="class_parameters_1abc9f31c243f424afa5906e493b9ffd80" kind="variable"><name>cmpObj</name></member>
+    <member refid="class_parameters_1aa70f64d4e0b509e446b0d80428388c67" kind="function"><name>printParameters</name></member>
+    <member refid="class_parameters_1a640a1a349975a8cb023696f25e563a5c" kind="function"><name>~Parameters</name></member>
+  </compound>
+  <compound refid="class_parse_data" kind="class"><name>ParseData</name>
+    <member refid="class_parse_data_1ae4d3dbdcc94f29050a2a594de060e4cd" kind="function"><name>parseDataFromFile</name></member>
+    <member refid="class_parse_data_1af70b3c64c6003479f1471f39311f1c41" kind="function"><name>parseOnlyInfoForData</name></member>
+    <member refid="class_parse_data_1a5fd2c75ac465598576a08968db5952fd" kind="function"><name>parseInfoForData</name></member>
+    <member refid="class_parse_data_1a73b9150353cf5ee76b6f51b04ca5295f" kind="function"><name>parseDataForData</name></member>
+  </compound>
+  <compound refid="class_parse_parameters" kind="class"><name>ParseParameters</name>
+    <member refid="class_parse_parameters_1aaacdd903ba8285b70c859d0ff7045b19" kind="function"><name>parseGIParametersFromFile</name></member>
+  </compound>
+  <compound refid="class_parser" kind="class"><name>Parser</name>
+    <member refid="class_parser_1aa5918b64d11e92cb71b38e22ddba4160" kind="function"><name>startsWith</name></member>
+    <member refid="class_parser_1aec743373efde22a5338fb1889cfd5155" kind="function"><name>getDoubleAttribute</name></member>
+    <member refid="class_parser_1a3f45aa36576e4e5a4a37cd89294f8348" kind="function"><name>getIntAttribute</name></member>
+    <member refid="class_parser_1a31a68a8c5769b56d263ab5789c6344d1" kind="function"><name>getIsLocalAttribute</name></member>
+    <member refid="class_parser_1a4f3e80712d9e25ecc2dc8a6b82923629" kind="function"><name>getComparator</name></member>
+  </compound>
+  <compound refid="class_solver" kind="class"><name>Solver</name>
+    <member refid="class_solver_1a7d34939316b6d352530eb79d23f24b84" kind="typedef"><name>Voxel</name></member>
+    <member refid="class_solver_1ae94144a2f18648d39f22a2ddbe9da3d7" kind="variable"><name>percentage_</name></member>
+    <member refid="class_solver_1af302e7ce285eba4cf8a2459402b208ce" kind="variable"><name>dtaSquare_</name></member>
+    <member refid="class_solver_1ad9a8e96d3ef4c20618b9e84e7a8d01c7" kind="variable"><name>ddSquare_</name></member>
+    <member refid="class_solver_1a395778766c7dce75e1e75b8aac7e7e17" kind="variable"><name>referenceValue_</name></member>
+    <member refid="class_solver_1a7c50f94e7da85172dc60addae1faa5a7" kind="variable"><name>limit_</name></member>
+    <member refid="class_solver_1ab3f56d37994ddcdeedbdfef8779b7c10" kind="variable"><name>local_</name></member>
+    <member refid="class_solver_1a94f29be2d1ea3788487cc085da2de084" kind="function"><name>Solver</name></member>
+    <member refid="class_solver_1adbf80fe76fa3e80799c18104f14e6d9a" kind="function"><name>doseDifference</name></member>
+    <member refid="class_solver_1a2ffea3fc4c2e5c043ce59e53d4218ff2" kind="function"><name>distanceToAgreement</name></member>
+    <member refid="class_solver_1a761b9a3d982e60916ee4f46371bb844e" kind="function"><name>gammaEquation</name></member>
+    <member refid="class_solver_1a02e5c2f22cbe374e976445d5e93f4ad1" kind="function"><name>calculateDD</name></member>
+    <member refid="class_solver_1a9ad92edea74480136904e72635f006c2" kind="function"><name>percentage</name></member>
+    <member refid="class_solver_1a0c19366d46286621ee13d4862e8f06d6" kind="function"><name>dta</name></member>
+    <member refid="class_solver_1a6e8017f4a2c7da58228aebba68d10aae" kind="function"><name>referenceValue</name></member>
+    <member refid="class_solver_1a7227dc4bf18836cc920c791400d8f0cc" kind="function"><name>limit</name></member>
+    <member refid="class_solver_1ab6b93b7ef6535a85812e1e360843e2db" kind="function"><name>local</name></member>
+    <member refid="class_solver_1a584de354af064b787a3b075cf66290ec" kind="function"><name>setReferenceValue</name></member>
+    <member refid="class_solver_1af4544ff8964dbcad5f28c6f93a0bf5b9" kind="function"><name>setLimit</name></member>
+    <member refid="class_solver_1a29a542bfb3c75eea49874dd56fb01bc6" kind="function"><name>setLocal</name></member>
+  </compound>
+  <compound refid="class_solver1_d" kind="class"><name>Solver1D</name>
+    <member refid="class_solver1_d_1aad7444f41282028f82ae00789b8db4d9" kind="variable"><name>reference_</name></member>
+    <member refid="class_solver1_d_1a8ff1bc758d449b9121dca405de55fe52" kind="variable"><name>target_</name></member>
+    <member refid="class_solver1_d_1ac13f8684d6c7be088714fe719cbc4f5e" kind="function"><name>Solver1D</name></member>
+    <member refid="class_solver1_d_1af1a59c98f24ccb01c840455c495c34cd" kind="function"><name>calculateGamma</name></member>
+  </compound>
+  <compound refid="class_solver2_d" kind="class"><name>Solver2D</name>
+    <member refid="class_solver2_d_1a3ff3826791060737d53892c2e3cff39d" kind="variable"><name>reference_</name></member>
+    <member refid="class_solver2_d_1aec57de8e5d25074bb640efb14f0f34ec" kind="variable"><name>target_</name></member>
+    <member refid="class_solver2_d_1ac3dbc2b9947cad39cc781b85e1e3f24f" kind="function"><name>Solver2D</name></member>
+    <member refid="class_solver2_d_1af8d67a073040cf5302317a71a66eb77f" kind="function"><name>calculateGamma</name></member>
+  </compound>
+  <compound refid="class_solver3_d" kind="class"><name>Solver3D</name>
+    <member refid="class_solver3_d_1afd922a08125ef9f76ec18157754ac7e3" kind="variable"><name>reference_</name></member>
+    <member refid="class_solver3_d_1a585172729231114078c916efe6da6d6d" kind="variable"><name>target_</name></member>
+    <member refid="class_solver3_d_1a8c29e232c34603321162e6130ccb7cb0" kind="function"><name>Solver3D</name></member>
+    <member refid="class_solver3_d_1a865e561176dfd5ef7e7cfc682cc63541" kind="function"><name>calculateGamma</name></member>
+    <member refid="class_solver3_d_1a2147033cde3d74b92b3cf478af737504" kind="function"><name>calculateGamma2_5D</name></member>
+  </compound>
+  <compound refid="struct_solver_1_1_voxel" kind="struct"><name>Solver::Voxel</name>
+    <member refid="struct_solver_1_1_voxel_1a7b9abae59ad6dce2473795e92c141955" kind="variable"><name>x</name></member>
+    <member refid="struct_solver_1_1_voxel_1ac7fed376325fa959ab73dd7b0a6a812e" kind="variable"><name>y</name></member>
+    <member refid="struct_solver_1_1_voxel_1a8a9c1bb7802df99cde668065dbc0cb34" kind="variable"><name>z</name></member>
+    <member refid="struct_solver_1_1_voxel_1afadb75bd78c1fbd0880ba96406a49e0a" kind="variable"><name>dist</name></member>
+    <member refid="struct_solver_1_1_voxel_1aee0bcfbb57e05071c90f6e474c2ae9ad" kind="function"><name>Voxel</name></member>
+    <member refid="struct_solver_1_1_voxel_1a73eb2364091303d05299087a5ee56382" kind="function"><name>Voxel</name></member>
+    <member refid="struct_solver_1_1_voxel_1a50bf2569a924b89e83bb6a3b6edad3fb" kind="function"><name>compare</name></member>
+  </compound>
+  <compound refid="class_spiral_no_rectangle_solver1_d" kind="class"><name>SpiralNoRectangleSolver1D</name>
+    <member refid="class_spiral_no_rectangle_solver1_d_1aa42c4ed193b331930c81b90704d0886e" kind="function"><name>SpiralNoRectangleSolver1D</name></member>
+    <member refid="class_spiral_no_rectangle_solver1_d_1abec1aa365ca22824631d18cea034f2b9" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_no_rectangle_solver2_d" kind="class"><name>SpiralNoRectangleSolver2D</name>
+    <member refid="class_spiral_no_rectangle_solver2_d_1a28215742ed48c3c205e46d764746b92e" kind="function"><name>SpiralNoRectangleSolver2D</name></member>
+    <member refid="class_spiral_no_rectangle_solver2_d_1a7a1a52e22a2959471940ea9b751b6232" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_no_rectangle_solver3_d" kind="class"><name>SpiralNoRectangleSolver3D</name>
+    <member refid="class_spiral_no_rectangle_solver3_d_1a1a7919197acd59dc2f1c0e081995312d" kind="function"><name>SpiralNoRectangleSolver3D</name></member>
+    <member refid="class_spiral_no_rectangle_solver3_d_1a6d254747e9353bd0d80e3ed42d1a1b0e" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_rectangle_solver1_d" kind="class"><name>SpiralRectangleSolver1D</name>
+    <member refid="class_spiral_rectangle_solver1_d_1a5c8663f6eca513e6c098508237b540b9" kind="function"><name>SpiralRectangleSolver1D</name></member>
+    <member refid="class_spiral_rectangle_solver1_d_1a27fe625eb7d36ea09a03bd78cb1e6ad9" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_rectangle_solver2_d" kind="class"><name>SpiralRectangleSolver2D</name>
+    <member refid="class_spiral_rectangle_solver2_d_1a0903f989f5e03fdd8319f7ae6cf8fd0d" kind="function"><name>SpiralRectangleSolver2D</name></member>
+    <member refid="class_spiral_rectangle_solver2_d_1ac41a8a69a8e07df0f8c2eac31d383dd9" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_rectangle_solver3_d" kind="class"><name>SpiralRectangleSolver3D</name>
+    <member refid="class_spiral_rectangle_solver3_d_1a064400e72b4c3235de5e2f78cb8120f4" kind="function"><name>SpiralRectangleSolver3D</name></member>
+    <member refid="class_spiral_rectangle_solver3_d_1a0c6fbf26c17670af9807bda37a1b004a" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_solver1_d" kind="class"><name>SpiralSolver1D</name>
+    <member refid="class_spiral_solver1_d_1a21ba7fb98b3d6b143fd310ea69bc4f4c" kind="function"><name>SpiralSolver1D</name></member>
+    <member refid="class_spiral_solver1_d_1a67653ce5ab045419171f9036600fbf41" kind="function"><name>calculateGamma</name></member>
+    <member refid="class_spiral_solver1_d_1a1e6d4884998928152e9640e74b47f8ce" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_solver2_d" kind="class"><name>SpiralSolver2D</name>
+    <member refid="class_spiral_solver2_d_1a02d34b17d6f18457b9b4085f09fc9db2" kind="function"><name>SpiralSolver2D</name></member>
+    <member refid="class_spiral_solver2_d_1a873ea0cdda590b630ee8b8cb190d5196" kind="function"><name>calculateGamma</name></member>
+    <member refid="class_spiral_solver2_d_1ab77fb4bf0577393d0ea3a25b2a309937" kind="function"><name>getIndicesOrder</name></member>
+  </compound>
+  <compound refid="class_spiral_solver3_d" kind="class"><name>SpiralSolver3D</name>
+    <member refid="class_spiral_solver3_d_1a557dbb8930935302e610e91c6df2a6cf" kind="function"><name>SpiralSolver3D</name></member>
+    <member refid="class_spiral_solver3_d_1a6efdbbea64897b70d0268bcb7e3ef119" kind="function"><name>calculateGamma</name></member>
+    <member refid="class_spiral_solver3_d_1af14b09e7ede989a945e01cb3ee2fa8b4" kind="function"><name>calculateGamma2_5D</name></member>
+    <member refid="class_spiral_solver3_d_1a810cc0e66079e8e8d2152deb893f2946" kind="function"><name>getIndicesOrder</name></member>
+    <member refid="class_spiral_solver3_d_1a90efdea5671406d8e56a679fbc04ef05" kind="function"><name>calculateGamma2_5DSliceXY</name></member>
+    <member refid="class_spiral_solver3_d_1a7d7db3f129126828f9913d1af18dc657" kind="function"><name>calculateGamma2_5DSliceXZ</name></member>
+    <member refid="class_spiral_solver3_d_1a7ff863867458844e368257a74cf26e9b" kind="function"><name>calculateGamma2_5DSliceYZ</name></member>
+  </compound>
+  <compound refid="structstd_1_1is__error__code__enum_3_01mbi__subregion__error_01_4" kind="struct"><name>std::is_error_code_enum&lt; mbi_subregion_error &gt;</name>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1aligned__allocator" kind="class"><name>yagit::core::data::aligned_allocator</name>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a76c1fd1661f08a62a556e1c40de1f926" kind="typedef"><name>base</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1afc928efd67a18b3887bf6890a3c5ab6a" kind="typedef"><name>value_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1af92caa80c9bc17195d565f246f7a3527" kind="typedef"><name>size_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a179276058791fd56137cf3fc5c5bf985" kind="typedef"><name>difference_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a77ee01ced31e82ac5d0d57741daea3d0" kind="typedef"><name>propagate_on_container_move_assignment</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a18b92f054ebffa64dfe7051fd1796171" kind="function"><name>aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a12da90b2a76c73b40e262a93b0b187a4" kind="function"><name>aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1ab0f1bc75849ee6647e57e903a4d5b588" kind="function"><name>aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1ab6e8d60e8ba543131d639ff9791317f7" kind="function"><name>operator=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1ae5203f710c527b071276fc56db57dd41" kind="function"><name>operator=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a9c8f6e19c196b0551c4c4380b48f8e67" kind="function"><name>~aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1abe3b9b48d152dcad9ca6ebe6d58a2d08" kind="function"><name>allocate</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1abe0df241926350ddf893e6cc22c92d22" kind="function"><name>allocate_at_least</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1ac9ebd76981cac0d1349298213cae3c22" kind="function"><name>deallocate</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a2b286788bc72c45e762325e7c6e4c8c3" kind="function"><name>operator==</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a577ef8dc1675b244ff8d9cd4c1036a17" kind="function"><name>operator!=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1aligned__allocator_1a6fa9df0122c123300a74e4f61a0b5d74" kind="function"><name>blocks_count</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1allocation__result" kind="struct"><name>yagit::core::data::allocation_result</name>
+    <member refid="structyagit_1_1core_1_1data_1_1allocation__result_1a584134d2bdef6c6552fac5fd0040133c" kind="variable"><name>ptr</name></member>
+    <member refid="structyagit_1_1core_1_1data_1_1allocation__result_1a4b368ba40291f31b3b3cffb52d2b716b" kind="variable"><name>count</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1data__format" kind="struct"><name>yagit::core::data::data_format</name>
+    <member refid="structyagit_1_1core_1_1data_1_1data__format_1af4a2f245a1f94451d431cbcf805678e9" kind="variable"><name>order</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1data__region" kind="struct"><name>yagit::core::data::data_region</name>
+    <member refid="structyagit_1_1core_1_1data_1_1data__region_1a44271e6d369bcf419538a93382182f50" kind="variable"><name>offset</name></member>
+    <member refid="structyagit_1_1core_1_1data_1_1data__region_1a650ffbea9dc90450abdfa04e08e6435c" kind="variable"><name>size</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1detail_1_1aligned__block" kind="struct"><name>yagit::core::data::detail::aligned_block</name>
+    <member refid="structyagit_1_1core_1_1data_1_1detail_1_1aligned__block_1ac92039efef305362da12866b7a7f5670" kind="variable"><name>block</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1detail_1_1has__allocate__at__least__method" kind="class"><name>yagit::core::data::detail::has_allocate_at_least_method</name>
+    <member refid="classyagit_1_1core_1_1data_1_1detail_1_1has__allocate__at__least__method_1aae0d8c109be005ee5170f69716ac7958" kind="variable"><name>value</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1detail_1_1has__allocate__at__least__method_1a861711828dc462f2d7a9d7c7826db108" kind="function"><name>test</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1detail_1_1has__allocate__at__least__method_1aeacf6c69a4455e4d39f0c9bccc998bba" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e_1_1detail_1_1aligned__float32__block" kind="struct"><name>yagit::core::data::detail::SIMDPP_ARCH_NAMESPACE::detail::aligned_float32_block</name>
+    <member refid="structyagit_1_1core_1_1data_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e_1_1detail_1_1aligned__float32__block_1a332949dd9057aa10d4da3ade3e06c68d" kind="variable"><name>block</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e_1_1detail_1_1aligned__float64__block" kind="struct"><name>yagit::core::data::detail::SIMDPP_ARCH_NAMESPACE::detail::aligned_float64_block</name>
+    <member refid="structyagit_1_1core_1_1data_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e_1_1detail_1_1aligned__float64__block_1a64f6033a5d9a67f674e9a87391cfdfb0" kind="variable"><name>block</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kind="class"><name>yagit::core::data::fast_float_aligned_allocator</name>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4" kind="class"><name>yagit::core::data::fast_float_aligned_allocator&lt; double &gt;</name>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a392ec48646dd21b34ee0aadebf5cb4cc" kind="typedef"><name>value_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a532b2c867895e801123f12d378280fae" kind="typedef"><name>size_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a6cd8945e99bb68f2a9b7f7f413865706" kind="typedef"><name>difference_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a6d09d1b494f5a816d183de8a6ecf8dcb" kind="typedef"><name>propagate_on_container_move_assignment</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a119a9707fb13e6f5cb4822a98ff7baaa" kind="function"><name>fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1add9be3e5885f7db9e69e6a33a3db3dc4" kind="function"><name>fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a1261fb4a93a105e56e6e1c2dbdac09a8" kind="function"><name>fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a8c3ad84a932bee3e033514c8311e6bdc" kind="function"><name>operator=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1aaaa0f878a5586f7dc1be67563835b1f2" kind="function"><name>operator=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a9fa8acab20b28d5271bdf4685dc89556" kind="function"><name>~fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1acb16cf5847904d9128bbce0efb1d5bb7" kind="function"><name>allocate</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1ac049eed8ca75daab083a11f05014fd45" kind="function"><name>allocate_at_least</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1adc405f3c387ed5bfa3194d42567227d0" kind="function"><name>deallocate</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1ad942844f1fb5021f073e8da90213b6ac" kind="function"><name>operator==</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01double_01_4_1a4345e48407d131953db6742096d2704a" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4" kind="class"><name>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</name>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a68395a5e5d1ce62bc3d027596eb99fd8" kind="typedef"><name>value_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1ae676e53bd0e2406fb6f6db26c31f9bac" kind="typedef"><name>size_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aad806d6ebb8dd15c84fc4a90e6ec4c3e" kind="typedef"><name>difference_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aa7504267557ced8feda8774921992b1a" kind="typedef"><name>propagate_on_container_move_assignment</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a1874be113cb1faa57ca6d93f4e708d33" kind="function"><name>fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a6fa953ba33af4d6a7082c417dc721659" kind="function"><name>fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aea3136b82c766fa29cef74d97564baac" kind="function"><name>fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a825a8e4bd765faae2b541bc81ac677ec" kind="function"><name>operator=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a48313c6219b8d0a3d5fc286908ad9d90" kind="function"><name>operator=</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1ab25a3594e82119b8cded8a3f546cbfe1" kind="function"><name>~fast_float_aligned_allocator</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a0317c47961f7922d3ea8dd26fa9f6cef" kind="function"><name>allocate</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1adadcb91960b689ad8b9bb611792b59de" kind="function"><name>allocate_at_least</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a5b4b4081b9f9d36cc2681dbfb4edb453" kind="function"><name>deallocate</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a0565d3fec9760915de5cbdd52b3e9fa7" kind="function"><name>operator==</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a9114bd72431a393581298b96baeb142d" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1iimage" kind="class"><name>yagit::core::data::iimage</name>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage_1a969207242fb00065370b29c2f18b1aa3" kind="function"><name>~iimage</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage_1a00534ea6696c539542fbc72b7850e655" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1iimage__region" kind="class"><name>yagit::core::data::iimage_region</name>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a9d37f613f04dc4183fc6d891ba71cb22" kind="function"><name>~iimage_region</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a5edf59e72af5e2a0573592b4b6b93317" kind="function"><name>preferred_data_format</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kind="function"><name>region</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a9afee2884d1dee1da6ad7b4813cc265e" kind="function"><name>subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ae0a3fac04c288fe51824a8c85a2f545e" kind="function"><name>subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1abed1b3b06d1e677cb15be8613eeb2213" kind="function"><name>slice</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a24539a2dd775ffad080b91781cacc63f" kind="function"><name>slice</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a8373fb474ffb60815265fdb477e1ed79" kind="function"><name>load</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a931e544c67357bfbe36af6f73b58328e" kind="function"><name>load</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1af7f747edd5681de4588f1a81e6596749" kind="function"><name>load</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab035f6185847a9528001ecd72277b82e" kind="function"><name>slice</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab5b92777c5a201aa2d644e8e81d687a4" kind="function"><name>create_subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a435b45bc06115a45e272af7a655556cc" kind="function"><name>allocate_at_least_for_image_data</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1image__coordinates" kind="class"><name>yagit::core::data::image_coordinates</name>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1image__data" kind="class"><name>yagit::core::data::image_data</name>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1ab3867239d1392a9828dc64235d0f1e20" kind="typedef"><name>value_type</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a405e772a4ce77b608b87665f53422c14" kind="typedef"><name>reference</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1acba257f04af73c4333ae740b016b8ebb" kind="typedef"><name>const_reference</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1ac968edd0fadad49a59abd6a5e2c1428d" kind="typedef"><name>pointer</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a9e94c67fd18c8fef5a2f5a3db607f4ec" kind="typedef"><name>const_pointer</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a48a4f5d9d8568c7ef6fd0e71f981c4c2" kind="variable"><name>_data</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1aae8d604c433541fdb7541e68264f8dce" kind="variable"><name>_image_region</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a3f65e0c926e0959c1c7db7a1e5583040" kind="variable"><name>_data_format</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a3bd37c8979fbd2ce5e5749c22b31ac67" kind="variable"><name>_real_total_size</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a1bd4cf74b148ef0794713fb0c7508c2f" kind="function"><name>image_data</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a091b3e2098b09e6de59995ce54691967" kind="function"><name>dimension_sizes</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a84543e4c317ac08af07fc0b9747c218f" kind="function"><name>region</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a9fc4e1fed85f23f8b1cf2c3b64366a02" kind="function"><name>format</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1aeab1edb8313011679c2134bb23523805" kind="function"><name>size</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a0fc32d6276353055c6a0ef41d99aba68" kind="function"><name>total_size</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a5446dc4f47b08c771a34ecc2f63b6908" kind="function"><name>real_total_size</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1ab0a6da3de8ac4838d529887d83541fbb" kind="function"><name>is_aligned_to</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a69d352ba8739a59ac437490862d6de53" kind="function"><name>data</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1image__data_1a95880a05bd7aec9aa643a9bac4d3b418" kind="function"><name>data</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1irtdose__image" kind="class"><name>yagit::core::data::irtdose_image</name>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image_1ad06d51cfe03f44d3662b4ff5cd52c649" kind="function"><name>~irtdose_image</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1irtdose__image__region" kind="class"><name>yagit::core::data::irtdose_image_region</name>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ac62350a849ea3226b14acfe6fe88b65b" kind="function"><name>~irtdose_image_region</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ab1f798276c8fc2fb50ab9ed1ca592421" kind="function"><name>preferred_coordinates_format</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1a8e5146db73a7b92f49ade7c2b6694f1e" kind="function"><name>subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1adc4ec74b7fc6e40b59c98a4234bc774a" kind="function"><name>subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1addeba8aec2101281feec3c0f08531444" kind="function"><name>load_coordinates</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1a7ac0d52e12c5b5a0e22c8d30e3d81148" kind="function"><name>load_coordinates</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1a4b7ce3361db1f609ed451937270ed54d" kind="function"><name>preferred_coordinates_format</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ac7e49318d3150251d8f9eb6721c4b9fe" kind="function"><name>load_coordinates</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1irtdose__image__region_1ac855d305661842317fc92fbda6578480" kind="function"><name>create_subregion</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1iwritable__image" kind="class"><name>yagit::core::data::iwritable_image</name>
+    <member refid="classyagit_1_1core_1_1data_1_1iwritable__image_1ad3e2aa09a9a52c54caf1f0f45ecccb87" kind="function"><name>~iwritable_image</name></member>
+  </compound>
+  <compound refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kind="class"><name>yagit::core::data::iwritable_image_region</name>
+    <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ad802e2a167de781aebd1cd7e3f9bf695" kind="function"><name>~iwritable_image_region</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a9aa277a2d619f5cc8ca4a0faa0afdd8c" kind="function"><name>save</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae92e4d3bbb99248101f606da43e15c35" kind="function"><name>subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a5e177069a19fa44f55bb3f1aaa9fb133" kind="function"><name>subregion</name></member>
+    <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae82f6f09fe153d6cfe33ee4f213e1f48" kind="function"><name>create_subregion</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1offsets" kind="struct"><name>yagit::core::data::offsets</name>
+    <member refid="structyagit_1_1core_1_1data_1_1offsets_1ae823e2fb2146709ecd106e50c4c0a527" kind="variable"><name>offset</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1order__element__t" kind="struct"><name>yagit::core::data::order_element_t</name>
+    <member refid="structyagit_1_1core_1_1data_1_1order__element__t_1a84a7e0837a15cbac9769a8835c54ca26" kind="variable"><name>dimension_index</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1data_1_1sizes" kind="struct"><name>yagit::core::data::sizes</name>
+    <member refid="structyagit_1_1core_1_1data_1_1sizes_1a26aeafc2d7179a6665da90d2c155de52" kind="variable"><name>sizes</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1gamma__index__params" kind="struct"><name>yagit::core::math::gamma_index_params</name>
+    <member refid="structyagit_1_1core_1_1math_1_1gamma__index__params_1aaab5a0b0b34a2df845fe618a8d6b98f1" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1gamma__index__params_1a88a8cee526c8075946d26cbe3f384dbe" kind="typedef"><name>variant_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1gamma__index__params_1ad43644f1848c1d10c49509fc2edd5fd8" kind="variable"><name>params</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params" kind="struct"><name>yagit::core::math::global_gamma_index_params</name>
+    <member refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1ae3f270fd11e74cdca616c9e2b0f69fe2" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1a0a603476f0c1d48fd5bd878041cb718f" kind="variable"><name>dose_difference_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1a4e5dd11cffdfd2edf8a61a997321b213" kind="variable"><name>distance_to_agreement_squared</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1local__gamma__index__params" kind="struct"><name>yagit::core::math::local_gamma_index_params</name>
+    <member refid="structyagit_1_1core_1_1math_1_1local__gamma__index__params_1a6262d7b494a0f28612724619c48e556f" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1local__gamma__index__params_1a2cc3a6c2cfa54d501aaad6d7d08b449a" kind="variable"><name>percentage</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1local__gamma__index__params_1a7b1136f6a7e6797db9556fef78ce9940" kind="variable"><name>distance_to_agreement_squared</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer" kind="struct"><name>yagit::core::math::parallel_gamma_index_implementer</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_011_01_4" kind="struct"><name>yagit::core::math::parallel_gamma_index_implementer&lt; Type, 1 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_011_01_4_1a3e05031504aeee92326c9411f7d0afab" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_011_01_4_1ad37835c6a55074366b34775703435ed9" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_011_01_4_1a62a0adf20367d447ef45ac0abff2344c" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_011_01_4_1aedb0059d4c28169eecf0c4b24a4f8b4a" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_012_01_4" kind="struct"><name>yagit::core::math::parallel_gamma_index_implementer&lt; Type, 2 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_012_01_4_1a8e2fbefce94920fc6d8c17411fe20728" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_012_01_4_1a02d5b2479a9c0aba3250b20c1997acee" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_012_01_4_1abfc6b5623fa57b06c3f6fe54065a3c87" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_012_01_4_1a6ea3d97948863cdbb08b95539c5189ed" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_013_01_4" kind="struct"><name>yagit::core::math::parallel_gamma_index_implementer&lt; Type, 3 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_013_01_4_1afc3a28c76ff8dcd17b742bbb546d2f69" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_013_01_4_1a7036caeb8fc71cb1eabf5c8a390daf6b" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_013_01_4_1a023cc07a296e1937aa68c9416ed6a30a" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__gamma__index__implementer_3_01_type_00_013_01_4_1af8d1c007e2a81fff8b3777a05ad8770f" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_011_01_4" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; double, 1 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1a95cef99dab8c6936a9194aff08505096" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1a943a44ae04f0e097dd439fdca10c8d6b" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1a630b2b66b783e8a637ffe94cf669c3a0" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1ac8af8567ca40b031645e72d35981be1f" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1acf40c723652ee618377b64f664b50780" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_012_01_4" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; double, 2 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a7bce4e962da3bd694b5749187c5b735d" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a0d31d975d4c25c862f1b2597fe008ee7" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a32362d291ad784c404c73a3580d6dd15" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a9a3e6392124bed2f9212f0466317a340" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a367de17c8f9bd790907a4e50f2239d8f" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_013_01_4" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; double, 3 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1aa3c5b9f0acefa344a57f432c457a35bc" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1ac8f3355d773fac124f8bb5f92764e13a" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1a2c44cdbe903a60215ac3720de8c964df" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1ab6cd93d49f34627a75532c72a3a02fba" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1ae03d3de0ec4edaff28e3ee0f95312072" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_011_01_4" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 1 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1ad63b50e52fd60ba9a53b850ede96351e" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1a4db94c2c4dbd3e83d0d82c396cf0b6e1" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1aedd8e52382a8ad1d9cf92ba6c98c4ea1" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1aede885a2d3e2981cd9818fb8b32fcda1" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1acc72e4c5ae5b800bb2829689db56889b" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_012_01_4" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 2 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a6a9314f2ede357f7658c0aa5fdf32425" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1ac2107a23a7515d4db5e665c34fca55ed" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a3ccdd3900e498fdfa0cd4b0b5472c199" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a644cfa523088a8ae2617a02ea398564c" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a19e26119a546081d53ebf3928ea2b90b" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4" kind="struct"><name>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a37297a386559fa7516454de79383f4e8" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1ab38b784c4af70ed56ef1438176ecbd11" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a6f2c17a52768226b9a699a992222b5c0" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a7707e08aea1a4bf6a4754c83d645d7fc" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1aac4cd326018c3b9b046359a3735aa509" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer" kind="struct"><name>yagit::core::math::sequenced_gamma_index_implementer</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_011_01_4" kind="struct"><name>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 1 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_011_01_4_1adc3af76c3e4950e186041169659b6a12" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_011_01_4_1a21627a77c6f95acc5eb1f474e0576004" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_011_01_4_1af4e3f90204ba71d15f8a4015377cdb60" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_011_01_4_1a9c1d83082afe8887457aac44b201c9de" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_012_01_4" kind="struct"><name>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 2 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_012_01_4_1ae75c6a8617a3eff86b19d0aa3380fd4d" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_012_01_4_1a22f06a6da841ffe99b12dc2ca3570bf0" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_012_01_4_1a13b666bc2681f6d1736d89c558d157c1" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_012_01_4_1ac30be4e64c4cfe596e066bfd9d6448de" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4" kind="struct"><name>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1aebc3fe619e32afd668d64768e27e3f96" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1a215a0be1a3aa5b88ab738102216b3eae" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1af1b612091d644b76ee53d1d882e9cbc7" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1a6b61c0ee9e12c95eb2e1e3b909ec2546" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_011_01_4" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer&lt; double, 1 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1a516ee008333b613d23803bde153895b8" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1aa290c90c8018f36c75003a318758f74f" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1ad26dd05ef64c4a4802d345c04c1783fd" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1a6ee1a7e6eb8557f435a90ecc49fb9b2e" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_011_01_4_1aa181d584ee0650aa757f116f6a2ba930" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_012_01_4" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer&lt; double, 2 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1ab31ecc2eb7bd3f901d89f525c19f8439" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a3ddaf0a8822a44f5a1b149d115df1bbf" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a535d2a01a772692f1f81717120f8326c" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a8675b2adf48b861b59a0a27a745a90a7" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_012_01_4_1a08ab5acb4027f437e06873a3e1c21942" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_013_01_4" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer&lt; double, 3 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1a19ff34a23c387e5ef6f9ca07cb0c6297" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1a0df9f5e0d776a9f03d3dddb0769ecd2e" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1a23d05ea2498b92ae041735306d735d27" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1a3601113c5144636e4b0c89b1a5bea728" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01double_00_013_01_4_1a383a35ca1cb004e3f75faca44af7c68e" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_011_01_4" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer&lt; float, 1 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1ab6a45188f685d6cd7645d6eb3642e2f7" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1a9bed498ee6f48f5e6df56d3a2c9b2194" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1afef70e3a98346357a5530c92b7d5e3b4" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1aa5e6333645419cb0af12af828bf79fac" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_011_01_4_1a19c8aa24c17be68164e13bd7e8e546e5" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_012_01_4" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer&lt; float, 2 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a0f4e14e866ff18318c0021a52fac3532" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a97fae2e27b0844257eefda37a0afa1ef" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a1527988cfff0a23610d75d605887d1b9" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1a331f35af24cbf2e61b8b74c7fe90c3b4" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_012_01_4_1adc913cda63348a31b316ad563d10f396" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_013_01_4" kind="struct"><name>yagit::core::math::unsequenced_gamma_index_implementer&lt; float, 3 &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a44d1a6e59c955623cf8c66d3c978204c" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a342fcb4266cebfc0a453c64410cf0bef" kind="function"><name>initialize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a7b51494699759214ea4ee1fadd6210bb" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1aa7fe981c9d2017fc1bac11a9a022fb4d" kind="function"><name>minimize_pass</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1ac3ed62672aafe05d0eb2fcdfda4b58a0" kind="function"><name>finalize_pass</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec" kind="struct"><name>yagit::core::math::vectorized::params_vec</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec_3_01gamma__index__params_3_01_type_01_4_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::params_vec&lt; gamma_index_params&lt; Type &gt;, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec_3_01gamma__index__params_3_01_type_01_4_00_01_vector_size_01_4_1a7173a3e95ac96d51dbb88db5fdfc4f46" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec_3_01global__gamma__index__params_3_01_type_01_4_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::params_vec&lt; global_gamma_index_params&lt; Type &gt;, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec_3_01global__gamma__index__params_3_01_type_01_4_00_01_vector_size_01_4_1ad3be8003b004ec71019166bcd761fc58" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec_3_01local__gamma__index__params_3_01_type_01_4_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::params_vec&lt; local_gamma_index_params&lt; Type &gt;, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1params__vec_3_01local__gamma__index__params_3_01_type_01_4_00_01_vector_size_01_4_1ad6f058d957393f76bce6eff496e06cad" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vec" kind="struct"><name>yagit::core::math::vectorized::vec</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01double_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vec&lt; double, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01double_00_01_vector_size_01_4_1a562f0fb43a5335c2b8f87c6cdd1e6fb2" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01float_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vec&lt; float, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01float_00_01_vector_size_01_4_1af68868bb8521a8e7dbf70bf33c6c26f6" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params" kind="struct"><name>yagit::core::math::vectorized::vgamma_index_params</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vgamma_index_params&lt; double, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4_1a066c755b10c381530442c40bfcf1551a" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4_1afa2435553cd746c46295b22538b2e03c" kind="typedef"><name>vector_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4_1a40ceadbf59fe880060ff8fdb33648b14" kind="typedef"><name>variant_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4_1a15172afea21edf6c67c80017642a3238" kind="variable"><name>vector_size</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4_1a8921c918decf4d23b93012a213b52302" kind="variable"><name>params</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01double_00_01_vector_size_01_4_1a4f9af54086cc21c702697e4b1214d730" kind="function"><name>vgamma_index_params</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vgamma_index_params&lt; float, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4_1add19f32124fb4ad59581d7818c0983be" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4_1a0146bbac079d026f4f38e5e53dd773bc" kind="typedef"><name>vector_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4_1ab7a8c5a9feb324194947797b7f5980e4" kind="typedef"><name>variant_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4_1a05551b861f8998d257d6ea91e93f1f63" kind="variable"><name>vector_size</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4_1afc1233cc581a0bd0cc90c18128e50daf" kind="variable"><name>params</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vgamma__index__params_3_01float_00_01_vector_size_01_4_1ae76eab453ea87326bccbaa3b55e354a0" kind="function"><name>vgamma_index_params</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params" kind="struct"><name>yagit::core::math::vectorized::vglobal_gamma_index_params</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vglobal_gamma_index_params&lt; double, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a1610d3005c47f79374229c625c5bf7ed" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a2793392bae19389edbcc434e44227af7" kind="typedef"><name>vector_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a6d7ef8c4a171ac089d96ed782203695d" kind="variable"><name>vector_size</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a80170909e37f340a892172b8996de2a5" kind="variable"><name>dose_difference_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a2d50d4e3f5b3ba440cf7ac1bd20ae0d9" kind="variable"><name>distance_to_agreement_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a96212db3a7bb506b09e91ad554bc4d72" kind="function"><name>vglobal_gamma_index_params</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vglobal_gamma_index_params&lt; float, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4_1aca0cbaf79cc1237f5b38e7340f252fc7" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a02d877866c10de3b9bb0ae7594698771" kind="typedef"><name>vector_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a790af9219f91832984253e82e729246a" kind="variable"><name>vector_size</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4_1ae54c23541c9af802a2b225abb31c5bd1" kind="variable"><name>dose_difference_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a6c803eec2f312583ad7550343e48a2ec" kind="variable"><name>distance_to_agreement_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vglobal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a77145c89d32203fdb12abc182540e8e6" kind="function"><name>vglobal_gamma_index_params</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params" kind="struct"><name>yagit::core::math::vectorized::vlocal_gamma_index_params</name>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; double, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a393dc1eb2ef46f2d66656e7ef4a32ec2" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4_1ace6b2b16c8e3842662b49c7679f0c40c" kind="typedef"><name>vector_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a2dc2407a2195b7addd92c9f289435677" kind="variable"><name>vector_size</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a310aaabddaf1020a6b9e4b62924a639f" kind="variable"><name>percentage</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a1c062a6ae87bfb4877be9517500e028d" kind="variable"><name>distance_to_agreement_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01double_00_01_vector_size_01_4_1a3c5718edb83fe11bf8d900844f18cc5c" kind="function"><name>vlocal_gamma_index_params</name></member>
+  </compound>
+  <compound refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4" kind="struct"><name>yagit::core::math::vectorized::vlocal_gamma_index_params&lt; float, VectorSize &gt;</name>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1acad246b8fca5a5a47189911caf1893f2" kind="typedef"><name>value_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a5351e54776c5b3941f8cf60c76dc45d8" kind="typedef"><name>vector_type</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1af1ebc99c53dc50585fedb74424afed3e" kind="variable"><name>vector_size</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1ad0e30f5a8df71e9512732796236911be" kind="variable"><name>percentage</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a598ec43079470c6ea28a8b7fa6167448" kind="variable"><name>distance_to_agreement_squared</name></member>
+    <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vlocal__gamma__index__params_3_01float_00_01_vector_size_01_4_1a919dadc0ec5f2b3541004f3b6602fb3c" kind="function"><name>vlocal_gamma_index_params</name></member>
+  </compound>
+  <compound refid="namespace_0D48" kind="namespace"><name>@48</name>
+  </compound>
+  <compound refid="namespacegdcm" kind="namespace"><name>gdcm</name>
+  </compound>
+  <compound refid="namespacegenerate_config" kind="namespace"><name>generateConfig</name>
+    <member refid="generate_config_8py_1af69a36f9602cfe53eca45507ec5f8d14" kind="variable"><name>dimentionPool</name></member>
+    <member refid="generate_config_8py_1a0baf80f63ddb3eada6992423ee7bda04" kind="variable"><name>ddPool</name></member>
+    <member refid="generate_config_8py_1af06452db268e93ea20881ced5a4969c7" kind="variable"><name>dtaPool</name></member>
+    <member refid="generate_config_8py_1a25f40b320308e47a13ccb82e937673f0" kind="variable"><name>localPool</name></member>
+    <member refid="generate_config_8py_1a455e4830656ccc772771a9d84da7ab8f" kind="variable"><name>refvalPool</name></member>
+    <member refid="generate_config_8py_1abe08903cc8d2bb128ce84c04d67eb146" kind="variable"><name>limitPool</name></member>
+    <member refid="generate_config_8py_1a055b077e2ea2443011a6ca76a8ebebf7" kind="variable"><name>planePool</name></member>
+    <member refid="generate_config_8py_1a4ebe6ec0b2a848e13072507047a68df8" kind="variable"><name>refslicePool</name></member>
+    <member refid="generate_config_8py_1a0a3aa00dd45f5cdad68438c8b5e05f1a" kind="variable"><name>tarslicePool</name></member>
+    <member refid="generate_config_8py_1ab051813e5da6a489fcddb67f0aedb1cb" kind="variable"><name>comparatorPool</name></member>
+    <member refid="generate_config_8py_1aa42590b2d6ccd045db9cac80aeaab6d8" kind="variable"><name>epsilonPool</name></member>
+    <member refid="generate_config_8py_1a259d40f8f87979b03edc5093871a33db" kind="variable"><name>comparatorSignature</name></member>
+    <member refid="generate_config_8py_1a8602c153ab18e20251bb386f41f18b63" kind="variable"><name>prefix</name></member>
+    <member refid="generate_config_8py_1abbbf0d5830fd4a96598f011583d6784b" kind="variable"><name>content</name></member>
+    <member refid="generate_config_8py_1aecc77831a8d30e8b0914cffd1e8b654d" kind="variable"><name>path</name></member>
+    <member refid="generate_config_8py_1acbc43c9d990c4f5d3dba2a4b8d57e26d" kind="variable"><name>config</name></member>
+  </compound>
+  <compound refid="namespacegenerate_test_suit" kind="namespace"><name>generateTestSuit</name>
+    <member refid="generate_test_suit_8py_1a66d149dd72283800faf71a66e4095dba" kind="variable"><name>dims</name></member>
+    <member refid="generate_test_suit_8py_1a8bd4a2a93641a2dc3d1cfbe9cc17e8aa" kind="variable"><name>dds</name></member>
+    <member refid="generate_test_suit_8py_1a7ec6e47658ee03a2e4eb3f9287391ef0" kind="variable"><name>dtas</name></member>
+    <member refid="generate_test_suit_8py_1a6823e52999a24251e9bf543e390bdc9e" kind="variable"><name>locs</name></member>
+    <member refid="generate_test_suit_8py_1adbdbb31ed1f525c28c177ddc8aadbf62" kind="variable"><name>lims</name></member>
+    <member refid="generate_test_suit_8py_1acb12d9e229dc9c8de15442527b832a74" kind="variable"><name>comps</name></member>
+    <member refid="generate_test_suit_8py_1af2766cfdb0b4638c2f018b55007b7fdf" kind="variable"><name>epses</name></member>
+    <member refid="generate_test_suit_8py_1a0d865741b94613974e3f656abe042fd2" kind="variable"><name>pattern</name></member>
+    <member refid="generate_test_suit_8py_1ac10d802de68802dd736239e583e2e27c" kind="variable"><name>prefix</name></member>
+    <member refid="generate_test_suit_8py_1a8c3c1714f51f186d6b7620b6024f1b1e" kind="variable"><name>testSuitePath</name></member>
+    <member refid="generate_test_suit_8py_1a25026c32c61720526d7245a50b1683ab" kind="variable"><name>testSuitePaths</name></member>
+    <member refid="generate_test_suit_8py_1aea23fa104c7f518fb50790149d07e71e" kind="variable"><name>configPath</name></member>
+    <member refid="generate_test_suit_8py_1a0ca6c5e24fdcafa20979a1d9b8f55d4c" kind="variable"><name>testCaseName</name></member>
+    <member refid="generate_test_suit_8py_1a186b6707d658bde54f042dcbf2595590" kind="variable"><name>testCasePath</name></member>
+    <member refid="generate_test_suit_8py_1a687884c84da58666635d9cb444b697ba" kind="variable"><name>testCase</name></member>
+    <member refid="generate_test_suit_8py_1aabdd0dca54016f1b502fb7901d3e0e36" kind="variable"><name>content</name></member>
+    <member refid="generate_test_suit_8py_1a8ef404e08d63c5062f1d448ce845b18b" kind="variable"><name>suiteFile</name></member>
+  </compound>
+  <compound refid="namespacemanage_compressing_suits" kind="namespace"><name>manageCompressingSuits</name>
+    <member refid="manage_compressing_suits_8py_1afe039b7537f3c52a109ab2815c8374ef" kind="function"><name>compress</name></member>
+    <member refid="manage_compressing_suits_8py_1a216868118178f571b4a03cdaa282bb3b" kind="function"><name>decompress</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacestd_1_1chrono" kind="namespace"><name>std::chrono</name>
+  </compound>
+  <compound refid="namespaceyagit" kind="namespace"><name>yagit</name>
+  </compound>
+  <compound refid="namespaceyagit_1_1core" kind="namespace"><name>yagit::core</name>
+    <member refid="common_8hpp_1ac2a64ceea30c13d5159859870fd26c78" kind="typedef"><name>size_t</name></member>
+    <member refid="common_8hpp_1a60027985f34c88fbdd7319f3aed182ad" kind="typedef"><name>view</name></member>
+    <member refid="common_8hpp_1af3af7e960048db075ff8efc9d24d88a1" kind="typedef"><name>const_view</name></member>
+    <member refid="definitions_8hpp_1a0e7b5d4296db458ea1eaaea7134befed" kind="typedef"><name>ptrdiff_t</name></member>
+    <member refid="common_8hpp_1a9c95f5829f8a297f4dbc3d2c004bf6d4" kind="variable"><name>is_power_of_two_v</name></member>
+    <member refid="common_8hpp_1a734492535a1e1941024815f6fc0a7c9a" kind="function"><name>is_aligned_to_bytes</name></member>
+    <member refid="common_8hpp_1a9890fb5059184b7bda1f057bfef0ff0d" kind="function"><name>is_aligned_to</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1data" kind="namespace"><name>yagit::core::data</name>
+    <member refid="common_8hpp_1a9884403964bf962beca203960cc2b409" kind="variable"><name>dim_x</name></member>
+    <member refid="common_8hpp_1aa467d6c5c8a7b0850bcc43a4ec9ad184" kind="variable"><name>dim_y</name></member>
+    <member refid="common_8hpp_1a00f43cdda17f20ae8ca3b11dd1c3342d" kind="variable"><name>dim_z</name></member>
+    <member refid="common_8hpp_1a77109373e9024769ab69520ff788613c" kind="variable"><name>dim</name></member>
+    <member refid="common_8hpp_1ac681f324bab061c1a85c9f86eb6ce5f9" kind="variable"><name>cpp_multidimensional_array_format</name></member>
+    <member refid="common_8hpp_1a8d808e64ebd96b8619d602783723c6f2" kind="variable"><name>default_format</name></member>
+    <member refid="common_8hpp_1a0574b9515af2b06bd1029878a503fe16" kind="function"><name>operator==</name></member>
+    <member refid="common_8hpp_1acd2d09b07db6ae93c27a73c6db50387e" kind="function"><name>operator!=</name></member>
+    <member refid="common_8hpp_1a63dfa41998de7a175ec2ecda36050693" kind="function"><name>operator==</name></member>
+    <member refid="common_8hpp_1a73d656e97c7bee930c72f6932d878b70" kind="function"><name>operator!=</name></member>
+    <member refid="common_8hpp_1a3aeece8b2fe86d6d3ff3241b0bbfab8d" kind="function"><name>total_size</name></member>
+    <member refid="common_8hpp_1acbc1aa7d0a56fd0f17b4850c1681a512" kind="function"><name>operator==</name></member>
+    <member refid="common_8hpp_1a66c6e9d7b638335c5d9f41193822c459" kind="function"><name>operator!=</name></member>
+    <member refid="common_8hpp_1a45ceb2bdccba3deb1dd1c79fc82a3635" kind="function"><name>operator==</name></member>
+    <member refid="common_8hpp_1a124466370b432d231eb534f152db14e6" kind="function"><name>operator!=</name></member>
+    <member refid="common_8hpp_1aec93077ab7a41a93ea93afdab7cc71ee" kind="function"><name>operator==</name></member>
+    <member refid="common_8hpp_1af26c66c3796099fc752c584bde913c63" kind="function"><name>operator!=</name></member>
+    <member refid="image__data_8hpp_1a9b7d2d1785fc8a4e55dde40f9188adad" kind="function"><name>image_data</name></member>
+    <member refid="image__coordinates_8hpp_1ab985d4e8efb3e8f79d691eee470ad74a" kind="function"><name>image_coordinates</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1data_1_1detail" kind="namespace"><name>yagit::core::data::detail</name>
+    <member refid="common_8hpp_1ae73299fe75c4d3eec4f53a3789a1ff8b" kind="variable"><name>allocate_at_least_is_standard</name></member>
+    <member refid="common_8hpp_1aaf3c552789886ce3fe135932f59b6180" kind="variable"><name>is_power_of_two_v</name></member>
+    <member refid="common_8hpp_1a2d1f170b2613157fe14e9d02175438be" kind="variable"><name>has_allocate_at_least_method_v</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1aeb6b275dbb81719cf1ebc1ec4dd609d2" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a6a3216cf55c88d05d446e4094257a97e" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a1b1087e6b753f30b485c261fc95d7277" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a08e1967b6961a743321ce915d01fffb4" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1afaa52771f0d5a9f3d1a0011eced21f2d" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a8896201c0ebca1054f6be1a67be6e0c6" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="common_8hpp_1a852aab550e35b77c7127505e8e5a3f4d" kind="function"><name>make_default_order</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8hpp_1ab8feeb90c4bbe9204ef5a1840312d9f5" kind="function"><name>allocate_float32</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8hpp_1ad76aae8193a12c21191d3fb3055d1dc7" kind="function"><name>allocate_at_least_float32</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8hpp_1a8b2c828dab5b3d0b5a8a8b04c008ebfc" kind="function"><name>deallocate_float32</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8hpp_1a1a579bda8cff4fb1323081563957d433" kind="function"><name>allocate_float64</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8hpp_1a82fdbce3555ef4612d2eec1510782b03" kind="function"><name>allocate_at_least_float64</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8hpp_1aaa8bcd70a4e8fcabf9348031b158fdcc" kind="function"><name>deallocate_float64</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1data_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e" kind="namespace"><name>yagit::core::data::detail::SIMDPP_ARCH_NAMESPACE</name>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a7d843c7bc3ea92b4ef3694fde290e1b3" kind="typedef"><name>float_block</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a64f17aa9748112a52e89b01e1ce0a494" kind="typedef"><name>double_block</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1af18f1f974e744cbe3f63afccdc51f5b9" kind="variable"><name>float32_VectorSize</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a4a808de7969427201d61375ab40f5174" kind="variable"><name>float64_VectorSize</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1ad41a59fdc78f0f56f534374aa035d150" kind="function"><name>allocate_float32</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a0c244af41c23477e9e8aa088384f675e" kind="function"><name>allocate_at_least_float32</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a151b7175f83b0016c3bb679d615d6668" kind="function"><name>deallocate_float32</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1ad9e45f008cd5831e4e36fac24118835f" kind="function"><name>allocate_float64</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1af5ce3c920073f87522871557a4bb2c3d" kind="function"><name>allocate_at_least_float64</name></member>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a0ffef7f4ec3ad92a9581953c0a6e0fb1" kind="function"><name>deallocate_float64</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1data_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e_1_1detail" kind="namespace"><name>yagit::core::data::detail::SIMDPP_ARCH_NAMESPACE::detail</name>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a2d7f33464be31637362aa74f8dbe23d5" kind="function"><name>blocks_count</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math" kind="namespace"><name>yagit::core::math</name>
+    <member refid="gamma__index_8hpp_1a76ca8ad357996326c5249cc9c20da7d3" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a933e3cca8f9a55768820208f59cefa29" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a2819d698546924ef88f7402df2d42b0c" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1affe08722dbd47eaf9866c1b6b8eab040" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1aa687d772a06dc5d23b0a50a143ffafca" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a2d8407c1ae38ba263379177091c3b304" kind="function"><name>gamma_index</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1basic" kind="namespace"><name>yagit::core::math::basic</name>
+    <member refid="include_2math_2basic_2gamma__index__range__impl_8hpp_1a9830f1a0853663ffe277d44989bc1a27" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="include_2math_2basic_2gamma__index__range__impl_8hpp_1a709bbee1bf8f8acbe419806d8b4e384c" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="include_2math_2basic_2gamma__index__range__impl_8hpp_1a2df9b3a319bd319e53bfff7ca87c0463" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a5018eeb1967e74b1594e1e4728cde23b" kind="function"><name>dose_difference</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1af9b3a866d29329b95a78f79c5877fa55" kind="function"><name>dose_difference</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a86293249924b6298b5350188667678b0" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a7a29b31231e7686bc35836f8aa52923d" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1ab27ddb0f7382b12d586f3aed9ccd2ba6" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a4b97e6ed5f641db460ce7451e8b4e311" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a3373963628e4e66bee2dba2036d633ca" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a504148d0245d4bcdaf8952c7125bed0f" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1aa6081457ad6638cd7c760a2046804154" kind="function"><name>gamma_index</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1aee8b38080508fb8512e6238cdd1945dd" kind="function"><name>gamma_index</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1ada5993e09383df007064555cdd588da4" kind="function"><name>gamma_index</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a2684dc7b1ed75e02498c5e74927dd675" kind="function"><name>gamma_index</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1ad7b693c68c93b5ebae30e1b8d37209b6" kind="function"><name>gamma_index</name></member>
+    <member refid="basic_2gamma__index__single_8hpp_1a82a124868389033d989a0b50a979c202" kind="function"><name>gamma_index</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1basic_1_1detail" kind="namespace"><name>yagit::core::math::basic::detail</name>
+    <member refid="include_2math_2basic_2gamma__index__range__impl_8hpp_1a7df9164c0849ac1c0d2c811c389cbadc" kind="function"><name>gamma_index_minimize_pass</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1basic_1_1openmp" kind="namespace"><name>yagit::core::math::basic::openmp</name>
+    <member refid="include_2math_2basic_2openmp_2gamma__index__range__impl_8hpp_1ab2644bb9010125888bff673b90529717" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="include_2math_2basic_2openmp_2gamma__index__range__impl_8hpp_1a9a28c6588a653b2a553f4ab24811fa24" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="include_2math_2basic_2openmp_2gamma__index__range__impl_8hpp_1a918560b295f2a2f6fe5fbb77229cf94b" kind="function"><name>gamma_index_finalize_pass</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1basic_1_1openmp_1_1detail" kind="namespace"><name>yagit::core::math::basic::openmp::detail</name>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1detail" kind="namespace"><name>yagit::core::math::detail</name>
+    <member refid="gamma__index_8hpp_1ab16b1a2855c26e43623b7ce2eee8fd47" kind="variable"><name>splitting_factor</name></member>
+    <member refid="gamma__index_8hpp_1aaa687bf3edad151e8ce14c7dc01efc39" kind="function"><name>gamma_index_should_split</name></member>
+    <member refid="gamma__index_8hpp_1a7f9a5be847791308bd3719ece8539130" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="gamma__index_8hpp_1ac8940268894e2f49139298c529586a32" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a2a5fccc5a4cdbec2e0b908fe8b3333d4" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="gamma__index_8hpp_1ae05a713ab88a33a1684f8bd80251c569" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a3a01f89ada34c5b212dcb305effe8ac0" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a4a5309c9c1c1e5fc365543877d9939db" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a36827c3c9bc4b4cd9af279fe4d0eab38" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1adb1b76528251ff6c6fce1e0d15ccbdc8" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1ae561b92cba83e17d5cd199c77ddd35c7" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a09fe86b2ca10bef8f742523c17da6b35" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a28878c18876db5fad952c39bca17c751" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a937ebfaa4c0cdbd726cc8a52b7751be4" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a9336e99b66874a5cab93d21b51a338fb" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a1f45ff85090d33919d936a4c7c8423bc" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a441d2bc4a920366cdb1e7c9edebb4267" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="gamma__index_8hpp_1aac835518318c0d50344a611dbccc10d7" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="gamma__index_8hpp_1a2a4315b19d98ae3e3f42e23839761005" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1aa995c247fb091576c9038171dbf959ac" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a1f91504bbb0a6aee00604a5ac6e47f58" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a32a5b2a02bf3bb8c4597d2721ccaca93" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1af2e6a109bc61449d9634e4d5cc9f2573" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1ac668e2d5705597ec21b6bd6aa22ab685" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a1b9dd0070e897a603da02bb55154fae2" kind="function"><name>split_region</name></member>
+    <member refid="gamma__index_8hpp_1ac376a1df661f08f3edd2fe91a8cfa8ef" kind="function"><name>split_region</name></member>
+    <member refid="gamma__index_8hpp_1adf7f20ca2ce66e4a01584df4545b99c5" kind="function"><name>split_region</name></member>
+    <member refid="gamma__index_8hpp_1afa08640cf6fb5a334653acd4f1a3189b" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a94d335748d43641f4314efdf9b7df3b0" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a74c19355c8cf54ffe3e62c76ec2a1c20" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a5776049bf3bba45cdd8ff9cf63fb27bd" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1a99bb07c8cf0c185228c6c3bb1ed66c7d" kind="function"><name>gamma_index</name></member>
+    <member refid="gamma__index_8hpp_1aad8af16ebe91eca3cc4cf25ee082eb5a" kind="function"><name>gamma_index</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1vectorized" kind="namespace"><name>yagit::core::math::vectorized</name>
+    <member refid="math_2vectorized_2common_8hpp_1af259fb54e6b5f6d60220864a2f57b628" kind="typedef"><name>vec_t</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1a287f1242398e6f0165bb212e94f89b00" kind="typedef"><name>params_vec_t</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1aefece926d12252b35eacea0cf10ab7fe" kind="function"><name>load</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1a344aeec4ddf8a51917163649f7ea466f" kind="function"><name>store</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1ab41d7d85f6d88627815ee36a2315ca50" kind="function"><name>find_if</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1a62c8680505794a4585a9c83e1781ec83" kind="function"><name>find_if</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a803fb8e4e4a515cb9fca9e5827caccfa" kind="function"><name>dose_difference</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a177ece3e8c7ca6a00214477bbe18e3f6" kind="function"><name>dose_difference</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1afd67c6ff365371e6456e157fe0ebabdc" kind="function"><name>dose_difference</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a33245654fac5f5f2966dfc985bb10a0a" kind="function"><name>dose_difference</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a0cc175b22822d844701a8c96f3327f5f" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1ae7fcf93edd77ecde1ebec79f598feff4" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a2902ff1b9deea8b5e55afbb0732c8ff8" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a92ca293f163c8328f8cb3ab83536ae8c" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1ab9cc51be5c9369fd77d7e7c6c8dd9536" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a456e42ff6aaa0efe14338bbc302c7ab4" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a4965f35f181935cf7831e3ee12714351" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a6b4f8d924b3329e2af57b526c4d0380c" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a782fcd20440a5a539be645830b7289cd" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a987bc0cb01285ae4f9d8ed92aaad5ea9" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a1f9914190e370a0bba86e8d0f99e64ac" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1ac40fe16ac926f1c20d21e2cce8392e55" kind="function"><name>distance_to_agreement</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a7bc6cf5e1348044e6d1465ec9a254a2f" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1aa700c2c263d27eef2a10df825763359d" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a055d0543c79de406e8cf84c06631e8c5" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1ad08bf821f54f0bb16f7656e18da4c86f" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1af897ed59b4e07a66b109c230bd64f458" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a8f89c054c555712c329227b57a3f07c0" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a014f53caa9d20877ba15f4bcbfbad5dd" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1ae9e97433d80c181efd248f2c403af37e" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a6a4caaa7d5d0e3d042b305f0553f0d14" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a25571dbb9c9baab0ec46b85e4dd7f407" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a50885341222454208ef3781a3a09aaf2" kind="function"><name>gamma_index</name></member>
+    <member refid="vectorized_2gamma__index__single_8hpp_1a1287a07945da4760f70e4c0089359b22" kind="function"><name>gamma_index</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1vectorized_1_1detail" kind="namespace"><name>yagit::core::math::vectorized::detail</name>
+    <member refid="gamma__index__range__impl_8cpp_1a55ec670744bf33e2d1ba32b8f60af350" kind="variable"><name>gamma_index_output</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a9a90db2717277dfc53bf973b053a8764" kind="variable"><name>gamma_index_output_end</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ae105b0cb707c0257f915f822241776c0" kind="variable"><name>reference_doses</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a3e24fa916cc43504118afe7c0c4062ff" kind="variable"><name>reference_coordinates</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1aa11ab85fa83d8d41bc9b01cf1cc992ec" kind="variable"><name>target_doses</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a1a8253ad9a263c521fa86668fabd0047" kind="variable"><name>target_doses_end</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a2531c59e9e9a2ea7cb1c0b8443c2f80e" kind="variable"><name>target_coordinates</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a74ad3357a63bbb604f1a67f2a46fa6e5" kind="variable"><name>params</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ae0689ac36103c7290c5b4d9bfc670e67" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a971c562ecf91e8e92bf7eff9c6ad3b29" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a8de7c3c28b3921da1aaeed1a6438e4b3" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ab86317283c1361ac838654c4763b9d19" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1a000785c1298f2404f1dd0792e1698ff6" kind="function"><name>find_if</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1af11e195a581a702349b51069dc6524f0" kind="function"><name>find_if</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1a005d7407c21651f2d822324545dd5eb8" kind="function"><name>find_if</name></member>
+    <member refid="math_2vectorized_2common_8hpp_1aaf089b77dfec08adb64a46fa41bc3005" kind="function"><name>find_if</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a2054c6571d7186ea80b9cb4c6baba10a" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a009d37185e7cb93fa8b6c4632dd07398" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a1e9ce37b3233fc0733fa9a80c43dc491" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a679483d53e12b8abde9e53715fbdf5a5" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a7d0551d5336645a0897bc8d308b9c760" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1af2d0dc4d325a8ec9ca17faef83e4ba9b" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a2aeec3124aefd9bef0e6a00f690c619a" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1ac8abb96ec105333add3c02cd76117959" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a5381502d5468b3651e1c8f4bdef945ac" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a4ea49095c3b6b784b1d9ccd20c118762" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a1470ecbdf6d9274f337224fefbeb60d4" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a73ee4476db4f2739d686ed5b49d0b125" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1adc9ed9f5189001e9f8e2581e03a8d12f" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a9ae8220ae08d4b8324f23b9c14bc488d" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1ac75d386196f4fe98f4f05b4c8856cd38" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1ae41277de81d8ec939d6c53e47b709695" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1acc34995f182e48a2b7c962abecc97ed0" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a9d55cb50171ef240a8e62b5c269fe8dd" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp_1a8dd35008e24438f88029b5cf2c01bee6" kind="function"><name>gamma_index_finalize_pass</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1vectorized_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e" kind="namespace"><name>yagit::core::math::vectorized::detail::SIMDPP_ARCH_NAMESPACE</name>
+    <member refid="gamma__index__range__impl_8cpp_1aebe8d3b330786661f09dabc107cf696d" kind="variable"><name>float32_VectorSize</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a79588b7e62de412ef8fea30cc176446d" kind="variable"><name>float64_VectorSize</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a53536d3daa231e79b9db4853f6851cf4" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a044894ea9440aac7533357ac95af64e9" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a774ecd03e67e39e6a57f5b54266e0e52" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a5108c61b28495c02ce66062acf9d6531" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1abd840da69bbbd5660df120a87e47f253" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a0a0ccfd758c873b1ae5cafda244a0c05" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ace4e7244ee7313bd04036d3297e6b03c" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ae27d0e007eee1e5ed4812cfabd16e810" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ab4ec395ab07deacf497aa512be333904" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1aa004fc76adcc505967a383d2e994fb68" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ada9b8e574fdd180ef38a00bbed5179b6" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1a4f25f2fb219996368acf96c3ca63b850" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ac3a7dd0d8412ef708a00f731e3a0a38e" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1aa21b55342d730a70f0183c5a0518c565" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ae11a030c4789a10fa4f0e2cd7c66a706" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="gamma__index__range__impl_8cpp_1ada3d8d4de6362160bfb7e3b5f75bed4f" kind="function"><name>gamma_index_finalize_pass</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1vectorized_1_1openmp" kind="namespace"><name>yagit::core::math::vectorized::openmp</name>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1vectorized_1_1openmp_1_1detail" kind="namespace"><name>yagit::core::math::vectorized::openmp::detail</name>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1ab669b7d6fad503a2d437018db57cb755" kind="variable"><name>gamma_index_output</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1abd96396bf3212e466497d684026e0332" kind="variable"><name>gamma_index_output_end</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a1530a2755e968ce4c01d830cd4ff2dbb" kind="variable"><name>reference_doses</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1ae04a18130ca0aebc633033c5bae91ee3" kind="variable"><name>reference_coordinates</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a9fe76a97fd8bfe81baf250346fa97327" kind="variable"><name>target_doses</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1af0d5271a74d538d78fc3d47bdebf047f" kind="variable"><name>target_doses_end</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a01bbc7c17d067e580842820f7a86ff2b" kind="variable"><name>target_coordinates</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a76b2a3087a9d70a1d56f8f61fb2107a3" kind="variable"><name>params</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a5dbe203c838e70845f201258950bb3ec" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a3bdd15413e115cb7ce0bdee9dd8224f6" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a144a056feb12b28e8164dd9716879d01" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1aaa76ae1b1ed36b582e7fc06783afd9ef" kind="function"><name>SIMDPP_MAKE_DISPATCHER</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1ad88aecace3c95b7d8e78fd6b165465fc" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1abf3d0ee5ad4c38179436a67cf73339ab" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a534d8c0b4d88588678c0b979329b0d02" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a53a74bda0ed96b3b6d95ab450d378ecd" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a3be25f0656cae76a58300cc3e67e5763" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a9a2ea858d9ebd8af27096b9148b8c2bd" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a58bb7cfe78bea1f77ccf1382416d75e6" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1af5d3c47da043a996b6ffb2ceab88c76a" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a1eba1e6b403e3c33bd5046df62020c8c" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a9a28f462e7671a261216504dbaeafc91" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a36a4b68d1eb8613dae783ef5da248473" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a8b3f39f79bf3dff6383d2f8e3fd54f2a" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1ae6f54df766a2e5c0da73da5df95dd098" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a4ed03fe5cb318962dd38a2e2641e1557" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1aaafbe6c23197aac89a819124fd11543e" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp_1a975543ea1f5f2ffa182136ada53fb7ca" kind="function"><name>gamma_index_finalize_pass</name></member>
+  </compound>
+  <compound refid="namespaceyagit_1_1core_1_1math_1_1vectorized_1_1openmp_1_1detail_1_1_s_i_m_d_p_p___a_r_c_h___n_a_m_e_s_p_a_c_e" kind="namespace"><name>yagit::core::math::vectorized::openmp::detail::SIMDPP_ARCH_NAMESPACE</name>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1aab44773176392a7fd48c825f13191e32" kind="variable"><name>float32_VectorSize</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a929967c846880b13b0bfd21af7131585" kind="variable"><name>float64_VectorSize</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a1eeef89aa56eef329b67d2a59d5e1df6" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1af68d2f8b49c305447ed20d4f85a60c33" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1afe1974d13744fb8626f335286d28dcb1" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a5bff0a0e51718e28a1ecffc7625ecf6c" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1aa830b4f484d90a3d34740bf88377086b" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a1e4edcb1acc3407bc5c31495be796d86" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1ac67634296a760dc0919ea8963f0df448" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a38cfa5784caae3e864dc6ab562af2225" kind="function"><name>gamma_index_finalize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1aa616990f88a1c4530c48deee9d14da88" kind="function"><name>gamma_index_initialize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1aa47b8313d89931cab594ecd581badd77" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1af7c78a244b20b84cee1ee769f1b94572" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a4662ae85a5fbc6030a1358afdff77204" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a94f3932b771d83c85a0c8b35cb04006c" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a51a2db86e42287960f7f941f6930f786" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1acf73deebdc763ff51a415bb8e4a5fd6b" kind="function"><name>gamma_index_minimize_pass</name></member>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a13e6be62d92db9efae51dd1947ee8a82" kind="function"><name>gamma_index_finalize_pass</name></member>
+  </compound>
+  <compound refid="additions_8cpp" kind="file"><name>additions.cpp</name>
+    <member refid="additions_8cpp_1a5f39ebf7aa86cd6ae65baf3301e2fbaf" kind="function"><name>defaultMaskConverter</name></member>
+    <member refid="additions_8cpp_1aa0bc1f968ddb42c447d69c9d1f60ac3d" kind="function"><name>doubleComparator</name></member>
+    <member refid="additions_8cpp_1af021f4d3435786622ec616b42c65a537" kind="function"><name>noiseFilter</name></member>
+    <member refid="additions_8cpp_1a606edaa79c700b5fd7fb714de65b54a3" kind="function"><name>convertArrayToBinaryMask</name></member>
+    <member refid="additions_8cpp_1a04388c70ea754547e8e10d0d759a753a" kind="function"><name>applyMaskToImage</name></member>
+    <member refid="additions_8cpp_1a74366d7e3668d2cb1d53798299b73897" kind="function"><name>applyFilteringFunctionToImage</name></member>
+    <member refid="additions_8cpp_1a500b86ac0a7e9863745740a59505386b" kind="function"><name>applyNoiseFilteringToImage</name></member>
+    <member refid="additions_8cpp_1a193460deb754c584d2216e00b34c3142" kind="function"><name>applyLinearMappingToImage</name></member>
+    <member refid="additions_8cpp_1a8dc53578804e74783897b92a14b29a52" kind="function"><name>calculateGammaArraySize</name></member>
+    <member refid="additions_8cpp_1a7dc5c24b17405045f81c5a87a29f190e" kind="function"><name>activeVoxelsNumber</name></member>
+    <member refid="additions_8cpp_1a0f806a2e9eb244f2afb3cb588cd1dd2d" kind="function"><name>activeVoxelsPercentage</name></member>
+    <member refid="additions_8cpp_1aaf46ad8cd04ed6fe9010cc7d4f06688c" kind="function"><name>imageMin</name></member>
+    <member refid="additions_8cpp_1ab931843c7cd97a402676df070c842ade" kind="function"><name>imageMax</name></member>
+    <member refid="additions_8cpp_1af8967aa05617a63eb043fa93fcd38d63" kind="function"><name>imageAvg</name></member>
+    <member refid="additions_8cpp_1a36e7f66faef4adb07908f34b06e7e069" kind="function"><name>gammaPassingRate</name></member>
+    <member refid="additions_8cpp_1a47644d11a6b5a54ff79b25befce4e212" kind="function"><name>createComputationDescription</name></member>
+    <member refid="additions_8cpp_1a2f7d22f620cac2cbc2c1cc25a230437a" kind="function"><name>prepareStatisticsFile</name></member>
+    <member refid="additions_8cpp_1a3ebb2ac25ae59b6109a7f061c1cb0d95" kind="function"><name>prepareHistogram</name></member>
+    <member refid="additions_8cpp_1a0c8a98f5cd7f1c281607a69d4f743769" kind="function"><name>prepareHistogram</name></member>
+    <member refid="additions_8cpp_1a4108cc53591987ff1b8f3b9fc937a4f7" kind="function"><name>prepareHistogram</name></member>
+    <member refid="additions_8cpp_1aa9b747096da1c546990850b42e080e5f" kind="function"><name>prepareCumulativeHistogram</name></member>
+    <member refid="additions_8cpp_1af20d473ee33e41c6b3513fa9a00ac7b7" kind="function"><name>prepareCumulativeHistogram</name></member>
+    <member refid="additions_8cpp_1aa73a4ba9965849578de7856ac1b77f99" kind="function"><name>prepareCumulativeHistogram</name></member>
+  </compound>
+  <compound refid="additions_8h" kind="file"><name>additions.h</name>
+    <member refid="additions_8h_1afe751bb39b2ed9934daf7d607a51d573" kind="function"><name>convertArrayToBinaryMask</name></member>
+    <member refid="additions_8h_1a04388c70ea754547e8e10d0d759a753a" kind="function"><name>applyMaskToImage</name></member>
+    <member refid="additions_8h_1a2d464e807605d8698ade1cc085d9c688" kind="function"><name>applyFilteringFunctionToImage</name></member>
+    <member refid="additions_8h_1a500b86ac0a7e9863745740a59505386b" kind="function"><name>applyNoiseFilteringToImage</name></member>
+    <member refid="additions_8h_1a193460deb754c584d2216e00b34c3142" kind="function"><name>applyLinearMappingToImage</name></member>
+    <member refid="additions_8h_1a81ea066c93089aca209a863cd353c911" kind="function"><name>calculateGammaArraySize</name></member>
+    <member refid="additions_8h_1a7dc5c24b17405045f81c5a87a29f190e" kind="function"><name>activeVoxelsNumber</name></member>
+    <member refid="additions_8h_1a0f806a2e9eb244f2afb3cb588cd1dd2d" kind="function"><name>activeVoxelsPercentage</name></member>
+    <member refid="additions_8h_1aaf46ad8cd04ed6fe9010cc7d4f06688c" kind="function"><name>imageMin</name></member>
+    <member refid="additions_8h_1ab931843c7cd97a402676df070c842ade" kind="function"><name>imageMax</name></member>
+    <member refid="additions_8h_1af8967aa05617a63eb043fa93fcd38d63" kind="function"><name>imageAvg</name></member>
+    <member refid="additions_8h_1a36e7f66faef4adb07908f34b06e7e069" kind="function"><name>gammaPassingRate</name></member>
+    <member refid="additions_8h_1ac4a991b4afa3914090b775c8eec36cfc" kind="function"><name>createComputationDescription</name></member>
+    <member refid="additions_8h_1a44fd85660e2cbcecb2872dd8e705abc1" kind="function"><name>prepareStatisticsFile</name></member>
+    <member refid="additions_8h_1a3ebb2ac25ae59b6109a7f061c1cb0d95" kind="function"><name>prepareHistogram</name></member>
+    <member refid="additions_8h_1a0c8a98f5cd7f1c281607a69d4f743769" kind="function"><name>prepareHistogram</name></member>
+    <member refid="additions_8h_1a4108cc53591987ff1b8f3b9fc937a4f7" kind="function"><name>prepareHistogram</name></member>
+    <member refid="additions_8h_1aa9b747096da1c546990850b42e080e5f" kind="function"><name>prepareCumulativeHistogram</name></member>
+    <member refid="additions_8h_1af20d473ee33e41c6b3513fa9a00ac7b7" kind="function"><name>prepareCumulativeHistogram</name></member>
+    <member refid="additions_8h_1aa73a4ba9965849578de7856ac1b77f99" kind="function"><name>prepareCumulativeHistogram</name></member>
+  </compound>
+  <compound refid="aligned__allocator_8hpp" kind="file"><name>aligned_allocator.hpp</name>
+  </compound>
+  <compound refid="classic__solver_8cpp" kind="file"><name>classic_solver.cpp</name>
+    <member refid="classic__solver_8cpp_1ac703d7da8ec551638617256fc4979b52" kind="typedef"><name>Voxel</name></member>
+  </compound>
+  <compound refid="common_8hpp" kind="file"><name>common.hpp</name>
+    <member refid="common_8hpp_1a79cc5d98ed69f68b070eebd1218f4fbf" kind="define"><name>ALLOCATE_AT_LEAST_NOT_DEFINED</name></member>
+  </compound>
+  <compound refid="math_2common_8hpp" kind="file"><name>math/common.hpp</name>
+  </compound>
+  <compound refid="math_2vectorized_2common_8hpp" kind="file"><name>math/vectorized/common.hpp</name>
+  </compound>
+  <compound refid="comparator_8h" kind="file"><name>comparator.h</name>
+  </compound>
+  <compound refid="core__logger_8cpp" kind="file"><name>core_logger.cpp</name>
+    <member refid="core__logger_8cpp_1a192ae3fbc914c80cfaa03dd6f27193d1" kind="variable"><name>FILENAME</name></member>
+    <member refid="core__logger_8cpp_1a15bd1f3c8e3cd1104fc4da9c8615aa29" kind="function"><name>createCoreTimestamp</name></member>
+    <member refid="core__logger_8cpp_1ac6e9c8ea05f4b048046002e3165cc1d4" kind="function"><name>enableCoreLogging</name></member>
+    <member refid="core__logger_8cpp_1a636b0a62a218721454aba83b0e660a00" kind="function"><name>disableCoreLogging</name></member>
+    <member refid="core__logger_8cpp_1af0b32aeaec588753dc0bd71f1368fb94" kind="function"><name>initializeCoreLogger</name></member>
+    <member refid="core__logger_8cpp_1a732c553f6fe407e3fb753a4889954a6b" kind="function"><name>initializeCoreLogger</name></member>
+    <member refid="core__logger_8cpp_1aef0eebb7580c3a18d74b90948a8ea00c" kind="function"><name>logCoreMessage</name></member>
+    <member refid="core__logger_8cpp_1aab51755daf7db1c457f86eb6ea83289c" kind="function"><name>toString</name></member>
+    <member refid="core__logger_8cpp_1a49e53951909fa3652455abf8394ec3b8" kind="function"><name>planeToString</name></member>
+    <member refid="core__logger_8cpp_1ae7a67814f8dfbef5ab13b095f7a4912b" kind="function"><name>algorithmToString</name></member>
+  </compound>
+  <compound refid="core__logger_8h" kind="file"><name>core_logger.h</name>
+    <member refid="core__logger_8h_1ac69af7e6d987a142ea88c2766c4701cf" kind="variable"><name>CORE_LOGGER_ON</name></member>
+    <member refid="core__logger_8h_1ac6e9c8ea05f4b048046002e3165cc1d4" kind="function"><name>enableCoreLogging</name></member>
+    <member refid="core__logger_8h_1a636b0a62a218721454aba83b0e660a00" kind="function"><name>disableCoreLogging</name></member>
+    <member refid="core__logger_8h_1af0b32aeaec588753dc0bd71f1368fb94" kind="function"><name>initializeCoreLogger</name></member>
+    <member refid="core__logger_8h_1a732c553f6fe407e3fb753a4889954a6b" kind="function"><name>initializeCoreLogger</name></member>
+    <member refid="core__logger_8h_1a2e305987aefb6f63bc3c9b88f3b6a828" kind="function"><name>logCoreMessage</name></member>
+    <member refid="core__logger_8h_1a1322edaa172730e0e16162bf85bb7154" kind="function"><name>toString</name></member>
+    <member refid="core__logger_8h_1a8352a6c6ff100179ba1ad70bd70232e0" kind="function"><name>planeToString</name></member>
+    <member refid="core__logger_8h_1a725aa52983f481395eae1d54ae2d018b" kind="function"><name>algorithmToString</name></member>
+  </compound>
+  <compound refid="data_8cpp" kind="file"><name>data.cpp</name>
+  </compound>
+  <compound refid="data_8h" kind="file"><name>data.h</name>
+  </compound>
+  <compound refid="definitions_8hpp" kind="file"><name>definitions.hpp</name>
+  </compound>
+  <compound refid="dicom__reader_8cpp" kind="file"><name>dicom_reader.cpp</name>
+  </compound>
+  <compound refid="dicom__reader_8h" kind="file"><name>dicom_reader.h</name>
+  </compound>
+  <compound refid="dicom__tag__strategies_8cpp" kind="file"><name>dicom_tag_strategies.cpp</name>
+    <member refid="dicom__tag__strategies_8cpp_1ab3b1dea347f2d668c25dea7c4d4c0cb8" kind="function"><name>rewriteAllTagsStrategy</name></member>
+    <member refid="dicom__tag__strategies_8cpp_1abfdcf01ce95c496259353f93a59a19d6" kind="function"><name>rewriteNoTagsStrategy</name></member>
+    <member refid="dicom__tag__strategies_8cpp_1a562d327a8bb9e08f76e5a8fb0a6e6648" kind="function"><name>rewriteAllNonPrivateTagsStrategy</name></member>
+    <member refid="dicom__tag__strategies_8cpp_1adf5baba6749406808e2e70218f57eb9c" kind="function"><name>rewriteSpecifiedTagsStrategy</name></member>
+    <member refid="dicom__tag__strategies_8cpp_1a6e265748232926241688180baa23d81b" kind="function"><name>omitSpecifiedTagsStrategy</name></member>
+    <member refid="dicom__tag__strategies_8cpp_1a5b13009e750538947ab1325d488844b9" kind="function"><name>resolveTagsRewriteStrategy</name></member>
+    <member refid="dicom__tag__strategies_8cpp_1ab88e424d7712e8df9aee92398ed7e2a3" kind="function"><name>applyDicomTagsRewriteStrategy</name></member>
+  </compound>
+  <compound refid="dicom__tag__strategies_8h" kind="file"><name>dicom_tag_strategies.h</name>
+    <member refid="dicom__tag__strategies_8h_1a28f8f10360b4e16bea53259fe0a022f2" kind="typedef"><name>tagsRewriteStrategy</name></member>
+    <member refid="dicom__tag__strategies_8h_1ac6755e4dac2bd9435b2c987350ab5432" kind="function"><name>applyDicomTagsRewriteStrategy</name></member>
+  </compound>
+  <compound refid="dicom__tags_8h" kind="file"><name>dicom_tags.h</name>
+    <member refid="dicom__tags_8h_1aa9748af64e02a7dce93332119d3a6c8d" kind="define"><name>DCM_MODALITY</name></member>
+    <member refid="dicom__tags_8h_1a7e3c2d9fe47f754dfc5f14f29e8355d6" kind="define"><name>DCM_SPACING_BETWEEN_SLICES</name></member>
+    <member refid="dicom__tags_8h_1a3a2aefed7c59ac7cec6c01df0e986cf0" kind="define"><name>DCM_IMAGE_POSITION</name></member>
+    <member refid="dicom__tags_8h_1ab5453e885f7d2ac159fa5aa2eac20f2a" kind="define"><name>DCM_PIXEL_SPACING</name></member>
+    <member refid="dicom__tags_8h_1a2e9bd47f660fa85cf8722a8a025e24ba" kind="define"><name>DCM_RESCALE_INTERCEPT</name></member>
+    <member refid="dicom__tags_8h_1a689e1a769ca72bb5cd7c13d0ed2adc7d" kind="define"><name>DCM_RESCALE_SLOPE</name></member>
+    <member refid="dicom__tags_8h_1a78dcc249474843b162372bfd3b47a4ce" kind="define"><name>DCM_GRID_FRAME_OFFSET_VECTOR</name></member>
+    <member refid="dicom__tags_8h_1a14d33a9b15d42f10fb0105eaee37e138" kind="define"><name>DCM_DOSE_GRID_SCALING</name></member>
+    <member refid="dicom__tags_8h_1a7cc727e226cc1c8742b19cf6fde6d02e" kind="define"><name>PIXEL_DATA</name></member>
+    <member refid="dicom__tags_8h_1affd965a38ad22ab56f892768f8a4fbd6" kind="define"><name>DCM_GROUP_PIXEL_DATA</name></member>
+  </compound>
+  <compound refid="dicom__writer_8cpp" kind="file"><name>dicom_writer.cpp</name>
+  </compound>
+  <compound refid="dicom__writer_8h" kind="file"><name>dicom_writer.h</name>
+  </compound>
+  <compound refid="dispatcher_8cpp" kind="file"><name>dispatcher.cpp</name>
+    <member refid="dispatcher_8cpp_1a264845487667b31ad266bb93ac0632b9" kind="function"><name>acquireImage1D</name></member>
+    <member refid="dispatcher_8cpp_1a9dc576a9e1dc2590e7817e428cf6acc2" kind="function"><name>acquireImage2D</name></member>
+    <member refid="dispatcher_8cpp_1ab1cd51e36678d2fe46b90dc7f88af103" kind="function"><name>acquireImage3D</name></member>
+    <member refid="dispatcher_8cpp_1a48a54aa354235c6837049e8ea42464da" kind="function"><name>acquireImage3DSliceXY</name></member>
+    <member refid="dispatcher_8cpp_1aa304175113885b0e6d59607caf5c00b5" kind="function"><name>acquireImage3DSliceXZ</name></member>
+    <member refid="dispatcher_8cpp_1aa3b2b6b907ade41678893365091a032d" kind="function"><name>acquireImage3DSliceYZ</name></member>
+    <member refid="dispatcher_8cpp_1aa666921f05a3bd9f8c9b1631c0e71608" kind="function"><name>acquireImage3DSlice</name></member>
+    <member refid="dispatcher_8cpp_1a48c0729fdddfcccb831735bb0f961df2" kind="function"><name>calculateGamma1D</name></member>
+    <member refid="dispatcher_8cpp_1a078bd85c54bf06976820eaadc4cb9061" kind="function"><name>calculateGamma2D</name></member>
+    <member refid="dispatcher_8cpp_1adcdc5a783365e98f56f4146cb76f2f0b" kind="function"><name>calculateGamma3D</name></member>
+    <member refid="dispatcher_8cpp_1adae0793cacf277db6ddbb4989b554386" kind="function"><name>calculateGamma2_5D</name></member>
+    <member refid="dispatcher_8cpp_1a45223be22b53fb0a8e93acfd84e2f56c" kind="function"><name>calculate2DGammaFrom3D</name></member>
+    <member refid="dispatcher_8cpp_1a1a01f44b96cce74593e27ef0d1a61ed8" kind="function"><name>calculateGamma</name></member>
+  </compound>
+  <compound refid="dispatcher_8h" kind="file"><name>dispatcher.h</name>
+    <member refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kind="function"><name>calculateGamma</name></member>
+  </compound>
+  <compound refid="fast__float__aligned__allocator_8cpp" kind="file"><name>fast_float_aligned_allocator.cpp</name>
+  </compound>
+  <compound refid="fast__float__aligned__allocator_8hpp" kind="file"><name>fast_float_aligned_allocator.hpp</name>
+  </compound>
+  <compound refid="fast__float__aligned__allocator__impl_8cpp" kind="file"><name>fast_float_aligned_allocator_impl.cpp</name>
+    <member refid="fast__float__aligned__allocator__impl_8cpp_1a0394bb6dc964709e5b9bb5458ecfc7b7" kind="define"><name>SIMDPP_USER_ARCH_INFO</name></member>
+  </compound>
+  <compound refid="fast__float__aligned__allocator__impl_8hpp" kind="file"><name>fast_float_aligned_allocator_impl.hpp</name>
+  </compound>
+  <compound refid="gamma__index_8hpp" kind="file"><name>gamma_index.hpp</name>
+  </compound>
+  <compound refid="gamma__index__range_8cpp" kind="file"><name>gamma_index_range.cpp</name>
+  </compound>
+  <compound refid="openmp_2gamma__index__range_8cpp" kind="file"><name>openmp/gamma_index_range.cpp</name>
+  </compound>
+  <compound refid="basic_2gamma__index__range_8hpp" kind="file"><name>basic/gamma_index_range.hpp</name>
+  </compound>
+  <compound refid="basic_2openmp_2gamma__index__range_8hpp" kind="file"><name>basic/openmp/gamma_index_range.hpp</name>
+  </compound>
+  <compound refid="vectorized_2gamma__index__range_8hpp" kind="file"><name>vectorized/gamma_index_range.hpp</name>
+  </compound>
+  <compound refid="vectorized_2openmp_2gamma__index__range_8hpp" kind="file"><name>vectorized/openmp/gamma_index_range.hpp</name>
+  </compound>
+  <compound refid="gamma__index__range__impl_8cpp" kind="file"><name>gamma_index_range_impl.cpp</name>
+    <member refid="gamma__index__range__impl_8cpp_1a0394bb6dc964709e5b9bb5458ecfc7b7" kind="define"><name>SIMDPP_USER_ARCH_INFO</name></member>
+  </compound>
+  <compound refid="openmp_2gamma__index__range__impl_8cpp" kind="file"><name>openmp/gamma_index_range_impl.cpp</name>
+    <member refid="openmp_2gamma__index__range__impl_8cpp_1a0394bb6dc964709e5b9bb5458ecfc7b7" kind="define"><name>SIMDPP_USER_ARCH_INFO</name></member>
+  </compound>
+  <compound refid="include_2math_2basic_2gamma__index__range__impl_8hpp" kind="file"><name>include/math/basic/gamma_index_range_impl.hpp</name>
+  </compound>
+  <compound refid="include_2math_2basic_2openmp_2gamma__index__range__impl_8hpp" kind="file"><name>include/math/basic/openmp/gamma_index_range_impl.hpp</name>
+  </compound>
+  <compound refid="src_2math_2vectorized_2gamma__index__range__impl_8hpp" kind="file"><name>src/math/vectorized/gamma_index_range_impl.hpp</name>
+  </compound>
+  <compound refid="src_2math_2vectorized_2openmp_2gamma__index__range__impl_8hpp" kind="file"><name>src/math/vectorized/openmp/gamma_index_range_impl.hpp</name>
+  </compound>
+  <compound refid="basic_2gamma__index__single_8hpp" kind="file"><name>basic/gamma_index_single.hpp</name>
+  </compound>
+  <compound refid="vectorized_2gamma__index__single_8hpp" kind="file"><name>vectorized/gamma_index_single.hpp</name>
+  </compound>
+  <compound refid="generate_config_8py" kind="file"><name>generateConfig.py</name>
+  </compound>
+  <compound refid="generate_test_suit_8py" kind="file"><name>generateTestSuit.py</name>
+  </compound>
+  <compound refid="gprcomparator_8cpp" kind="file"><name>gprcomparator.cpp</name>
+  </compound>
+  <compound refid="iimage_8hpp" kind="file"><name>iimage.hpp</name>
+  </compound>
+  <compound refid="iimage__region_8hpp" kind="file"><name>iimage_region.hpp</name>
+  </compound>
+  <compound refid="image_8cpp" kind="file"><name>image.cpp</name>
+  </compound>
+  <compound refid="image_8h" kind="file"><name>image.h</name>
+  </compound>
+  <compound refid="image__coordinates_8hpp" kind="file"><name>image_coordinates.hpp</name>
+  </compound>
+  <compound refid="image__data_8hpp" kind="file"><name>image_data.hpp</name>
+  </compound>
+  <compound refid="irtdose__image_8hpp" kind="file"><name>irtdose_image.hpp</name>
+  </compound>
+  <compound refid="irtdose__image__region_8hpp" kind="file"><name>irtdose_image_region.hpp</name>
+  </compound>
+  <compound refid="iwritable__image_8hpp" kind="file"><name>iwritable_image.hpp</name>
+  </compound>
+  <compound refid="iwritable__image__region_8hpp" kind="file"><name>iwritable_image_region.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1abdc584cc447ff427d14b07ec1d89dcad" kind="function"><name>test_float</name></member>
+    <member refid="main_8cpp_1a426d36b7fd8d66fd02d8427bcff38853" kind="function"><name>test_double</name></member>
+    <member refid="main_8cpp_1a99e2a87dda3ff070f63ae0bafcdfba64" kind="function"><name>test_orig_sr</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="main_test_8cpp" kind="file"><name>mainTest.cpp</name>
+    <member refid="main_test_8cpp_1ac417f0eea6be49860d89130af1e77ee2" kind="function"><name>test</name></member>
+    <member refid="main_test_8cpp_1a121f7e5949b599c47ef67da07dd81663" kind="function"><name>handleTestCase</name></member>
+    <member refid="main_test_8cpp_1af58d1cb05dc5009275c17029f4a88d61" kind="function"><name>handleTestSuit</name></member>
+    <member refid="main_test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="manage_compressing_suits_8py" kind="file"><name>manageCompressingSuits.py</name>
+  </compound>
+  <compound refid="math__gi__policies__tests_8cpp" kind="file"><name>math_gi_policies_tests.cpp</name>
+    <member refid="math__gi__policies__tests_8cpp_1a139f00d2466d591f60b8d6a73c8273f1" kind="define"><name>BOOST_TEST_DYN_LINK</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1a6b2a3852db8bb19ab6909bac01859985" kind="define"><name>BOOST_TEST_MODULE</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1ab08cac6922cf0ef7ef35ba5c4013ebcc" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1a80cfb62577eafb0a83c955f3d8cfd26a" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1abf5fcd0a67726d92fef786c063c9db10" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1af992599d8b50cc73cb9376481a24f77e" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1a6e897ac2dbaa07264df287a64fce711f" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="math__gi__policies__tests_8cpp_1ad0a0f5fff31410fa5e9873bdac9ad179" kind="function"><name>expected_specializations_compile_without_errors</name></member>
+  </compound>
+  <compound refid="math__gi__single__tests_8cpp" kind="file"><name>math_gi_single_tests.cpp</name>
+    <member refid="math__gi__single__tests_8cpp_1ad8ba537d501582ba2a032149c141df8f" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="math__gi__single__tests_8cpp_1ac5ec6a604c2a84adb4238da7db1fa520" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+  </compound>
+  <compound refid="memory__based__image_8hpp" kind="file"><name>memory_based_image.hpp</name>
+  </compound>
+  <compound refid="memory__based__image__region_8hpp" kind="file"><name>memory_based_image_region.hpp</name>
+    <member refid="memory__based__image__region_8hpp_1a6544c062725a72fe33fcdfab9adabc89" kind="enum"><name>mbi_subregion_error</name></member>
+    <member refid="memory__based__image__region_8hpp_1a6544c062725a72fe33fcdfab9adabc89a587365907678ee307cfa74dd545755a7" kind="enumvalue"><name>invalid_subregion</name></member>
+    <member refid="memory__based__image__region_8hpp_1a6544c062725a72fe33fcdfab9adabc89a9556aeb1bbbe5a05c16194e5b03b8e9f" kind="enumvalue"><name>subregion_outside_bounds</name></member>
+    <member refid="memory__based__image__region_8hpp_1a6544c062725a72fe33fcdfab9adabc89aad921d60486366258809553a3db49a4a" kind="enumvalue"><name>unknown</name></member>
+    <member refid="memory__based__image__region_8hpp_1ab4a38dd623205f6e83304006af550b36" kind="variable"><name>_mbi_subregion_error_cat</name></member>
+    <member refid="memory__based__image__region_8hpp_1abf0a5df83fceefbc78cfadb52e7947da" kind="function"><name>make_index_transform</name></member>
+    <member refid="memory__based__image__region_8hpp_1ab7d90253053c9d897f0561d9b46ec440" kind="function"><name>calculate_index</name></member>
+  </compound>
+  <compound refid="onetoonecomparator_8cpp" kind="file"><name>onetoonecomparator.cpp</name>
+  </compound>
+  <compound refid="parameters_8cpp" kind="file"><name>parameters.cpp</name>
+  </compound>
+  <compound refid="parameters_8h" kind="file"><name>parameters.h</name>
+  </compound>
+  <compound refid="parse_data_8cpp" kind="file"><name>parseData.cpp</name>
+  </compound>
+  <compound refid="parse_data_8h" kind="file"><name>parseData.h</name>
+  </compound>
+  <compound refid="parse_parameters_8cpp" kind="file"><name>parseParameters.cpp</name>
+  </compound>
+  <compound refid="parse_parameters_8h" kind="file"><name>parseParameters.h</name>
+  </compound>
+  <compound refid="parser_8cpp" kind="file"><name>parser.cpp</name>
+  </compound>
+  <compound refid="parser_8h" kind="file"><name>parser.h</name>
+  </compound>
+  <compound refid="solver_8cpp" kind="file"><name>solver.cpp</name>
+  </compound>
+  <compound refid="solver_8h" kind="file"><name>solver.h</name>
+  </compound>
+  <compound refid="spiral__solver_8cpp" kind="file"><name>spiral_solver.cpp</name>
+    <member refid="spiral__solver_8cpp_1ac703d7da8ec551638617256fc4979b52" kind="typedef"><name>Voxel</name></member>
+  </compound>
+  <compound refid="spiral__with__rectangle__solver_8cpp" kind="file"><name>spiral_with_rectangle_solver.cpp</name>
+    <member refid="spiral__with__rectangle__solver_8cpp_1ac703d7da8ec551638617256fc4979b52" kind="typedef"><name>Voxel</name></member>
+  </compound>
+  <compound refid="spiral__without__rectangle__solver_8cpp" kind="file"><name>spiral_without_rectangle_solver.cpp</name>
+    <member refid="spiral__without__rectangle__solver_8cpp_1ac703d7da8ec551638617256fc4979b52" kind="typedef"><name>Voxel</name></member>
+  </compound>
+  <compound refid="transformer_8cpp" kind="file"><name>transformer.cpp</name>
+    <member refid="transformer_8cpp_1a3283b5260542d79beab2bee993a22791" kind="function"><name>saveTransformedToFile</name></member>
+    <member refid="transformer_8cpp_1a0646b5b21d1c4c80b732a824e6736894" kind="function"><name>split</name></member>
+    <member refid="transformer_8cpp_1ab6d9314d0fb8a51d5e240eea9036ad0c" kind="function"><name>transform2D</name></member>
+    <member refid="transformer_8cpp_1adefa9150a6eab2b08cc153dd53d9fa93" kind="function"><name>transform3D</name></member>
+    <member refid="transformer_8cpp_1a1263cd232ddffc1415699ca84dc07120" kind="function"><name>transform</name></member>
+    <member refid="transformer_8cpp_1abf9e6b7e6f15df4b525a2e7705ba3089" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="wrapper_8cpp" kind="file"><name>wrapper.cpp</name>
+    <member refid="wrapper_8cpp_1a00cad0d84c2544d58f7f08b09539d2ba" kind="function"><name>loadDicom</name></member>
+    <member refid="wrapper_8cpp_1a9dc780edb3728dc742e702afb8d80fc1" kind="function"><name>acquireImage</name></member>
+    <member refid="wrapper_8cpp_1a625043993e6547aebd3ce1fefb4cee76" kind="function"><name>saveImage</name></member>
+  </compound>
+  <compound refid="wrapper_8h" kind="file"><name>wrapper.h</name>
+    <member refid="wrapper_8h_1a71224bfcc6cb661a94706f42468df573" kind="function"><name>loadDicom</name></member>
+    <member refid="wrapper_8h_1a20608db6bc74694c28903e92bea6c630" kind="function"><name>acquireImage</name></member>
+    <member refid="wrapper_8h_1aabd275f325ca3bd41f5e0f157997666f" kind="function"><name>saveImage</name></member>
+  </compound>
+  <compound refid="wrapper__logger_8cpp" kind="file"><name>wrapper_logger.cpp</name>
+    <member refid="wrapper__logger_8cpp_1a192ae3fbc914c80cfaa03dd6f27193d1" kind="variable"><name>FILENAME</name></member>
+    <member refid="wrapper__logger_8cpp_1a47f9ffa46b6b7e53960e633df383cd3a" kind="function"><name>createWrapperTimestamp</name></member>
+    <member refid="wrapper__logger_8cpp_1ad00ec71645bc8fa2d756e7f1c66f8a5c" kind="function"><name>enableWrapperLogging</name></member>
+    <member refid="wrapper__logger_8cpp_1a47ec9fc2510d2e7d47db4fbabc0bf5d1" kind="function"><name>disableWrapperLogging</name></member>
+    <member refid="wrapper__logger_8cpp_1a036d410fc57766616396f44e84b002eb" kind="function"><name>initializeWrapperLogger</name></member>
+    <member refid="wrapper__logger_8cpp_1a6a3e76bd4f94ab22d7f330173ebdb0c6" kind="function"><name>initializeWrapperLogger</name></member>
+    <member refid="wrapper__logger_8cpp_1a5537b9adc6441620fa3026c08debb284" kind="function"><name>logWrapperMessage</name></member>
+  </compound>
+  <compound refid="wrapper__logger_8h" kind="file"><name>wrapper_logger.h</name>
+    <member refid="wrapper__logger_8h_1ad5bd5f291d910c016716c1133d85b8c0" kind="variable"><name>WRAPPER_LOGGER_ON</name></member>
+    <member refid="wrapper__logger_8h_1ad00ec71645bc8fa2d756e7f1c66f8a5c" kind="function"><name>enableWrapperLogging</name></member>
+    <member refid="wrapper__logger_8h_1a47ec9fc2510d2e7d47db4fbabc0bf5d1" kind="function"><name>disableWrapperLogging</name></member>
+    <member refid="wrapper__logger_8h_1a036d410fc57766616396f44e84b002eb" kind="function"><name>initializeWrapperLogger</name></member>
+    <member refid="wrapper__logger_8h_1a6a3e76bd4f94ab22d7f330173ebdb0c6" kind="function"><name>initializeWrapperLogger</name></member>
+    <member refid="wrapper__logger_8h_1aa24e3d85d08869622073a36ebe8bdd43" kind="function"><name>logWrapperMessage</name></member>
+  </compound>
+  <compound refid="dir_6b790dc7b151144be9f0cc4cdb882656" kind="dir"><name>allocation</name>
+  </compound>
+  <compound refid="dir_0aae9d27c9c05e6c1369fb7ecd12c615" kind="dir"><name>allocation</name>
+  </compound>
+  <compound refid="dir_15f5d2052270d216aabef213a04b8dd7" kind="dir"><name>allocation</name>
+  </compound>
+  <compound refid="dir_176664cd52a2e217b6bf6f10a04dbff7" kind="dir"><name>basic</name>
+  </compound>
+  <compound refid="dir_ccd685d4117889122576e1169fcf948b" kind="dir"><name>compat</name>
+  </compound>
+  <compound refid="dir_e1cfc093db27d718614460d08a0035ff" kind="dir"><name>data</name>
+  </compound>
+  <compound refid="dir_7aadfafb516d5fd91c86ae496949bb2f" kind="dir"><name>data</name>
+  </compound>
+  <compound refid="dir_75d2925a8562d0a6efd8508ef74d1670" kind="dir"><name>data</name>
+  </compound>
+  <compound refid="dir_d16b4a78cf3fe8ecaaf7d1591fc149dc" kind="dir"><name>dispatch</name>
+  </compound>
+  <compound refid="dir_66e12725d053f7b54ad5f7dcc269eb7f" kind="dir"><name>gi_additions</name>
+  </compound>
+  <compound refid="dir_966e361514890ced7bc70dd277f551e3" kind="dir"><name>gi_core</name>
+  </compound>
+  <compound refid="dir_0ff5accfe16b543cd7677ccf38529453" kind="dir"><name>gi_tests</name>
+  </compound>
+  <compound refid="dir_6e10a54a1d39e35a2ede896a3b8bf0f2" kind="dir"><name>gi_wrapper_cpp</name>
+  </compound>
+  <compound refid="dir_35f31e90512b2908ec29561895201bac" kind="dir"><name>image</name>
+  </compound>
+  <compound refid="dir_3915e60ab7ec95403c46cebc92ee494e" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_37b3b9fe1fc4f9c9187b99fe79843431" kind="dir"><name>math</name>
+  </compound>
+  <compound refid="dir_6d5efe9d1d591ad691efb072343214a5" kind="dir"><name>math</name>
+  </compound>
+  <compound refid="dir_a33c6e96d0b44bca9600675e4033dcd3" kind="dir"><name>math</name>
+  </compound>
+  <compound refid="dir_d1eb5615632e75860dc727680c2e4983" kind="dir"><name>openmp</name>
+  </compound>
+  <compound refid="dir_37b16490bde719e56b042495ae6d83b7" kind="dir"><name>openmp</name>
+  </compound>
+  <compound refid="dir_d1b3bcc9d010386da8ef53e1ebbeffe5" kind="dir"><name>openmp</name>
+  </compound>
+  <compound refid="dir_bff9626dbc3671794c5dca3a7179d962" kind="dir"><name>openmp</name>
+  </compound>
+  <compound refid="dir_46b343005c0325c0813940b8a1ec9a3d" kind="dir"><name>performance_analysis</name>
+  </compound>
+  <compound refid="dir_8ccaa536cb5fa72ff8a92ee011d5f91a" kind="dir"><name>rtdose</name>
+  </compound>
+  <compound refid="dir_e8f86655736af208c095658ebbb7d002" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_d678871cc52b97b0bf516d10825e5750" kind="dir"><name>tests</name>
+  </compound>
+  <compound refid="dir_10b11db025725b3348cf9bcaac8d92fc" kind="dir"><name>vectorized</name>
+  </compound>
+  <compound refid="dir_2aca294af3eb55429c8fb516adbce119" kind="dir"><name>vectorized</name>
+  </compound>
+  <compound refid="dir_9d61cad42358dbebf57af43f6274ebef" kind="dir"><name>vectorized</name>
+  </compound>
+</doxygenindex>

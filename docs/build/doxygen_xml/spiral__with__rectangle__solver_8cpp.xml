@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="spiral__with__rectangle__solver_8cpp" kind="file" language="C++">
+    <compoundname>spiral_with_rectangle_solver.cpp</compoundname>
+    <includes refid="solver_8h" local="yes">solver.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includes refid="image_8h" local="yes">image.h</includes>
+    <incdepgraph>
+      <node id="345">
+        <label>cmath</label>
+      </node>
+      <node id="343">
+        <label>string</label>
+      </node>
+      <node id="346">
+        <label>image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>vector</label>
+      </node>
+      <node id="341">
+        <label>utility</label>
+      </node>
+      <node id="344">
+        <label>algorithm</label>
+      </node>
+      <node id="340">
+        <label>solver.h</label>
+        <link refid="solver_8h"/>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>spiral_with_rectangle_solver.cpp</label>
+        <link refid="spiral__with__rectangle__solver_8cpp"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="spiral__with__rectangle__solver_8cpp_1ac703d7da8ec551638617256fc4979b52" prot="public" static="no">
+        <type>Solver::Voxel</type>
+        <definition>typedef Solver::Voxel Voxel</definition>
+        <argsstring></argsstring>
+        <name>Voxel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/spiral_with_rectangle_solver.cpp" line="41" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/spiral_with_rectangle_solver.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>SpiralRectangleSolver<sp/>=<sp/>Spiral<sp/>No<sp/>Interpolation<sp/>Rectangle<sp/>Solver</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>a<sp/>solver<sp/>used<sp/>for<sp/>Gamma<sp/>Index<sp/>calculation<sp/>using<sp/>spiral<sp/>no<sp/>interpolation<sp/>version<sp/>of<sp/>the<sp/>algorithm</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*(subversion<sp/>of<sp/>SpiralSolver)<sp/>with<sp/>a<sp/>boundary<sp/>rectangle,<sp/>within<sp/>which<sp/>the<sp/>voxel<sp/>comparison<sp/>is<sp/>performed.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>The<sp/>boundary<sp/>was<sp/>introduced<sp/>in<sp/>order<sp/>to<sp/>speed<sp/>up<sp/>calculations<sp/>by<sp/>elimination<sp/>of<sp/>comparison<sp/>of<sp/>distant<sp/>voxels.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>getIndicesOrder</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Function<sp/>for<sp/>calculating<sp/>the<sp/>spiral,<sp/>this<sp/>is<sp/>ordered<sp/>vector<sp/>of<sp/>offsets<sp/>from<sp/>a<sp/>virtual<sp/>central<sp/>point<sp/>of<sp/>the<sp/>spiral.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>For<sp/>further<sp/>description<sp/>see<sp/>sni_solver.cpp</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/></highlight><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="solver_8h" kindref="compound">solver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="image_8h" kindref="compound">image.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Solver::Voxel<sp/>Voxel;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">SpiralRectangleSolver1D::SpiralRectangleSolver1D(Image1D&amp;<sp/>reference,<sp/>Image1D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>SpiralSolver1D(reference,<sp/>target,<sp/>percentage,<sp/>dta)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">vector&lt;Voxel&gt;<sp/>SpiralRectangleSolver1D::getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="49"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>left<sp/>=<sp/>int(2<sp/>*<sp/>sqrt(dtaSquare_)/<sp/>target_.spacing()[0]);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>2<sp/>*<sp/>left<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Voxel&gt;<sp/>indices(width);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>width;<sp/>i++)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>di<sp/>=<sp/>pow((i<sp/>-<sp/>left)<sp/>*<sp/>target_.spacing()[0],<sp/>2);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indices[i]<sp/>=<sp/>Voxel(sqrt(di),<sp/>i);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>sort(indices.begin(),<sp/>indices.end(),<sp/>Voxel::compare);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>indices;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">SpiralRectangleSolver2D::SpiralRectangleSolver2D(Image2D&amp;<sp/>reference,<sp/>Image2D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>SpiralSolver2D(reference,<sp/>target,<sp/>percentage,<sp/>dta)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">vector&lt;Voxel&gt;<sp/>SpiralRectangleSolver2D::getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="71"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>left<sp/>=<sp/>int(2<sp/>*<sp/>sqrt(dtaSquare_)/<sp/>target_.spacing()[0]);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>2<sp/>*<sp/>left<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>top<sp/>=<sp/>int(2<sp/>*<sp/>sqrt(dtaSquare_)/<sp/>target_.spacing()[1]);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>2<sp/>*<sp/>top<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Voxel&gt;<sp/>indices(height<sp/>*<sp/>width);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>height;<sp/>j++)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dj<sp/>=<sp/>pow((j<sp/>-<sp/>top)<sp/>*<sp/>target_.spacing()[1],<sp/>2);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>width;<sp/>i++)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>di<sp/>=<sp/>pow((i<sp/>-<sp/>left)<sp/>*<sp/>target_.spacing()[0],<sp/>2);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indices[j<sp/>*<sp/>width<sp/>+<sp/>i]<sp/>=<sp/>Voxel(sqrt(di<sp/>+<sp/>dj),<sp/>i,<sp/>j);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>sort(indices.begin(),<sp/>indices.end(),<sp/>Voxel::compare);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>indices;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">SpiralRectangleSolver3D::SpiralRectangleSolver3D(Image3D&amp;<sp/>reference,<sp/>Image3D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>SpiralSolver3D(reference,<sp/>target,<sp/>percentage,<sp/>dta)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">vector&lt;Voxel&gt;<sp/>SpiralRectangleSolver3D::getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>front)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="99"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>left<sp/>=<sp/>int(2<sp/>*<sp/>sqrt(dtaSquare_)/<sp/>target_.spacing()[0]);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>2<sp/>*<sp/>left<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>top<sp/>=<sp/>int(2<sp/>*<sp/>sqrt(dtaSquare_)/<sp/>target_.spacing()[1]);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>2<sp/>*<sp/>top<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>front<sp/>=<sp/>int(2<sp/>*<sp/>sqrt(dtaSquare_)/<sp/>target_.spacing()[2]);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth<sp/>=<sp/>2<sp/>*<sp/>front<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Voxel&gt;<sp/>indices(width<sp/>*<sp/>height<sp/>*<sp/>depth);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>depth;<sp/>k++)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dk<sp/>=<sp/>pow((k<sp/>-<sp/>front)<sp/>*<sp/>target_.spacing()[2],<sp/>2);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>height;<sp/>j++)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dj<sp/>=<sp/>pow((j<sp/>-<sp/>top)<sp/>*<sp/>target_.spacing()[1],<sp/>2);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>width;<sp/>i++)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>di<sp/>=<sp/>pow((i<sp/>-<sp/>left)<sp/>*<sp/>target_.spacing()[0],<sp/>2);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indices[(k<sp/>*<sp/>height<sp/>+<sp/>j)<sp/>*<sp/>width<sp/>+<sp/>i]<sp/>=<sp/>Voxel(sqrt(di<sp/>+<sp/>dj<sp/>+<sp/>dk),<sp/>i,<sp/>j,<sp/>k);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>sort(indices.begin(),<sp/>indices.end(),<sp/>Voxel::compare);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>indices;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/spiral_with_rectangle_solver.cpp"/>
+  </compounddef>
+</doxygen>

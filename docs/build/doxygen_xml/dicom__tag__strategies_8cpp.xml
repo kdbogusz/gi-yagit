@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dicom__tag__strategies_8cpp" kind="file" language="C++">
+    <compoundname>dicom_tag_strategies.cpp</compoundname>
+    <includes refid="dicom__tag__strategies_8h" local="yes">dicom_tag_strategies.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="yes">gdcmReader.h</includes>
+    <includes local="yes">gdcmGlobal.h</includes>
+    <includes local="yes">gdcmDicts.h</includes>
+    <includes local="yes">gdcmDict.h</includes>
+    <includes local="yes">gdcmAttribute.h</includes>
+    <includes local="yes">gdcmStringFilter.h</includes>
+    <includes local="yes">gdcmImageReader.h</includes>
+    <includes local="yes">gdcmSequenceOfItems.h</includes>
+    <includes local="yes">gdcmDataElement.h</includes>
+    <includes refid="dicom__tags_8h" local="yes">dicom_tags.h</includes>
+    <incdepgraph>
+      <node id="104">
+        <label>dicom_tags.h</label>
+        <link refid="dicom__tags_8h"/>
+      </node>
+      <node id="100">
+        <label>gdcmStringFilter.h</label>
+      </node>
+      <node id="98">
+        <label>gdcmDict.h</label>
+      </node>
+      <node id="103">
+        <label>gdcmDataElement.h</label>
+      </node>
+      <node id="91">
+        <label>dicom_tag_strategies.cpp</label>
+        <link refid="dicom__tag__strategies_8cpp"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>gdcmAttribute.h</label>
+      </node>
+      <node id="96">
+        <label>gdcmGlobal.h</label>
+      </node>
+      <node id="97">
+        <label>gdcmDicts.h</label>
+      </node>
+      <node id="94">
+        <label>iostream</label>
+      </node>
+      <node id="92">
+        <label>dicom_tag_strategies.h</label>
+        <link refid="dicom__tag__strategies_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>gdcmImageReader.h</label>
+      </node>
+      <node id="102">
+        <label>gdcmSequenceOfItems.h</label>
+      </node>
+      <node id="93">
+        <label>set</label>
+      </node>
+      <node id="95">
+        <label>gdcmReader.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1ab3b1dea347f2d668c25dea7c4d4c0cb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rewriteAllTagsStrategy</definition>
+        <argsstring>(int, int, const set&lt; pair&lt; int, int &gt;&gt;)</argsstring>
+        <name>rewriteAllTagsStrategy</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="38" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1abfdcf01ce95c496259353f93a59a19d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rewriteNoTagsStrategy</definition>
+        <argsstring>(int, int, const set&lt; pair&lt; int, int &gt;&gt;)</argsstring>
+        <name>rewriteNoTagsStrategy</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="44" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1a562d327a8bb9e08f76e5a8fb0a6e6648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rewriteAllNonPrivateTagsStrategy</definition>
+        <argsstring>(int tagGroupId, int, const set&lt; pair&lt; int, int &gt;&gt;)</argsstring>
+        <name>rewriteAllNonPrivateTagsStrategy</name>
+        <param>
+          <type>int</type>
+          <declname>tagGroupId</declname>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="50" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1adf5baba6749406808e2e70218f57eb9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rewriteSpecifiedTagsStrategy</definition>
+        <argsstring>(int tagGroupId, int tagTagId, const set&lt; pair&lt; int, int &gt;&gt; tagSet)</argsstring>
+        <name>rewriteSpecifiedTagsStrategy</name>
+        <param>
+          <type>int</type>
+          <declname>tagGroupId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tagTagId</declname>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+          <declname>tagSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="57" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1a6e265748232926241688180baa23d81b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool omitSpecifiedTagsStrategy</definition>
+        <argsstring>(int tagGroupId, int tagTagId, const set&lt; pair&lt; int, int &gt;&gt; tagSet)</argsstring>
+        <name>omitSpecifiedTagsStrategy</name>
+        <param>
+          <type>int</type>
+          <declname>tagGroupId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tagTagId</declname>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+          <declname>tagSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="64" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1a5b13009e750538947ab1325d488844b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tagsRewriteStrategy</type>
+        <definition>tagsRewriteStrategy resolveTagsRewriteStrategy</definition>
+        <argsstring>(int strategy)</argsstring>
+        <name>resolveTagsRewriteStrategy</name>
+        <param>
+          <type>int</type>
+          <declname>strategy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="76" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="76" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="dicom__tag__strategies_8cpp_1ab88e424d7712e8df9aee92398ed7e2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void applyDicomTagsRewriteStrategy</definition>
+        <argsstring>(DataSet &amp;source, DataSet &amp;destination, int rewriteTagsStrategyId, const set&lt; pair&lt; int, int &gt;&gt; userTags)</argsstring>
+        <name>applyDicomTagsRewriteStrategy</name>
+        <param>
+          <type>DataSet &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>DataSet &amp;</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rewriteTagsStrategyId</declname>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+          <declname>userTags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" line="93" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp" bodystart="93" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dicom__tag__strategies_8h" kindref="compound">dicom_tag_strategies.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmReader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmGlobal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmDicts.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmDict.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmAttribute.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmStringFilter.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmImageReader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmSequenceOfItems.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmDataElement.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dicom__tags_8h" kindref="compound">dicom_tags.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegdcm" kindref="compound">gdcm</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>DICOM<sp/>tags<sp/>from<sp/>source<sp/>DICOM<sp/>are<sp/>rewritten<sp/>into<sp/>result<sp/>DICOM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rewriteAllTagsStrategy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>None<sp/>of<sp/>DICOM<sp/>tags<sp/>from<sp/>source<sp/>DICOM<sp/>are<sp/>rewritten<sp/>into<sp/>result<sp/>DICOM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rewriteNoTagsStrategy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Only<sp/>non-private<sp/>DICOM<sp/>tags<sp/>from<sp/>source<sp/>DICOM<sp/>are<sp/>rewritten<sp/>into<sp/>result<sp/>DICOM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rewriteAllNonPrivateTagsStrategy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagGroupId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>DICOM<sp/>Standard<sp/>-<sp/>Private<sp/>attribute<sp/>tags<sp/>are<sp/>tags<sp/>with<sp/>an<sp/>odd<sp/>group<sp/>number<sp/>greater<sp/>than<sp/>8.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(tagGroupId<sp/>%<sp/>2<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>tagGroupId<sp/>&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>DICOM<sp/>tags<sp/>from<sp/>source<sp/>DICOM<sp/>are<sp/>rewrited<sp/>into<sp/>result<sp/>DICOM<sp/>only<sp/>if<sp/>they<sp/>are<sp/>included<sp/>in<sp/>tagSet.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rewriteSpecifiedTagsStrategy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagGroupId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagTagId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;<sp/>tagSet)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>pair&lt;int,<sp/>int&gt;<sp/>tag<sp/>=<sp/>make_pair(tagGroupId,<sp/>tagTagId);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tagSet.find(tag)<sp/>!=<sp/>tagSet.end();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>DICOM<sp/>tags<sp/>from<sp/>source<sp/>DICOM<sp/>are<sp/>rewrited<sp/>into<sp/>result<sp/>DICOM<sp/>except<sp/>those<sp/>that<sp/>are<sp/>included<sp/>in<sp/>tagSet.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>omitSpecifiedTagsStrategy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagGroupId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tagTagId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;<sp/>tagSet)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>pair&lt;int,<sp/>int&gt;<sp/>tag<sp/>=<sp/>make_pair(tagGroupId,<sp/>tagTagId);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tagSet.find(tag)<sp/>==<sp/>tagSet.end();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Function<sp/>maps<sp/>integer<sp/>value<sp/>passed<sp/>by<sp/>user<sp/>to<sp/>concrete<sp/>tag<sp/>rewrite<sp/>strategy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>5<sp/>-<sp/>rewrite<sp/>all<sp/>tags<sp/>from<sp/>source<sp/>dicom,<sp/>except<sp/>these<sp/>included<sp/>in<sp/>function<sp/>tagSet<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4<sp/>-<sp/>rewrite<sp/>only<sp/>source<sp/>dicom<sp/>tags<sp/>included<sp/>in<sp/>function<sp/>tagSet<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>3<sp/>-<sp/>rewrite<sp/>only<sp/>not<sp/>private<sp/>tags<sp/>from<sp/>source<sp/>dicom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2<sp/>-<sp/>not<sp/>rewrite<sp/>any<sp/>tags<sp/>from<sp/>source<sp/>dicom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1<sp/>or<sp/>other<sp/>integer<sp/>values<sp/>-<sp/>rewrite<sp/>all<sp/>tags<sp/>from<sp/>source<sp/>dicom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">tagsRewriteStrategy<sp/>resolveTagsRewriteStrategy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>strategy)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(strategy)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>omitSpecifiedTagsStrategy;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rewriteSpecifiedTagsStrategy;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rewriteAllNonPrivateTagsStrategy;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rewriteNoTagsStrategy;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rewriteAllTagsStrategy;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dicom__tag__strategies_8h_1ac6755e4dac2bd9435b2c987350ab5432" kindref="member">applyDicomTagsRewriteStrategy</ref>(DataSet&amp;<sp/>source,<sp/>DataSet&amp;<sp/>destination,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rewriteTagsStrategyId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;<sp/>userTags)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Map<sp/>strategy<sp/>passed<sp/>by<sp/>parameter<sp/>from<sp/>integer<sp/>value<sp/>to<sp/>pointer<sp/>to<sp/>function<sp/>represent<sp/>strategy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>tagsRewriteStrategy<sp/>rewriteStrategy<sp/>=<sp/>resolveTagsRewriteStrategy(rewriteTagsStrategyId);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(DataSet::ConstIterator<sp/>src<sp/>=<sp/>source.Begin(),<sp/>srcEnd<sp/>=<sp/>source.End();<sp/>src<sp/>!=<sp/>srcEnd;<sp/>++src)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rewriteStrategy(src-&gt;GetTag().GetGroup(),<sp/>src-&gt;GetTag().GetElement(),<sp/>userTags))</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>create<sp/>new<sp/>data<sp/>so<sp/>we<sp/>shouldn&apos;t<sp/>rewrite<sp/>this<sp/>tag<sp/>from<sp/>input<sp/>dicom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(src-&gt;GetTag().GetGroup()<sp/>==<sp/>DCM_GROUP_PIXEL_DATA)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destination.Replace(*src);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataElement<sp/>destinationDataElement<sp/>=<sp/>destination.GetDataElement(src-&gt;GetTag());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(VR().GetVRString(src-&gt;GetVR())<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;SQ&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>DICOM<sp/>standard<sp/>item<sp/>positions<sp/>start<sp/>from<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;=<sp/>src-&gt;GetValueAsSQ()-&gt;GetNumberOfItems();<sp/>i++)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dicom__tag__strategies_8h_1ac6755e4dac2bd9435b2c987350ab5432" kindref="member">applyDicomTagsRewriteStrategy</ref>(src-&gt;GetValueAsSQ()-&gt;GetItem(i).GetNestedDataSet(),</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destinationDataElement.GetValueAsSQ()-&gt;GetItem(i).GetNestedDataSet(),</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rewriteTagsStrategyId,<sp/>userTags);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destination.Replace(destinationDataElement);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_tag_strategies.cpp"/>
+  </compounddef>
+</doxygen>

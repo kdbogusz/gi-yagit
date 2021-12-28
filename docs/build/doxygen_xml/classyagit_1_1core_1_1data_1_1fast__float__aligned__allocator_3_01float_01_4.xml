@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4" kind="class" language="C++" prot="public">
+    <compoundname>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a68395a5e5d1ce62bc3d027596eb99fd8" prot="public" static="no">
+        <type>float</type>
+        <definition>using yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::value_type =  float</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="25" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1ae676e53bd0e2406fb6f6db26c31f9bac" prot="public" static="no">
+        <type>size_t</type>
+        <definition>using yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::size_type =  size_t</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="26" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aad806d6ebb8dd15c84fc4a90e6ec4c3e" prot="public" static="no">
+        <type>ptrdiff_t</type>
+        <definition>using yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::difference_type =  ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="27" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aa7504267557ced8feda8774921992b1a" prot="public" static="no">
+        <type>std::true_type</type>
+        <definition>using yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::propagate_on_container_move_assignment =  std::true_type</definition>
+        <argsstring></argsstring>
+        <name>propagate_on_container_move_assignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="28" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a1874be113cb1faa57ca6d93f4e708d33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::fast_float_aligned_allocator</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>fast_float_aligned_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a6fa953ba33af4d6a7082c417dc721659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::fast_float_aligned_allocator</definition>
+        <argsstring>(const fast_float_aligned_allocator &amp;other) noexcept=default</argsstring>
+        <name>fast_float_aligned_allocator</name>
+        <param>
+          <type>const <ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aea3136b82c766fa29cef74d97564baac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::fast_float_aligned_allocator</definition>
+        <argsstring>(fast_float_aligned_allocator &amp;&amp;other) noexcept=default</argsstring>
+        <name>fast_float_aligned_allocator</name>
+        <param>
+          <type><ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a825a8e4bd765faae2b541bc81ac677ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;</type>
+        <definition>constexpr fast_float_aligned_allocator&amp; yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::operator=</definition>
+        <argsstring>(const fast_float_aligned_allocator &amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a48313c6219b8d0a3d5fc286908ad9d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;</type>
+        <definition>constexpr fast_float_aligned_allocator&amp; yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::operator=</definition>
+        <argsstring>(fast_float_aligned_allocator &amp;&amp;other) noexcept=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1ab25a3594e82119b8cded8a3f546cbfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr</type>
+        <definition>constexpr yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::~fast_float_aligned_allocator</definition>
+        <argsstring>()=default</argsstring>
+        <name>~fast_float_aligned_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a0317c47961f7922d3ea8dd26fa9f6cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>value_type *</type>
+        <definition>float * yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::allocate</definition>
+        <argsstring>(size_type n)</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>size_type</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="39" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/data/allocation/fast_float_aligned_allocator.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1adadcb91960b689ad8b9bb611792b59de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>allocation_result&lt; value_type * &gt;</type>
+        <definition>allocation_result&lt; float * &gt; yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::allocate_at_least</definition>
+        <argsstring>(size_type n)</argsstring>
+        <name>allocate_at_least</name>
+        <param>
+          <type>size_type</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="40" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/data/allocation/fast_float_aligned_allocator.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a5b4b4081b9f9d36cc2681dbfb4edb453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::deallocate</definition>
+        <argsstring>(value_type *p, size_type n)</argsstring>
+        <name>deallocate</name>
+        <param>
+          <type>value_type *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_type</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="41" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/data/allocation/fast_float_aligned_allocator.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a0565d3fec9760915de5cbdd52b3e9fa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::operator==</definition>
+        <argsstring>(const fast_float_aligned_allocator &amp;other)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="43" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a9114bd72431a393581298b96baeb142d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool yagit::core::data::fast_float_aligned_allocator&lt; float &gt;::operator!=</definition>
+        <argsstring>(const fast_float_aligned_allocator &amp;other)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator" kindref="compound">fast_float_aligned_allocator</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="47" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" line="23" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/fast_float_aligned_allocator.hpp" bodystart="22" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a0317c47961f7922d3ea8dd26fa9f6cef" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>allocate</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1adadcb91960b689ad8b9bb611792b59de" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>allocate_at_least</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a5b4b4081b9f9d36cc2681dbfb4edb453" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>deallocate</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aad806d6ebb8dd15c84fc4a90e6ec4c3e" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>difference_type</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a1874be113cb1faa57ca6d93f4e708d33" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>fast_float_aligned_allocator</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a6fa953ba33af4d6a7082c417dc721659" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>fast_float_aligned_allocator</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aea3136b82c766fa29cef74d97564baac" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>fast_float_aligned_allocator</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a9114bd72431a393581298b96baeb142d" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>operator!=</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a825a8e4bd765faae2b541bc81ac677ec" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>operator=</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a48313c6219b8d0a3d5fc286908ad9d90" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>operator=</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a0565d3fec9760915de5cbdd52b3e9fa7" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>operator==</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1aa7504267557ced8feda8774921992b1a" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>propagate_on_container_move_assignment</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1ae676e53bd0e2406fb6f6db26c31f9bac" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>size_type</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1a68395a5e5d1ce62bc3d027596eb99fd8" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>value_type</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1fast__float__aligned__allocator_3_01float_01_4_1ab25a3594e82119b8cded8a3f546cbfe1" prot="public" virt="non-virtual"><scope>yagit::core::data::fast_float_aligned_allocator&lt; float &gt;</scope><name>~fast_float_aligned_allocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

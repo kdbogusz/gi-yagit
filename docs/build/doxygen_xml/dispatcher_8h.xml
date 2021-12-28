@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dispatcher_8h" kind="file" language="C++">
+    <compoundname>dispatcher.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="core__logger_8h" local="yes">core_logger.h</includes>
+    <includedby refid="dispatcher_8cpp" local="yes">dispatcher.cpp</includedby>
+    <includedby refid="main_test_8cpp" local="yes">mainTest.cpp</includedby>
+    <incdepgraph>
+      <node id="148">
+        <label>core_logger.h</label>
+        <link refid="core__logger_8h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>string</label>
+      </node>
+      <node id="149">
+        <label>cstddef</label>
+      </node>
+      <node id="146">
+        <label>dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double* calculateGamma</definition>
+        <argsstring>(int algorithm, int dims, double *reference, double *target, double refXStart, double refXSpacing, int refXNumber, double refYStart, double refYSpacing, int refYNumber, double refZStart, double refZSpacing, int refZNumber, double tarXStart, double tarXSpacing, int tarXNumber, double tarYStart, double tarYSpacing, int tarYNumber, double tarZStart, double tarZSpacing, int tarZNumber, double percentage, double dta, bool local, double referenceValue, double limit, int plane=-1, int refSlice=-1, int tarSlice=-1)</argsstring>
+        <name>calculateGamma</name>
+        <param>
+          <type>int</type>
+          <declname>algorithm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>reference</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>refXStart</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>refXSpacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refXNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>refYStart</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>refYSpacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refYNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>refZStart</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>refZSpacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refZNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tarXStart</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tarXSpacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tarXNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tarYStart</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tarYSpacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tarYNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tarZStart</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tarZSpacing</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tarZNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>percentage</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dta</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>local</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>referenceValue</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refSlice</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tarSlice</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Main function. Responsible for calculating Gamma Index. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><itemizedlist>
+<listitem><para>Passed images must have the same number of dimensions.</para></listitem><listitem><para>...Y... parameters are only relevant if the images to be compared have 2 or 3 dimensions.</para></listitem><listitem><para>...Z... parameters are only relevant if the images to be compared have 3 dimensions.</para></listitem><listitem><para>Returned array has to be freed by the user.</para></listitem></itemizedlist>
+</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines which solver should be used to perform the comparison:<itemizedlist>
+<listitem><para>0 - Classic Solver,</para></listitem><listitem><para>1 - Spiral Solver with rectangle,</para></listitem><listitem><para>2 - Spiral Solver without rectangle. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions of the images under comparison:<itemizedlist>
+<listitem><para>1 - comparison 1D,</para></listitem><listitem><para>2 - comparison 2D,</para></listitem><listitem><para>3 - comparison 3D,</para></listitem><listitem><para>4 - comparison 2.5D (comparison of one slice of the reference image against the whole target image),</para></listitem><listitem><para>5 - comparison 2Dfrom3D (comparison of one slice of the reference image against another slice of the target image). </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First image that will be compared. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second image that will be compared. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refXStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate of the center of the most left top front voxel in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refXSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along x axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refXNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along x axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refYStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate of the center of the most left top front voxel in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refYSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along y axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refYNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along y axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refZStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>z coordinate of the center of the most left top front voxel in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refZSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along z axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refZNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along z axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarXStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate of the center of the most left top front voxel in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarXSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along x axis in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarXNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along x axis in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarYStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate of the center of the most left top front voxel in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarYSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along y axis in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarYNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along y axis in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarZStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>z coordinate of the center of the most left top front voxel in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarZSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along z axis in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarZNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along z axis in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>percentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the DD parameter passed in %. Usually is set to 3.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the DTA parameter passed in mm. Usually is set to 3.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>local</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Flag determining if the comparison should be performed using local of global version of GI algorithm. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value that is multiplied by the percentage to calculate the denominator of the dd component. Used only if local flag is set to False. If -1 is passed, then the default values is set, which is the maximum value in reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial value of GI. If -1 is passed, then the default values is set: 2.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only when dims is greater than 3. Specifies the orientation of the reference slice:<itemizedlist>
+<listitem><para>0 - parallel to XY plane,</para></listitem><listitem><para>1 - parallel to XZ plane,</para></listitem><listitem><para>2 - parallel to YZ plane. </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refSlice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only when dims is greater than 3. Specifies for which reference slice (in the given orientation) the comparison should be performed. First slice has number 0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarSlice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only when dims is equal 5. Specifies for which target slice (in the given orientation) the comparison should be performed. First slice has number 0.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array containing calculated Gamma Index values for the given images. Array size is the same as the reference image (or its slice when 2.5D or 2Dfrom3D comparison is performed). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/dispatcher.h" line="93" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/dispatcher.cpp" bodystart="544" bodyend="611"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DISPATCHER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISPATCHER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="core__logger_8h" kindref="compound">core_logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>algorithm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dims,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>reference,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>target,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>refXStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>refXSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refXNumber,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>refYStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>refYSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refYNumber,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>refZStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>refZSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refZNumber,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tarXStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tarXSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tarXNumber,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tarYStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tarYSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tarYNumber,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tarZStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tarZSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tarZNumber,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>local,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>referenceValue,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>limit,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane<sp/>=<sp/>-1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refSlice<sp/>=<sp/>-1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tarSlice<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/dispatcher.h"/>
+  </compounddef>
+</doxygen>

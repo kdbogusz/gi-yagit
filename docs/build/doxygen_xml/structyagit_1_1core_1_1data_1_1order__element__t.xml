@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1data_1_1order__element__t" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::data::order_element_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1data_1_1order__element__t_1a84a7e0837a15cbac9769a8835c54ca26" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t yagit::core::data::order_element_t::dimension_index</definition>
+        <argsstring></argsstring>
+        <name>dimension_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="176" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="176" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="176" bodyend="176"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1data_1_1order__element__t_1a84a7e0837a15cbac9769a8835c54ca26" prot="public" virt="non-virtual"><scope>yagit::core::data::order_element_t</scope><name>dimension_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

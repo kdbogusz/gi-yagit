@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegenerate_test_suit" kind="namespace" language="Python">
+    <compoundname>generateTestSuit</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="generate_test_suit_8py_1a66d149dd72283800faf71a66e4095dba" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.dims</definition>
+        <argsstring></argsstring>
+        <name>dims</name>
+        <initializer>=  &apos;2&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="29" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a8bd4a2a93641a2dc3d1cfbe9cc17e8aa" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.dds</definition>
+        <argsstring></argsstring>
+        <name>dds</name>
+        <initializer>=  &apos;1.0|2.0|3.0|4.0|5.0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="30" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a7ec6e47658ee03a2e4eb3f9287391ef0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.dtas</definition>
+        <argsstring></argsstring>
+        <name>dtas</name>
+        <initializer>=  &apos;1.0|2.0|3.0|4.0|5.0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="31" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a6823e52999a24251e9bf543e390bdc9e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.locs</definition>
+        <argsstring></argsstring>
+        <name>locs</name>
+        <initializer>=  &apos;true|false&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="32" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1adbdbb31ed1f525c28c177ddc8aadbf62" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.lims</definition>
+        <argsstring></argsstring>
+        <name>lims</name>
+        <initializer>=  &apos;2.0|20.0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="33" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1acb12d9e229dc9c8de15442527b832a74" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.comps</definition>
+        <argsstring></argsstring>
+        <name>comps</name>
+        <initializer>=  &apos;1to1|gpr&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="34" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1af2766cfdb0b4638c2f018b55007b7fdf" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.epses</definition>
+        <argsstring></argsstring>
+        <name>epses</name>
+        <initializer>=  &apos;0.1|0.05|0.01|0.005&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="35" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a0d865741b94613974e3f656abe042fd2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>generateTestSuit.pattern</definition>
+        <argsstring></argsstring>
+        <name>pattern</name>
+        <initializer>=  re.compile(&quot;dim(&quot; + dims + &quot;)dd(&quot; + dds + &quot;)dta(&quot; + dtas + &quot;)loc(&quot; + locs + &quot;)lim(&quot; + lims + &quot;)comp(&quot; + comps + &quot;)eps(&quot; + epses + &quot;)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="38" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1ac10d802de68802dd736239e583e2e27c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <initializer>=  &quot;./suits/test-cases/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="40" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a8c3c1714f51f186d6b7620b6024f1b1e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.testSuitePath</definition>
+        <argsstring></argsstring>
+        <name>testSuitePath</name>
+        <initializer>=  &quot;./suits/test-suits/&quot; + sys.argv[2] + &quot;.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="41" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a25026c32c61720526d7245a50b1683ab" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list generateTestSuit.testSuitePaths</definition>
+        <argsstring></argsstring>
+        <name>testSuitePaths</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="42" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1aea23fa104c7f518fb50790149d07e71e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>generateTestSuit.configPath</definition>
+        <argsstring></argsstring>
+        <name>configPath</name>
+        <initializer>=  sys.argv[1] + config</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="45" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a0ca6c5e24fdcafa20979a1d9b8f55d4c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>generateTestSuit.testCaseName</definition>
+        <argsstring></argsstring>
+        <name>testCaseName</name>
+        <initializer>=  config</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="46" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a186b6707d658bde54f042dcbf2595590" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit.testCasePath</definition>
+        <argsstring></argsstring>
+        <name>testCasePath</name>
+        <initializer>=  prefix + sys.argv[2] + &quot;/&quot; + testCaseName</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="51" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a687884c84da58666635d9cb444b697ba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>generateTestSuit.testCase</definition>
+        <argsstring></argsstring>
+        <name>testCase</name>
+        <initializer>=  open(testCasePath, &quot;w&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="53" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1aabdd0dca54016f1b502fb7901d3e0e36" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string generateTestSuit::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <initializer>=  sys.argv[3] + &quot;\n&quot; + sys.argv[4] + &quot;\n&quot; + configPath + &quot;\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="54" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="generate_test_suit_8py_1a8ef404e08d63c5062f1d448ce845b18b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>generateTestSuit.suiteFile</definition>
+        <argsstring></argsstring>
+        <name>suiteFile</name>
+        <initializer>=  open(testSuitePath, &quot;w&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="65" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_tests/generateTestSuit.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

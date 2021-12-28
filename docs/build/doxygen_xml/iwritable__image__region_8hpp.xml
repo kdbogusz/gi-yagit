@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="iwritable__image__region_8hpp" kind="file" language="C++">
+    <compoundname>iwritable_image_region.hpp</compoundname>
+    <includes local="no">common.hpp</includes>
+    <includes refid="iimage__region_8hpp" local="no">data/image/iimage_region.hpp</includes>
+    <includedby refid="iwritable__image_8hpp" local="no">iwritable_image.hpp</includedby>
+    <incdepgraph>
+      <node id="237">
+        <label>iwritable_image_region.hpp</label>
+        <link refid="iwritable__image__region_8hpp"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>common.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" prot="public">yagit::core::data::iwritable_image_region</innerclass>
+    <innernamespace refid="namespaceyagit_1_1core_1_1data">yagit::core::data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;common.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;data/image/iimage_region.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceyagit_1_1core_1_1data" kindref="compound">yagit::core::data</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ElementType,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>Dimensions&gt;</highlight></codeline>
+<codeline lineno="15" refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kindref="compound">iwritable_image_region</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref>&lt;ElementType,<sp/>Dimensions&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kindref="compound">iwritable_image_region</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>error_code<sp/><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a9aa277a2d619f5cc8ca4a0faa0afdd8c" kindref="member">save</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classyagit_1_1core_1_1data_1_1image__data" kindref="compound">image_data&lt;ElementType, Dimensions&gt;</ref>&amp;<sp/>data)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unique_ptr&lt;iwritable_image_region&lt;ElementType,<sp/>Dimensions&gt;&gt;<sp/><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae92e4d3bbb99248101f606da43e15c35" kindref="member">subregion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region&lt;Dimensions&gt;</ref>&amp;<sp/><ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region</ref>,<sp/>error_code&amp;<sp/>ec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>unique_ptr&lt;iwritable_image_region&lt;ElementType,<sp/>Dimensions&gt;&gt;(<ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae82f6f09fe153d6cfe33ee4f213e1f48" kindref="member">create_subregion</ref>(region,<sp/>ec));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unique_ptr&lt;iwritable_image_region&lt;ElementType,<sp/>Dimensions&gt;&gt;<sp/><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae92e4d3bbb99248101f606da43e15c35" kindref="member">subregion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region&lt;Dimensions&gt;</ref>&amp;<sp/>region)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="46"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_code<sp/>ec;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae92e4d3bbb99248101f606da43e15c35" kindref="member">subregion</ref>(region,<sp/>ec);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kindref="compound">iwritable_image_region&lt;ElementType, Dimensions&gt;</ref>*<sp/><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae82f6f09fe153d6cfe33ee4f213e1f48" kindref="member">create_subregion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region&lt;Dimensions&gt;</ref>&amp;<sp/>region,<sp/>error_code&amp;<sp/>ec)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp"/>
+  </compounddef>
+</doxygen>

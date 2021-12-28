@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="wrapper_8cpp" kind="file" language="C++">
+    <compoundname>wrapper.cpp</compoundname>
+    <includes refid="wrapper_8h" local="yes">wrapper.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="yes">gdcmReader.h</includes>
+    <includes local="yes">gdcmGlobal.h</includes>
+    <includes local="yes">gdcmDicts.h</includes>
+    <includes local="yes">gdcmDict.h</includes>
+    <includes local="yes">gdcmAttribute.h</includes>
+    <includes local="yes">gdcmStringFilter.h</includes>
+    <includes local="yes">gdcmImageReader.h</includes>
+    <includes local="yes">gdcmImageWriter.h</includes>
+    <includes refid="dicom__reader_8h" local="yes">dicom_reader.h</includes>
+    <includes refid="dicom__writer_8h" local="yes">dicom_writer.h</includes>
+    <includes refid="wrapper__logger_8h" local="yes">wrapper_logger.h</includes>
+    <incdepgraph>
+      <node id="363">
+        <label>wrapper.h</label>
+        <link refid="wrapper_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>gdcmStringFilter.h</label>
+      </node>
+      <node id="367">
+        <label>wrapper_logger.h</label>
+        <link refid="wrapper__logger_8h"/>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>string</label>
+      </node>
+      <node id="378">
+        <label>gdcmImageWriter.h</label>
+      </node>
+      <node id="374">
+        <label>gdcmDict.h</label>
+      </node>
+      <node id="362">
+        <label>wrapper.cpp</label>
+        <link refid="wrapper_8cpp"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>gdcmAttribute.h</label>
+      </node>
+      <node id="372">
+        <label>gdcmGlobal.h</label>
+      </node>
+      <node id="373">
+        <label>gdcmDicts.h</label>
+      </node>
+      <node id="379">
+        <label>dicom_reader.h</label>
+        <link refid="dicom__reader_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>vector</label>
+      </node>
+      <node id="370">
+        <label>cstdlib</label>
+      </node>
+      <node id="380">
+        <label>dicom_writer.h</label>
+        <link refid="dicom__writer_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>iostream</label>
+      </node>
+      <node id="368">
+        <label>cstddef</label>
+      </node>
+      <node id="377">
+        <label>gdcmImageReader.h</label>
+      </node>
+      <node id="364">
+        <label>set</label>
+      </node>
+      <node id="371">
+        <label>gdcmReader.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wrapper_8cpp_1a00cad0d84c2544d58f7f08b09539d2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>File &amp;</type>
+        <definition>File&amp; loadDicom</definition>
+        <argsstring>(string filepath)</argsstring>
+        <name>loadDicom</name>
+        <param>
+          <type>std::string</type>
+          <declname>filepath</declname>
+        </param>
+        <briefdescription>
+<para>Loads DICOM file into an GDCM object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The returned object should be later passed to other functions from this module.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to DICOM file tha should be loaded.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An GDCM object containing parsed DICOM file. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp" line="40" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="wrapper_8cpp_1a9dc780edb3728dc742e702afb8d80fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; acquireImage</definition>
+        <argsstring>(File &amp;file, int &amp;dims, double &amp;xStart, double &amp;xSpacing, int &amp;xNumber, double &amp;yStart, double &amp;ySpacing, int &amp;yNumber, double &amp;zStart, double &amp;zSpacing, int &amp;zNumber)</argsstring>
+        <name>acquireImage</name>
+        <param>
+          <type>File &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>xStart</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>xSpacing</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>xNumber</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>yStart</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>ySpacing</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>yNumber</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>zStart</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>zSpacing</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>zNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp" line="48" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp" bodystart="48" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="wrapper_8cpp_1a625043993e6547aebd3ce1fefb4cee76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void saveImage</definition>
+        <argsstring>(int dims, File &amp;oldFile, string filepath, double *gamma, int refXNumber, int refYNumber, int refZNumber, int precision, double fillValue, int rewriteTagsStrategy, const set&lt; pair&lt; int, int &gt;&gt; tags, int plane, int refSlice)</argsstring>
+        <name>saveImage</name>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>File &amp;</type>
+          <declname>oldFile</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refXNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refYNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refZNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fillValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rewriteTagsStrategy</declname>
+        </param>
+        <param>
+          <type>const set&lt; pair&lt; int, int &gt;&gt;</type>
+          <declname>tags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refSlice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp" line="61" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp" bodystart="61" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wrapper_8h" kindref="compound">wrapper.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmReader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmGlobal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmDicts.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmDict.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmAttribute.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmStringFilter.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmImageReader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gdcmImageWriter.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dicom__reader_8h" kindref="compound">dicom_reader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dicom__writer_8h" kindref="compound">dicom_writer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wrapper__logger_8h" kindref="compound">wrapper_logger.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacegdcm" kindref="compound">gdcm</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">File&amp;<sp/><ref refid="wrapper_8h_1a71224bfcc6cb661a94706f42468df573" kindref="member">loadDicom</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filepath)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wrapper__logger_8h_1aa24e3d85d08869622073a36ebe8bdd43" kindref="member">logWrapperMessage</ref>(</highlight><highlight class="stringliteral">&quot;Loading<sp/>DICOM<sp/>file:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>filepath);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>Reader<sp/>reader;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>reader.SetFileName(filepath.c_str());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reader.GetFile();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">std::vector&lt;double&gt;<sp/><ref refid="wrapper_8h_1a20608db6bc74694c28903e92bea6c630" kindref="member">acquireImage</ref>(File&amp;<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>dims,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>xStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>xSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>xNumber,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>yStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>ySpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>yNumber,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>zStart,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>zSpacing,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>zNumber)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wrapper__logger_8h_1aa24e3d85d08869622073a36ebe8bdd43" kindref="member">logWrapperMessage</ref>(</highlight><highlight class="stringliteral">&quot;Parsing<sp/>image...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>DicomReader<sp/>reader;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reader.acquireImage(file,<sp/>dims,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xStart,<sp/>xSpacing,<sp/>xNumber,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yStart,<sp/>ySpacing,<sp/>yNumber,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zStart,<sp/>zSpacing,<sp/>zNumber);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wrapper_8h_1aabd275f325ca3bd41f5e0f157997666f" kindref="member">saveImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dims,<sp/>File&amp;<sp/>oldFile,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filepath,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refXNumber,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refYNumber,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refZNumber,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fillValue,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rewriteTagsStrategy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal"><sp/>&lt;pair&lt;int,<sp/>int&gt;&gt;<sp/>tags,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refSlice)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wrapper__logger_8h_1aa24e3d85d08869622073a36ebe8bdd43" kindref="member">logWrapperMessage</ref>(</highlight><highlight class="stringliteral">&quot;Creating<sp/>results<sp/>file<sp/>at<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>filepath);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>DicomWriter*<sp/>writer;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(dims)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DicomWriter2D();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DicomWriter3D();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(plane)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DicomWriter3DSliceXY();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DicomWriter3DSliceXZ();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DicomWriter3DSliceYZ();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error.<sp/>Wrong<sp/>plane:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>plane<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.<sp/>Should<sp/>be<sp/>in<sp/>range<sp/>0-2.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error.<sp/>Wrong<sp/>dimensions<sp/>number:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>dims<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.<sp/>Should<sp/>be<sp/>in<sp/>range<sp/>2-5.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>writer-&gt;saveImage(filepath,<sp/>oldFile,<sp/>gamma,<sp/>refXNumber,<sp/>refYNumber,<sp/>refZNumber,<sp/>precision,<sp/>fillValue,<sp/>rewriteTagsStrategy,<sp/>tags,<sp/>refSlice);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>writer;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="wrapper__logger_8h_1aa24e3d85d08869622073a36ebe8bdd43" kindref="member">logWrapperMessage</ref>(</highlight><highlight class="stringliteral">&quot;DICOM<sp/>saved<sp/>successfully.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/wrapper.cpp"/>
+  </compounddef>
+</doxygen>

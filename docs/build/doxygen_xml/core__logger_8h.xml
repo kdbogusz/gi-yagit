@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="core__logger_8h" kind="file" language="C++">
+    <compoundname>core_logger.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">string</includes>
+    <includedby refid="classic__solver_8cpp" local="yes">classic_solver.cpp</includedby>
+    <includedby refid="core__logger_8cpp" local="yes">core_logger.cpp</includedby>
+    <includedby refid="dispatcher_8h" local="yes">dispatcher.h</includedby>
+    <includedby refid="dispatcher_8cpp" local="yes">dispatcher.cpp</includedby>
+    <includedby refid="spiral__solver_8cpp" local="yes">spiral_solver.cpp</includedby>
+    <incdepgraph>
+      <node id="58">
+        <label>core_logger.h</label>
+        <link refid="core__logger_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>string</label>
+      </node>
+      <node id="59">
+        <label>cstddef</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="61">
+        <label>core_logger.h</label>
+        <link refid="core__logger_8h"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>dispatcher.h</label>
+        <link refid="dispatcher_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="core__logger_8h_1ac69af7e6d987a142ea88c2766c4701cf" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool CORE_LOGGER_ON</definition>
+        <argsstring></argsstring>
+        <name>CORE_LOGGER_ON</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="28" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="core__logger_8h_1ac6e9c8ea05f4b048046002e3165cc1d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableCoreLogging</definition>
+        <argsstring>()</argsstring>
+        <name>enableCoreLogging</name>
+        <briefdescription>
+<para>Enables core logging service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="33" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1a636b0a62a218721454aba83b0e660a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void disableCoreLogging</definition>
+        <argsstring>()</argsstring>
+        <name>disableCoreLogging</name>
+        <briefdescription>
+<para>Disables core logging service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="38" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1af0b32aeaec588753dc0bd71f1368fb94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initializeCoreLogger</definition>
+        <argsstring>(bool clearLogs)</argsstring>
+        <name>initializeCoreLogger</name>
+        <param>
+          <type>bool</type>
+          <declname>clearLogs</declname>
+        </param>
+        <briefdescription>
+<para>Initializes core logger service. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clearLogs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether logs from previous calculations should be cleared. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="45" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="56" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1a732c553f6fe407e3fb753a4889954a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initializeCoreLogger</definition>
+        <argsstring>()</argsstring>
+        <name>initializeCoreLogger</name>
+        <briefdescription>
+<para>Initializes core logger service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="50" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1a2e305987aefb6f63bc3c9b88f3b6a828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logCoreMessage</definition>
+        <argsstring>(std::string message)</argsstring>
+        <name>logCoreMessage</name>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Puts an information in a log file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><ref refid="core__logger_8h_1af0b32aeaec588753dc0bd71f1368fb94" kindref="member">initializeCoreLogger()</ref> should be called beforehand.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text that should be put in a log file (timestamp will be included automatically). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="59" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="79" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1a1322edaa172730e0e16162bf85bb7154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string toString</definition>
+        <argsstring>(double value)</argsstring>
+        <name>toString</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Converts double to string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that needs to be converted to string.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value converted to string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="68" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1a8352a6c6ff100179ba1ad70bd70232e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string planeToString</definition>
+        <argsstring>(int value)</argsstring>
+        <name>planeToString</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Converts plane number to string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that needs to be converted to string.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value converted to string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="77" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="core__logger_8h_1a725aa52983f481395eae1d54ae2d018b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string algorithmToString</definition>
+        <argsstring>(int value)</argsstring>
+        <name>algorithmToString</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Converts algorithm number to string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value that needs to be converted to string.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Value converted to string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h" line="86" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.cpp" bodystart="110" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CORE_LOGGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CORE_LOGGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CORE_LOGGER_ON<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="core__logger_8h_1ac6e9c8ea05f4b048046002e3165cc1d4" kindref="member">enableCoreLogging</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="core__logger_8h_1a636b0a62a218721454aba83b0e660a00" kindref="member">disableCoreLogging</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="core__logger_8h_1af0b32aeaec588753dc0bd71f1368fb94" kindref="member">initializeCoreLogger</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clearLogs);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="core__logger_8h_1af0b32aeaec588753dc0bd71f1368fb94" kindref="member">initializeCoreLogger</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="core__logger_8h_1a2e305987aefb6f63bc3c9b88f3b6a828" kindref="member">logCoreMessage</ref>(std::string<sp/>message);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">std::string<sp/><ref refid="core__logger_8h_1a1322edaa172730e0e16162bf85bb7154" kindref="member">toString</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">std::string<sp/><ref refid="core__logger_8h_1a8352a6c6ff100179ba1ad70bd70232e0" kindref="member">planeToString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">std::string<sp/><ref refid="core__logger_8h_1a725aa52983f481395eae1d54ae2d018b" kindref="member">algorithmToString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//CORE_LOGGER_H</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/core_logger.h"/>
+  </compounddef>
+</doxygen>

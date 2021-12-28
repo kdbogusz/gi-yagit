@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a37297a386559fa7516454de79383f4e8" prot="public" static="no">
+        <type>float</type>
+        <definition>using yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;::value_type =  float</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" line="63" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1ab38b784c4af70ed56ef1438176ecbd11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>error_code</type>
+        <definition>error_code yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;::initialize_pass</definition>
+        <argsstring>(view&lt; value_type &gt; output, view&lt; value_type &gt; output_end)</argsstring>
+        <name>initialize_pass</name>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" line="65" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/math/vectorized/openmp/gamma_index_range.cpp" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a6f2c17a52768226b9a699a992222b5c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>error_code</type>
+        <definition>error_code yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;::minimize_pass</definition>
+        <argsstring>(view&lt; value_type &gt; output, view&lt; value_type &gt; output_end, const_view&lt; value_type &gt; reference_doses, array&lt; const_view&lt; value_type &gt;, 3 &gt; reference_coordinates, const_view&lt; value_type &gt; target_doses, const_view&lt; value_type &gt; target_doses_end, array&lt; const_view&lt; value_type &gt;, 3 &gt; target_coordinates, const local_gamma_index_params&lt; value_type &gt; &amp;params)</argsstring>
+        <name>minimize_pass</name>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <param>
+          <type>const_view&lt; value_type &gt;</type>
+          <declname>reference_doses</declname>
+        </param>
+        <param>
+          <type>array&lt; const_view&lt; value_type &gt;, 3 &gt;</type>
+          <declname>reference_coordinates</declname>
+        </param>
+        <param>
+          <type>const_view&lt; value_type &gt;</type>
+          <declname>target_doses</declname>
+        </param>
+        <param>
+          <type>const_view&lt; value_type &gt;</type>
+          <declname>target_doses_end</declname>
+        </param>
+        <param>
+          <type>array&lt; const_view&lt; value_type &gt;, 3 &gt;</type>
+          <declname>target_coordinates</declname>
+        </param>
+        <param>
+          <type>const local_gamma_index_params&lt; value_type &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" line="66" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/math/vectorized/openmp/gamma_index_range.cpp" bodystart="106" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a7707e08aea1a4bf6a4754c83d645d7fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>error_code</type>
+        <definition>error_code yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;::minimize_pass</definition>
+        <argsstring>(view&lt; value_type &gt; output, view&lt; value_type &gt; output_end, const_view&lt; value_type &gt; reference_doses, array&lt; const_view&lt; value_type &gt;, 3 &gt; reference_coordinates, const_view&lt; value_type &gt; target_doses, const_view&lt; value_type &gt; target_doses_end, array&lt; const_view&lt; value_type &gt;, 3 &gt; target_coordinates, const global_gamma_index_params&lt; value_type &gt; &amp;params)</argsstring>
+        <name>minimize_pass</name>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <param>
+          <type>const_view&lt; value_type &gt;</type>
+          <declname>reference_doses</declname>
+        </param>
+        <param>
+          <type>array&lt; const_view&lt; value_type &gt;, 3 &gt;</type>
+          <declname>reference_coordinates</declname>
+        </param>
+        <param>
+          <type>const_view&lt; value_type &gt;</type>
+          <declname>target_doses</declname>
+        </param>
+        <param>
+          <type>const_view&lt; value_type &gt;</type>
+          <declname>target_doses_end</declname>
+        </param>
+        <param>
+          <type>array&lt; const_view&lt; value_type &gt;, 3 &gt;</type>
+          <declname>target_coordinates</declname>
+        </param>
+        <param>
+          <type>const global_gamma_index_params&lt; value_type &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" line="73" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/math/vectorized/openmp/gamma_index_range.cpp" bodystart="123" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1aac4cd326018c3b9b046359a3735aa509" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>error_code</type>
+        <definition>error_code yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;::finalize_pass</definition>
+        <argsstring>(view&lt; value_type &gt; output, view&lt; value_type &gt; output_end)</argsstring>
+        <name>finalize_pass</name>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; value_type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" line="80" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/src/math/vectorized/openmp/gamma_index_range.cpp" bodystart="140" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" line="62" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/openmp/gamma_index_range.hpp" bodystart="61" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1aac4cd326018c3b9b046359a3735aa509" prot="public" virt="non-virtual"><scope>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</scope><name>finalize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1ab38b784c4af70ed56ef1438176ecbd11" prot="public" virt="non-virtual"><scope>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</scope><name>initialize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a6f2c17a52768226b9a699a992222b5c0" prot="public" virt="non-virtual"><scope>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</scope><name>minimize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a7707e08aea1a4bf6a4754c83d645d7fc" prot="public" virt="non-virtual"><scope>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</scope><name>minimize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1parallel__unsequenced__gamma__index__implementer_3_01float_00_013_01_4_1a37297a386559fa7516454de79383f4e8" prot="public" virt="non-virtual"><scope>yagit::core::math::parallel_unsequenced_gamma_index_implementer&lt; float, 3 &gt;</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

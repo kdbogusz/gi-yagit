@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_6b790dc7b151144be9f0cc4cdb882656" kind="dir">
+    <compoundname>allocation</compoundname>
+    <innerfile refid="aligned__allocator_8hpp">aligned_allocator.hpp</innerfile>
+    <innerfile refid="fast__float__aligned__allocator_8hpp">fast_float_aligned_allocator.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/allocation/"/>
+  </compounddef>
+</doxygen>

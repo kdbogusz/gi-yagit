@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_dicom_writer3_d_slice_y_z" kind="class" language="C++" prot="public">
+    <compoundname>DicomWriter3DSliceYZ</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DicomWriter</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dicom_writer3_d_slice_y_z_1a1c65487787d214458ae0bd40b1c66f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DicomWriter3DSliceYZ::DicomWriter3DSliceYZ</definition>
+        <argsstring>()</argsstring>
+        <name>DicomWriter3DSliceYZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="155" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="401" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dicom_writer3_d_slice_y_z_1aff7afde08c58b2c1c443fc71464526f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>DicomWriter3DSliceYZ::~DicomWriter3DSliceYZ</definition>
+        <argsstring>()</argsstring>
+        <name>~DicomWriter3DSliceYZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="157" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="406" bodyend="408"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_dicom_writer3_d_slice_y_z_1af097efad4aedb16a6245e22f0ed90e2d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DicomWriter3DSliceYZ::insertFrames</definition>
+        <argsstring>(gdcm::File &amp;newFile, gdcm::PixelFormat pf, gdcm::PhotometricInterpretation pi, double *gamma, int xNumber, int yNumber, int zNumber, int rescale, double fillValue, int xSlice)</argsstring>
+        <name>insertFrames</name>
+        <param>
+          <type>gdcm::File &amp;</type>
+          <declname>newFile</declname>
+        </param>
+        <param>
+          <type>gdcm::PixelFormat</type>
+          <declname>pf</declname>
+        </param>
+        <param>
+          <type>gdcm::PhotometricInterpretation</type>
+          <declname>pi</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>zNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rescale</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fillValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xSlice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="160" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.cpp" bodystart="410" bodyend="476"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" line="153" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_writer.h" bodystart="152" bodyend="162"/>
+    <listofallmembers>
+      <member refid="class_dicom_writer_1aea1291bd4a5ded738562eaaf0cac8d2e" prot="public" virt="non-virtual"><scope>DicomWriter3DSliceYZ</scope><name>DicomWriter</name></member>
+      <member refid="class_dicom_writer3_d_slice_y_z_1a1c65487787d214458ae0bd40b1c66f4d" prot="public" virt="non-virtual"><scope>DicomWriter3DSliceYZ</scope><name>DicomWriter3DSliceYZ</name></member>
+      <member refid="class_dicom_writer3_d_slice_y_z_1af097efad4aedb16a6245e22f0ed90e2d" prot="protected" virt="virtual"><scope>DicomWriter3DSliceYZ</scope><name>insertFrames</name></member>
+      <member refid="class_dicom_writer_1a05a765b74a2dbd49a7b8fb4d1e2102ae" prot="public" virt="non-virtual"><scope>DicomWriter3DSliceYZ</scope><name>saveImage</name></member>
+      <member refid="class_dicom_writer_1a0638f50fea749128668a8e69f6922d9a" prot="public" virt="virtual"><scope>DicomWriter3DSliceYZ</scope><name>~DicomWriter</name></member>
+      <member refid="class_dicom_writer3_d_slice_y_z_1aff7afde08c58b2c1c443fc71464526f6" prot="public" virt="virtual"><scope>DicomWriter3DSliceYZ</scope><name>~DicomWriter3DSliceYZ</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

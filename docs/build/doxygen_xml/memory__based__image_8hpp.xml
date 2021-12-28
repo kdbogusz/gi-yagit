@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="memory__based__image_8hpp" kind="file" language="C++">
+    <compoundname>memory_based_image.hpp</compoundname>
+    <includes local="no">data/iimage.hpp</includes>
+    <incdepgraph>
+      <node id="277">
+        <label>data/iimage.hpp</label>
+      </node>
+      <node id="276">
+        <label>memory_based_image.hpp</label>
+        <link refid="memory__based__image_8hpp"/>
+        <childnode refid="277" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;data/iimage.hpp&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image.hpp"/>
+  </compounddef>
+</doxygen>

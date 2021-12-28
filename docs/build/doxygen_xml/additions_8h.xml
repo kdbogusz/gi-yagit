@@ -1,0 +1,1124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="additions_8h" kind="file" language="C++">
+    <compoundname>additions.h</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes local="no">string</includes>
+    <includedby refid="additions_8cpp" local="yes">additions.cpp</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>additions.h</label>
+        <link refid="additions_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>cstddef</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="additions_8h_1afe751bb39b2ed9934daf7d607a51d573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool *</type>
+        <definition>bool* convertArrayToBinaryMask</definition>
+        <argsstring>(int size, double *array, bool((*converter)(double))=NULL)</argsstring>
+        <name>convertArrayToBinaryMask</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>bool((*converter)(double))</type>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Converts a double array to binary mask. </para>        </briefdescription>
+        <detaileddescription>
+<para>Using custom converter function, constructs a binary mask with the size of input array.</para><para>If no converter is specified (or NULL is passed) the default converter is applied.</para><para>Default converter returns True if array value is greater than 0.</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing array used to construct binary mask. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing array used to construct binary mask. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>converter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Pointer to function determining whether given value in original mask should evaluate to True or False.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to binary mask with the size of given array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a04388c70ea754547e8e10d0d759a753a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void applyMaskToImage</definition>
+        <argsstring>(int size, double *image, bool *mask)</argsstring>
+        <name>applyMaskToImage</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+<para>Sets image element to NaN if corresponding element in mask is False. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Image and mask must be the same size.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to binary mask. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="68" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a2d464e807605d8698ade1cc085d9c688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void applyFilteringFunctionToImage</definition>
+        <argsstring>(int size, double *image, bool(*filter)(double, void *), void *params=NULL)</argsstring>
+        <name>applyFilteringFunctionToImage</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>bool(*)(double, void *)</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Sets image element to NaN if filter function returns False. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to function determining whether given value in image should be excluded from further analysis. Can take additional parameter determined by user. (See applyNoiseFilteringToImage and noiseFilter functions.) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Additional parameter passed to filter function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="81" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a500b86ac0a7e9863745740a59505386b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void applyNoiseFilteringToImage</definition>
+        <argsstring>(int size, double *image, double noisePercentageLimit)</argsstring>
+        <name>applyNoiseFilteringToImage</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>noisePercentageLimit</declname>
+        </param>
+        <briefdescription>
+<para>Eliminates from the image values considered as a noise. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The threshold will be calculated using formula: threshold = minVal + (maxVal - minVal) * noisePercentage %</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>noisePercentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used to calculate threshold below which the voxels in the image will be considered as a noise. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="94" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="83" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a193460deb754c584d2216e00b34c3142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void applyLinearMappingToImage</definition>
+        <argsstring>(int size, double *image, double multiply, double add)</argsstring>
+        <name>applyLinearMappingToImage</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>multiply</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>add</declname>
+        </param>
+        <briefdescription>
+<para>Modifies image using a linear function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each element x in the image is set as follows: x &lt;- multiply * x + add</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>multiply</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See above. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>add</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>See above. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="107" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a81ea066c93089aca209a863cd353c911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int calculateGammaArraySize</definition>
+        <argsstring>(int dims, int refXNumber, int refYNumber=1, int refZNumber=1, int plane=-1)</argsstring>
+        <name>calculateGammaArraySize</name>
+        <param>
+          <type>int</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refXNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refYNumber</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>refZNumber</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the Gamma Index array size. It is usually the same as reference image size, but in case of 2.5D and 2Dfrom3D comparisons it differs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>All parameters should be the same as those passed to <ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma()</ref> function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions of the images under comparison:<itemizedlist>
+<listitem><para>1 - comparison 1D,</para></listitem><listitem><para>2 - comparison 2D,</para></listitem><listitem><para>3 - comparison 3D,</para></listitem><listitem><para>4 - comparison 2.5D (comparison of one slice of the reference image against the whole target image),</para></listitem><listitem><para>5 - comparison 2Dfrom3D (comparison of one slice of the reference image against another slice of the target image). </para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refXNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along x axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refYNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along y axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refZNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along z axis in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plane</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(optional) Required only when dims is greater than 3. Specifies the orientation of the reference slice:<itemizedlist>
+<listitem><para>0 - parallel to XY plane,</para></listitem><listitem><para>1 - parallel to XZ plane,</para></listitem><listitem><para>2 - parallel to YZ plane.</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Size of Gamma Index array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="135" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="98" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a7dc5c24b17405045f81c5a87a29f190e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int activeVoxelsNumber</definition>
+        <argsstring>(int size, double *image)</argsstring>
+        <name>activeVoxelsNumber</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Counts the number of elements of image that are not NaN. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of active elements in the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="145" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="128" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a0f806a2e9eb244f2afb3cb588cd1dd2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double activeVoxelsPercentage</definition>
+        <argsstring>(int size, double *image)</argsstring>
+        <name>activeVoxelsPercentage</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Counts the percentage of elements of image that are not NaN. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Percentage of active elements in the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="155" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1aaf46ad8cd04ed6fe9010cc7d4f06688c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double imageMin</definition>
+        <argsstring>(int size, double *image)</argsstring>
+        <name>imageMin</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Finds the minimum value in the image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Minimum value in the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="165" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="143" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1ab931843c7cd97a402676df070c842ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double imageMax</definition>
+        <argsstring>(int size, double *image)</argsstring>
+        <name>imageMax</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Finds the maximum value in the image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Maximum value in the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="175" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="153" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1af8967aa05617a63eb043fa93fcd38d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double imageAvg</definition>
+        <argsstring>(int size, double *image)</argsstring>
+        <name>imageAvg</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the average value in the image. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Average value in the image. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="185" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="163" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a36e7f66faef4adb07908f34b06e7e069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammaPassingRate</definition>
+        <argsstring>(int size, double *gamma)</argsstring>
+        <name>gammaPassingRate</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Calculates Gamma Passing Rate. </para>        </briefdescription>
+        <detaileddescription>
+<para>Gamma Passing Rate is the percentage of voxels for which the Gamma Index value is smaller than 1.0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. It can be calculated using <ref refid="additions_8h_1a81ea066c93089aca209a863cd353c911" kindref="member">calculateGammaArraySize()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Gamma Passing Rate. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="199" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="173" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1ac4a991b4afa3914090b775c8eec36cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string createComputationDescription</definition>
+        <argsstring>(std::string refFile, std::string tarFile, int algorithm)</argsstring>
+        <name>createComputationDescription</name>
+        <param>
+          <type>std::string</type>
+          <declname>refFile</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>tarFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>algorithm</declname>
+        </param>
+        <briefdescription>
+<para>Constructs brief example of description of the comparison. Can be used to distinguish entries in statistics file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>One can specify their own description and pass it to the: <ref refid="additions_8h_1a44fd85660e2cbcecb2872dd8e705abc1" kindref="member">prepareStatisticsFile()</ref> function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the reference file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tarFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the target file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Algorithm used for comparison.<itemizedlist>
+<listitem><para>0 - Classic Solver,</para></listitem><listitem><para>1 - Spiral Solver with rectangle,</para></listitem><listitem><para>2 - Spiral Solver without rectangle.</para></listitem></itemizedlist>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A short description. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="215" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="183" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a44fd85660e2cbcecb2872dd8e705abc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void prepareStatisticsFile</definition>
+        <argsstring>(int size, double *gamma, std::string info, std::string filepath=&quot;stats.txt&quot;)</argsstring>
+        <name>prepareStatisticsFile</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filepath</declname>
+          <defval>&quot;stats.txt&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Writes Gamma Index statistics to a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. It can be calculated using <ref refid="additions_8h_1a81ea066c93089aca209a863cd353c911" kindref="member">calculateGammaArraySize()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String that briefly describes the new stats entry. It can be prepared using <ref refid="additions_8h_1ac4a991b4afa3914090b775c8eec36cfc" kindref="member">createComputationDescription()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filepath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the file where the statistics will be saved (default: stats.txt). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="227" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="195" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a3ebb2ac25ae59b6109a7f061c1cb0d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* prepareHistogram</definition>
+        <argsstring>(int gammaSize, double *gamma, int delimitersSize, double *delimiters)</argsstring>
+        <name>prepareHistogram</name>
+        <param>
+          <type>int</type>
+          <declname>gammaSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delimitersSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>delimiters</declname>
+        </param>
+        <briefdescription>
+<para>Creates a histogram of Gamma Index values. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructed histogram is an array of integers, in which i-th element states for the number of voxels in gamma image that have value in the range &lt;delimiters[i]; delimiters[i+1]).</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gammaSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delimitersSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the delimiters array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delimiters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to double array, which values are the boundaries of the consecutive brackets of the histogram.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of integers representing histogram. The array size is equal to delimiters-1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="247" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="208" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a0c8a98f5cd7f1c281607a69d4f743769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* prepareHistogram</definition>
+        <argsstring>(int gammaSize, double *gamma, double xMin, double xMax, int bucketsNumber)</argsstring>
+        <name>prepareHistogram</name>
+        <param>
+          <type>int</type>
+          <declname>gammaSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xMin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xMax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bucketsNumber</declname>
+        </param>
+        <briefdescription>
+<para>Creates a histogram of Gamma Index values. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructed histogram is an array of integers. Histogram consists of bucketsNumber buckets of the same size (step = (xMax - xMin)/bucketsNumber)). The i-th element of the histogram states for the number of voxels in gamma image that have value in the range &lt;xMin + i * step; xMin + (i+1) * step).</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gammaSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum value that is taken into the histogram. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum value that is taken into the histogram. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bucketsNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of buckets that the range &lt;xMin; xMax) is divided into.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of integers representing histogram. The array size is equal to bucketsNumber. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="268" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="240" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1a4108cc53591987ff1b8f3b9fc937a4f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* prepareHistogram</definition>
+        <argsstring>(int gammaSize, double *gamma)</argsstring>
+        <name>prepareHistogram</name>
+        <param>
+          <type>int</type>
+          <declname>gammaSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Creates a histogram of Gamma Index values. </para>        </briefdescription>
+        <detaileddescription>
+<para>This histogram consists of 300 buckets in the range &lt;0.0; 3.0). For further information see the comment to the function immediately above.</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gammaSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of integers representing histogram. The array size is 300. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="283" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="255" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1aa9b747096da1c546990850b42e080e5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* prepareCumulativeHistogram</definition>
+        <argsstring>(int gammaSize, double *gamma, int delimitersSize, double *delimiters)</argsstring>
+        <name>prepareCumulativeHistogram</name>
+        <param>
+          <type>int</type>
+          <declname>gammaSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delimitersSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>delimiters</declname>
+        </param>
+        <briefdescription>
+<para>Creates a cumulative histogram of Gamma Index values. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructed histogram is an array of integers, in which i-th element states for the number of voxels in gamma image that have value in the range &lt;delimiters[0]; delimiters[i+1]).</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gammaSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delimitersSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the delimiters array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delimiters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to double array, which values are the boundaries of the consecutive brackets of the histogram.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of integers representing histogram. The array size is equal to delimiters-1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="303" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="260" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1af20d473ee33e41c6b3513fa9a00ac7b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* prepareCumulativeHistogram</definition>
+        <argsstring>(int gammaSize, double *gamma, double xMin, double xMax, int bucketsNumber)</argsstring>
+        <name>prepareCumulativeHistogram</name>
+        <param>
+          <type>int</type>
+          <declname>gammaSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xMin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xMax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bucketsNumber</declname>
+        </param>
+        <briefdescription>
+<para>Creates a cumulative histogram of Gamma Index values. </para>        </briefdescription>
+        <detaileddescription>
+<para>Constructed histogram is an array of integers. Histogram consists of bucketsNumber buckets of the same size (step = (xMax - xMin)/bucketsNumber)). The i-th element of the histogram states for the number of voxels in gamma image that have value in the range &lt;xMin; xMax + (i+1) * step).</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gammaSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum value that is taken into the histogram. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum value that is taken into the histogram. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bucketsNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of buckets that the range &lt;xMin; xMax) is divided into.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of integers representing histogram. The array size is equal to bucketsNumber. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="324" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="268" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="additions_8h_1aa73a4ba9965849578de7856ac1b77f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* prepareCumulativeHistogram</definition>
+        <argsstring>(int gammaSize, double *gamma)</argsstring>
+        <name>prepareCumulativeHistogram</name>
+        <param>
+          <type>int</type>
+          <declname>gammaSize</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Creates a cumulative histogram of Gamma Index values. </para>        </briefdescription>
+        <detaileddescription>
+<para>This histogram consists of 300 buckets in the range &lt;0.0; 3.0). For further information see the comment to the function immediately above.</para><para><simplesect kind="note"><para>Returned array has to be freed by the user.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gammaSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of linearized array representing image of GI values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linearized double array representing image of GI values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of integers representing histogram. The array size is 300. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h" line="339" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_additions/additions.cpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Additions</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>contains<sp/>a<sp/>set<sp/>of<sp/>additional<sp/>functions<sp/>provided<sp/>alongside<sp/>the<sp/>core<sp/>functions.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>User<sp/>can<sp/>use<sp/>them<sp/>for<sp/>preprocessing<sp/>the<sp/>input<sp/>and<sp/>further<sp/>processing<sp/>the<sp/>output.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>There<sp/>are<sp/>functions<sp/>that<sp/>allow<sp/>to:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>apply<sp/>mask<sp/>to<sp/>input<sp/>image</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>filter<sp/>the<sp/>input<sp/>image</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>modify<sp/>the<sp/>input<sp/>image<sp/>using<sp/>a<sp/>linear<sp/>function</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>calculate<sp/>statistics<sp/>from<sp/>the<sp/>output<sp/>image</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>-<sp/>prepare<sp/>histogram<sp/>and<sp/>cumulative<sp/>histogram</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/></highlight><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADDITIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDITIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1afe751bb39b2ed9934daf7d607a51d573" kindref="member">convertArrayToBinaryMask</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>array,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>((*converter)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">))<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a04388c70ea754547e8e10d0d759a753a" kindref="member">applyMaskToImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>mask);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a2d464e807605d8698ade1cc085d9c688" kindref="member">applyFilteringFunctionToImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(*filter)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>params<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a500b86ac0a7e9863745740a59505386b" kindref="member">applyNoiseFilteringToImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>noisePercentageLimit);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a193460deb754c584d2216e00b34c3142" kindref="member">applyLinearMappingToImage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>multiply,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>add);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a81ea066c93089aca209a863cd353c911" kindref="member">calculateGammaArraySize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dims,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refXNumber,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refYNumber<sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refZNumber<sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a7dc5c24b17405045f81c5a87a29f190e" kindref="member">activeVoxelsNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a0f806a2e9eb244f2afb3cb588cd1dd2d" kindref="member">activeVoxelsPercentage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1aaf46ad8cd04ed6fe9010cc7d4f06688c" kindref="member">imageMin</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1ab931843c7cd97a402676df070c842ade" kindref="member">imageMax</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1af8967aa05617a63eb043fa93fcd38d63" kindref="member">imageAvg</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>image);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a36e7f66faef4adb07908f34b06e7e069" kindref="member">gammaPassingRate</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">std::string<sp/><ref refid="additions_8h_1ac4a991b4afa3914090b775c8eec36cfc" kindref="member">createComputationDescription</ref>(std::string<sp/>refFile,<sp/>std::string<sp/>tarFile,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>algorithm);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="additions_8h_1a44fd85660e2cbcecb2872dd8e705abc1" kindref="member">prepareStatisticsFile</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma,<sp/>std::string<sp/>info,<sp/>std::string<sp/>filepath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stats.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1a3ebb2ac25ae59b6109a7f061c1cb0d95" kindref="member">prepareHistogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gammaSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delimitersSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>delimiters);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1a3ebb2ac25ae59b6109a7f061c1cb0d95" kindref="member">prepareHistogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gammaSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xMin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xMax,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bucketsNumber);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1a3ebb2ac25ae59b6109a7f061c1cb0d95" kindref="member">prepareHistogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gammaSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1aa9b747096da1c546990850b42e080e5f" kindref="member">prepareCumulativeHistogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gammaSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delimitersSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>delimiters);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1aa9b747096da1c546990850b42e080e5f" kindref="member">prepareCumulativeHistogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gammaSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xMin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xMax,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bucketsNumber);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="additions_8h_1aa9b747096da1c546990850b42e080e5f" kindref="member">prepareCumulativeHistogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gammaSize,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>gamma);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//ADDITIONS_H</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_additions/additions.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="solver_8h" kind="file" language="C++">
+    <compoundname>solver.h</compoundname>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includedby refid="classic__solver_8cpp" local="yes">classic_solver.cpp</includedby>
+    <includedby refid="dispatcher_8cpp" local="yes">dispatcher.cpp</includedby>
+    <includedby refid="solver_8cpp" local="yes">solver.cpp</includedby>
+    <includedby refid="spiral__solver_8cpp" local="yes">spiral_solver.cpp</includedby>
+    <includedby refid="spiral__with__rectangle__solver_8cpp" local="yes">spiral_with_rectangle_solver.cpp</includedby>
+    <includedby refid="spiral__without__rectangle__solver_8cpp" local="yes">spiral_without_rectangle_solver.cpp</includedby>
+    <includedby refid="main_8cpp" local="no">main.cpp</includedby>
+    <includedby refid="math__gi__policies__tests_8cpp" local="no">math_gi_policies_tests.cpp</includedby>
+    <incdepgraph>
+      <node id="325">
+        <label>string</label>
+      </node>
+      <node id="324">
+        <label>vector</label>
+      </node>
+      <node id="323">
+        <label>utility</label>
+      </node>
+      <node id="322">
+        <label>solver.h</label>
+        <link refid="solver_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_solver" prot="public">Solver</innerclass>
+    <innerclass refid="struct_solver_1_1_voxel" prot="public">Solver::Voxel</innerclass>
+    <innerclass refid="class_solver1_d" prot="public">Solver1D</innerclass>
+    <innerclass refid="class_solver2_d" prot="public">Solver2D</innerclass>
+    <innerclass refid="class_solver3_d" prot="public">Solver3D</innerclass>
+    <innerclass refid="class_classic_solver1_d" prot="public">ClassicSolver1D</innerclass>
+    <innerclass refid="class_classic_solver2_d" prot="public">ClassicSolver2D</innerclass>
+    <innerclass refid="class_classic_solver3_d" prot="public">ClassicSolver3D</innerclass>
+    <innerclass refid="class_spiral_solver1_d" prot="public">SpiralSolver1D</innerclass>
+    <innerclass refid="class_spiral_solver2_d" prot="public">SpiralSolver2D</innerclass>
+    <innerclass refid="class_spiral_solver3_d" prot="public">SpiralSolver3D</innerclass>
+    <innerclass refid="class_spiral_rectangle_solver1_d" prot="public">SpiralRectangleSolver1D</innerclass>
+    <innerclass refid="class_spiral_rectangle_solver2_d" prot="public">SpiralRectangleSolver2D</innerclass>
+    <innerclass refid="class_spiral_rectangle_solver3_d" prot="public">SpiralRectangleSolver3D</innerclass>
+    <innerclass refid="class_spiral_no_rectangle_solver1_d" prot="public">SpiralNoRectangleSolver1D</innerclass>
+    <innerclass refid="class_spiral_no_rectangle_solver2_d" prot="public">SpiralNoRectangleSolver2D</innerclass>
+    <innerclass refid="class_spiral_no_rectangle_solver3_d" prot="public">SpiralNoRectangleSolver3D</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="comment">/*********************************************************************************************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>&apos;yet<sp/>Another<sp/>Gamma<sp/>Index<sp/>Tool&apos;;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*********************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GI_SOLVER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GI_SOLVER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Image1D;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Image2D;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Image3D;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Solver</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>referenceValue);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>doseDifference(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ref,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tar)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>distanceToAgreement(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gammaEquation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ref,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tar,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calculateDD();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>referenceValue()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>limit()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>local()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setReferenceValue(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>referenceValue);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setLimit(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>limit);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setLocal(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>local);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Helper<sp/>structure<sp/>for<sp/>sorting<sp/>voxels<sp/>according<sp/>to<sp/>their<sp/>distance<sp/>from<sp/>a<sp/>given<sp/>point<sp/>(center<sp/>of<sp/>the<sp/>spiral)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Voxel</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y,<sp/>z;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Voxel()<sp/>:<sp/>dist(0.0),<sp/>x(0),<sp/>y(0),<sp/>z(0)<sp/>{}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Voxel(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y_<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z_<sp/>=<sp/>0)<sp/>:<sp/>dist(dist_),<sp/>x(x_),<sp/>y(y_),<sp/>z(z_)<sp/>{}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>compare(Voxel<sp/>a,<sp/>Voxel<sp/>b)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.dist<sp/>&lt;<sp/>b.dist;<sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>Voxel;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage_;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dtaSquare_;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ddSquare_;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>referenceValue_;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>limit_;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>local_;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Solver1D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver1D(Image1D&amp;<sp/>reference,<sp/>Image1D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image1D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>Image1D&amp;<sp/>reference_;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>Image1D&amp;<sp/>target_;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Solver2D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver2D(Image2D&amp;<sp/>reference,<sp/>Image2D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image2D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D&amp;<sp/>reference_;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D&amp;<sp/>target_;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Solver3D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver3D(Image3D&amp;<sp/>reference,<sp/>Image3D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image3D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image2D<sp/>calculateGamma2_5D(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>Image3D&amp;<sp/>reference_;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>Image3D&amp;<sp/>target_;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ClassicSolver1D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver1D</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>ClassicSolver1D(Image1D&amp;<sp/>reference,<sp/>Image1D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image1D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>();</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ClassicSolver2D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver2D</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>ClassicSolver2D(Image2D&amp;<sp/>reference,<sp/>Image2D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image2D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ClassicSolver3D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver3D</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>ClassicSolver3D(Image3D&amp;<sp/>reference,<sp/>Image3D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image3D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>();</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image2D<sp/>calculateGamma2_5D(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D<sp/>calculateGamma2_5DSliceXY(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D<sp/>calculateGamma2_5DSliceXZ(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D<sp/>calculateGamma2_5DSliceYZ(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralSolver1D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver1D</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralSolver1D(Image1D&amp;<sp/>reference,<sp/>Image1D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image1D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralSolver2D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver2D</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralSolver2D(Image2D&amp;<sp/>reference,<sp/>Image2D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image2D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>();</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralSolver3D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Solver3D</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralSolver3D(Image3D&amp;<sp/>reference,<sp/>Image3D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image3D<sp/><ref refid="dispatcher_8h_1afe64b329ab813564758904a9a82e0f23" kindref="member">calculateGamma</ref>();</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Image2D<sp/>calculateGamma2_5D(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>front)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D<sp/>calculateGamma2_5DSliceXY(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D<sp/>calculateGamma2_5DSliceXZ(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>Image2D<sp/>calculateGamma2_5DSliceYZ(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slice);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralRectangleSolver1D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SpiralSolver1D</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralRectangleSolver1D(Image1D&amp;<sp/>reference,<sp/>Image1D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralRectangleSolver2D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SpiralSolver2D</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralRectangleSolver2D(Image2D&amp;<sp/>reference,<sp/>Image2D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralRectangleSolver3D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SpiralSolver3D</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralRectangleSolver3D(Image3D&amp;<sp/>reference,<sp/>Image3D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>front)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralNoRectangleSolver1D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SpiralSolver1D</highlight></codeline>
+<codeline lineno="392"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralNoRectangleSolver1D(Image1D&amp;<sp/>reference,<sp/>Image1D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralNoRectangleSolver2D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SpiralSolver2D</highlight></codeline>
+<codeline lineno="402"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralNoRectangleSolver2D(Image2D&amp;<sp/>reference,<sp/>Image2D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SpiralNoRectangleSolver3D<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>SpiralSolver3D</highlight></codeline>
+<codeline lineno="412"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/>SpiralNoRectangleSolver3D(Image3D&amp;<sp/>reference,<sp/>Image3D&amp;<sp/>target,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>percentage,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dta);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>vector&lt;Voxel&gt;<sp/>getIndicesOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>front)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h"/>
+  </compounddef>
+</doxygen>

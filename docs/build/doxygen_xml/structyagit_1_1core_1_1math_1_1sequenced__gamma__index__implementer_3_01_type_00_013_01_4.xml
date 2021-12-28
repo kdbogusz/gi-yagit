@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Type</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1aebc3fe619e32afd668d64768e27e3f96" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr error_code</type>
+        <definition>static constexpr error_code yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;::initialize_pass</definition>
+        <argsstring>(view&lt; Type &gt; output, view&lt; Type &gt; output_end)</argsstring>
+        <name>initialize_pass</name>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" line="103" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1a215a0be1a3aa5b88ab738102216b3eae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr error_code</type>
+        <definition>static constexpr error_code yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;::minimize_pass</definition>
+        <argsstring>(view&lt; Type &gt; output, view&lt; Type &gt; output_end, const_view&lt; Type &gt; reference_doses, std::array&lt; const_view&lt; Type &gt;, 3 &gt; reference_coordinates, const_view&lt; Type &gt; target_doses, const_view&lt; Type &gt; target_doses_end, std::array&lt; const_view&lt; Type &gt;, 3 &gt; target_coordinates, const local_gamma_index_params&lt; Type &gt; &amp;params)</argsstring>
+        <name>minimize_pass</name>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <param>
+          <type>const_view&lt; Type &gt;</type>
+          <declname>reference_doses</declname>
+        </param>
+        <param>
+          <type>std::array&lt; const_view&lt; Type &gt;, 3 &gt;</type>
+          <declname>reference_coordinates</declname>
+        </param>
+        <param>
+          <type>const_view&lt; Type &gt;</type>
+          <declname>target_doses</declname>
+        </param>
+        <param>
+          <type>const_view&lt; Type &gt;</type>
+          <declname>target_doses_end</declname>
+        </param>
+        <param>
+          <type>std::array&lt; const_view&lt; Type &gt;, 3 &gt;</type>
+          <declname>target_coordinates</declname>
+        </param>
+        <param>
+          <type>const local_gamma_index_params&lt; Type &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" line="107" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" bodystart="107" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1af1b612091d644b76ee53d1d882e9cbc7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr error_code</type>
+        <definition>static constexpr error_code yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;::minimize_pass</definition>
+        <argsstring>(view&lt; Type &gt; output, view&lt; Type &gt; output_end, const_view&lt; Type &gt; reference_doses, std::array&lt; const_view&lt; Type &gt;, 3 &gt; reference_coordinates, const_view&lt; Type &gt; target_doses, const_view&lt; Type &gt; target_doses_end, std::array&lt; const_view&lt; Type &gt;, 3 &gt; target_coordinates, const global_gamma_index_params&lt; Type &gt; &amp;params)</argsstring>
+        <name>minimize_pass</name>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <param>
+          <type>const_view&lt; Type &gt;</type>
+          <declname>reference_doses</declname>
+        </param>
+        <param>
+          <type>std::array&lt; const_view&lt; Type &gt;, 3 &gt;</type>
+          <declname>reference_coordinates</declname>
+        </param>
+        <param>
+          <type>const_view&lt; Type &gt;</type>
+          <declname>target_doses</declname>
+        </param>
+        <param>
+          <type>const_view&lt; Type &gt;</type>
+          <declname>target_doses_end</declname>
+        </param>
+        <param>
+          <type>std::array&lt; const_view&lt; Type &gt;, 3 &gt;</type>
+          <declname>target_coordinates</declname>
+        </param>
+        <param>
+          <type>const global_gamma_index_params&lt; Type &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" line="123" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" bodystart="123" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1a6b61c0ee9e12c95eb2e1e3b909ec2546" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr error_code</type>
+        <definition>static constexpr error_code yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;::finalize_pass</definition>
+        <argsstring>(view&lt; Type &gt; output, view&lt; Type &gt; output_end)</argsstring>
+        <name>finalize_pass</name>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>view&lt; Type &gt;</type>
+          <declname>output_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" line="139" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" line="102" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/basic/gamma_index_range.hpp" bodystart="101" bodyend="143"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1a6b61c0ee9e12c95eb2e1e3b909ec2546" prot="public" virt="non-virtual"><scope>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;</scope><name>finalize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1aebc3fe619e32afd668d64768e27e3f96" prot="public" virt="non-virtual"><scope>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;</scope><name>initialize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1a215a0be1a3aa5b88ab738102216b3eae" prot="public" virt="non-virtual"><scope>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;</scope><name>minimize_pass</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1sequenced__gamma__index__implementer_3_01_type_00_013_01_4_1af1b612091d644b76ee53d1d882e9cbc7" prot="public" virt="non-virtual"><scope>yagit::core::math::sequenced_gamma_index_implementer&lt; Type, 3 &gt;</scope><name>minimize_pass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

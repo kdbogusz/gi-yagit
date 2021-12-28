@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_6d5efe9d1d591ad691efb072343214a5" kind="dir">
+    <compoundname>math</compoundname>
+    <innerdir refid="dir_10b11db025725b3348cf9bcaac8d92fc">vectorized</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/dispatch/math/"/>
+  </compounddef>
+</doxygen>

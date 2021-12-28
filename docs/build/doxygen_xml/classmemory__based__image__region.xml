@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmemory__based__image__region" kind="class" language="C++" prot="public">
+    <compoundname>memory_based_image_region</compoundname>
+    <basecompoundref refid="classyagit_1_1core_1_1data_1_1iimage__region" prot="private" virt="non-virtual">yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename ElementType</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>Dimensions</declname>
+        <defname>Dimensions</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmemory__based__image__region_1a892a180c0354288b68acc56cc42aacfe" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; ElementType[]&gt;</type>
+        <definition>std::shared_ptr&lt;ElementType[]&gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="77" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory__based__image__region_1aa4e6a5d322d884ab53532afa10bb230b" prot="protected" static="no" mutable="no">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1sizes" kindref="compound">sizes</ref>&lt; Dimensions &gt;</type>
+        <definition>sizes&lt;Dimensions&gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="78" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmemory__based__image__region_1a44db2d0a953e96233e767ddb9dda2fa1" prot="protected" static="no" mutable="no">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt;</type>
+        <definition>data_region&lt;Dimensions&gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::_region</definition>
+        <argsstring></argsstring>
+        <name>_region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="79" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmemory__based__image__region_1a991586887ab98af073a10f9738784633" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>memory_based_image_region&lt; ElementType, Dimensions &gt;::memory_based_image_region</definition>
+        <argsstring>(const std::shared_ptr&lt; ElementType[]&gt; &amp;data, const sizes&lt; Dimensions &gt; &amp;size, const data_region&lt; Dimensions &gt; &amp;region)</argsstring>
+        <name>memory_based_image_region</name>
+        <param>
+          <type>const std::shared_ptr&lt; ElementType[]&gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1sizes" kindref="compound">sizes</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="81" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1a99f0df912de9beefd9f846370a867e44" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>error_code</type>
+        <definition>virtual error_code memory_based_image_region&lt; ElementType, Dimensions &gt;::load</definition>
+        <argsstring>(ElementType *data_storage, const data_format&lt; Dimensions &gt; &amp;format, size_t &amp;required_size) const override</argsstring>
+        <name>load</name>
+        <param>
+          <type>ElementType *</type>
+          <declname>data_storage</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__format" kindref="compound">data_format</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>required_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1a5e5a30428fc766647d8f4715437df32d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>error_code</type>
+        <definition>virtual error_code memory_based_image_region&lt; ElementType, Dimensions &gt;::load_coordinates</definition>
+        <argsstring>(ElementType *data_storage, size_t dimension, const data_format&lt; Dimensions &gt; &amp;format, size_t &amp;required_size) const override</argsstring>
+        <name>load_coordinates</name>
+        <param>
+          <type>ElementType *</type>
+          <declname>data_storage</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>dimension</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__format" kindref="compound">data_format</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>required_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1a00e95a4bb620ca9d8be51bc78c90cc11" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unique_ptr&lt; <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref>&lt; ElementType, Dimensions - 1 &gt; &gt;</type>
+        <definition>virtual unique_ptr&lt;iimage_region&lt;ElementType, Dimensions - 1&gt; &gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::slice</definition>
+        <argsstring>(size_t dimension, size_t index, error_code &amp;ec) const override</argsstring>
+        <name>slice</name>
+        <param>
+          <type>size_t</type>
+          <declname>dimension</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>error_code &amp;</type>
+          <declname>ec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="164" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmemory__based__image__region_1a56ee4f339653f13144f0de0b1a379fc2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr std::error_code</type>
+        <definition>static constexpr std::error_code memory_based_image_region&lt; ElementType, Dimensions &gt;::make_error_code</definition>
+        <argsstring>(mbi_subregion_error e)</argsstring>
+        <name>make_error_code</name>
+        <param>
+          <type>mbi_subregion_error</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="91" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmemory__based__image__region_1af2bface3a6431abc9a684dd3df1f53b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual memory_based_image_region&lt; ElementType, Dimensions &gt;::~memory_based_image_region</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~memory_based_image_region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1af45fac4bd64d32648030b267a1297ffc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1data__format" kindref="compound">data_format</ref>&lt; Dimensions &gt;</type>
+        <definition>virtual data_format&lt;Dimensions&gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::preferred_data_format</definition>
+        <argsstring>() const override</argsstring>
+        <name>preferred_data_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="98" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1a04b556fb80bf9d6c95229b02a71cb525" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1data__format" kindref="compound">data_format</ref>&lt; Dimensions &gt;</type>
+        <definition>virtual data_format&lt;Dimensions&gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::preferred_coordinates_format</definition>
+        <argsstring>() const override</argsstring>
+        <name>preferred_coordinates_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="99" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1a058d79be892d07ddc1c26e1bff295bce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>unique_ptr&lt; <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref>&lt; ElementType, Dimensions &gt; &gt;</type>
+        <definition>virtual unique_ptr&lt;iimage_region&lt;ElementType, Dimensions&gt; &gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::subregion</definition>
+        <argsstring>(const data_region&lt; Dimensions &gt; &amp;region, error_code &amp;ec) const</argsstring>
+        <name>subregion</name>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>region</declname>
+        </param>
+        <param>
+          <type>error_code &amp;</type>
+          <declname>ec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="100" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="100" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1a485190f2e58312e0148268ebd736eb28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt;</type>
+        <definition>virtual data_region&lt;Dimensions&gt; memory_based_image_region&lt; ElementType, Dimensions &gt;::region</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="128" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classmemory__based__image__region_1ac4dbfb8afc7eaf2906e7bfe6d5c3a051" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>error_code</type>
+        <definition>virtual error_code memory_based_image_region&lt; ElementType, Dimensions &gt;::save</definition>
+        <argsstring>(const image_data&lt; ElementType, Dimensions &gt; &amp;data) override</argsstring>
+        <name>save</name>
+        <param>
+          <type>const <ref refid="classyagit_1_1core_1_1data_1_1image__data" kindref="compound">image_data</ref>&lt; ElementType, Dimensions &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="129" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="129" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage__region"/>
+      </node>
+      <node id="34">
+        <label>memory_based_image_region&lt; ElementType, Dimensions &gt;</label>
+        <childnode refid="35" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="37">
+        <label>yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage__region"/>
+      </node>
+      <node id="36">
+        <label>memory_based_image_region&lt; ElementType, Dimensions &gt;</label>
+        <childnode refid="37" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" line="74" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/tests/memory_based_image_region.hpp" bodystart="72" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classmemory__based__image__region_1a892a180c0354288b68acc56cc42aacfe" prot="protected" virt="non-virtual"><scope>memory_based_image_region</scope><name>_data</name></member>
+      <member refid="classmemory__based__image__region_1a44db2d0a953e96233e767ddb9dda2fa1" prot="protected" virt="non-virtual"><scope>memory_based_image_region</scope><name>_region</name></member>
+      <member refid="classmemory__based__image__region_1aa4e6a5d322d884ab53532afa10bb230b" prot="protected" virt="non-virtual"><scope>memory_based_image_region</scope><name>_size</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a435b45bc06115a45e272af7a655556cc" prot="private" virt="non-virtual"><scope>memory_based_image_region</scope><name>allocate_at_least_for_image_data</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab5b92777c5a201aa2d644e8e81d687a4" prot="private" virt="pure-virtual"><scope>memory_based_image_region</scope><name>create_subregion</name></member>
+      <member refid="classmemory__based__image__region_1a99f0df912de9beefd9f846370a867e44" prot="protected" virt="virtual"><scope>memory_based_image_region</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a8373fb474ffb60815265fdb477e1ed79" prot="private" virt="non-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a931e544c67357bfbe36af6f73b58328e" prot="private" virt="non-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1af7f747edd5681de4588f1a81e6596749" prot="private" virt="pure-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>load</name></member>
+      <member refid="classmemory__based__image__region_1a5e5a30428fc766647d8f4715437df32d" prot="protected" virt="virtual"><scope>memory_based_image_region</scope><name>load_coordinates</name></member>
+      <member refid="classmemory__based__image__region_1a56ee4f339653f13144f0de0b1a379fc2" prot="private" virt="non-virtual"><scope>memory_based_image_region</scope><name>make_error_code</name></member>
+      <member refid="classmemory__based__image__region_1a991586887ab98af073a10f9738784633" prot="protected" virt="non-virtual"><scope>memory_based_image_region</scope><name>memory_based_image_region</name></member>
+      <member refid="classmemory__based__image__region_1a04b556fb80bf9d6c95229b02a71cb525" prot="public" virt="virtual"><scope>memory_based_image_region</scope><name>preferred_coordinates_format</name></member>
+      <member refid="classmemory__based__image__region_1af45fac4bd64d32648030b267a1297ffc" prot="public" virt="virtual"><scope>memory_based_image_region</scope><name>preferred_data_format</name></member>
+      <member refid="classmemory__based__image__region_1a485190f2e58312e0148268ebd736eb28" prot="public" virt="virtual"><scope>memory_based_image_region</scope><name>region</name></member>
+      <member refid="classmemory__based__image__region_1ac4dbfb8afc7eaf2906e7bfe6d5c3a051" prot="public" virt="virtual"><scope>memory_based_image_region</scope><name>save</name></member>
+      <member refid="classmemory__based__image__region_1a00e95a4bb620ca9d8be51bc78c90cc11" prot="protected" virt="virtual"><scope>memory_based_image_region</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1abed1b3b06d1e677cb15be8613eeb2213" prot="private" virt="non-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a24539a2dd775ffad080b91781cacc63f" prot="private" virt="non-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab035f6185847a9528001ecd72277b82e" prot="private" virt="pure-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>slice</name></member>
+      <member refid="classmemory__based__image__region_1a058d79be892d07ddc1c26e1bff295bce" prot="public" virt="virtual"><scope>memory_based_image_region</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a9afee2884d1dee1da6ad7b4813cc265e" prot="private" virt="non-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ae0a3fac04c288fe51824a8c85a2f545e" prot="private" virt="non-virtual" ambiguityscope="yagit::core::data::iimage_region::"><scope>memory_based_image_region</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a9d37f613f04dc4183fc6d891ba71cb22" prot="private" virt="virtual"><scope>memory_based_image_region</scope><name>~iimage_region</name></member>
+      <member refid="classmemory__based__image__region_1af2bface3a6431abc9a684dd3df1f53b6" prot="public" virt="virtual"><scope>memory_based_image_region</scope><name>~memory_based_image_region</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

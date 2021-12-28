@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1math_1_1global__gamma__index__params" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::math::global_gamma_index_params</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1ae3f270fd11e74cdca616c9e2b0f69fe2" prot="public" static="no">
+        <type>T</type>
+        <definition>using yagit::core::math::global_gamma_index_params&lt; T &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" line="20" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1a0a603476f0c1d48fd5bd878041cb718f" prot="public" static="no" mutable="no">
+        <type>value_type</type>
+        <definition>value_type yagit::core::math::global_gamma_index_params&lt; T &gt;::dose_difference_squared</definition>
+        <argsstring></argsstring>
+        <name>dose_difference_squared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" line="22" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1a4e5dd11cffdfd2edf8a61a997321b213" prot="public" static="no" mutable="no">
+        <type>value_type</type>
+        <definition>value_type yagit::core::math::global_gamma_index_params&lt; T &gt;::distance_to_agreement_squared</definition>
+        <argsstring></argsstring>
+        <name>distance_to_agreement_squared</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" line="23" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" line="19" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/common.hpp" bodystart="18" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1a4e5dd11cffdfd2edf8a61a997321b213" prot="public" virt="non-virtual"><scope>yagit::core::math::global_gamma_index_params</scope><name>distance_to_agreement_squared</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1a0a603476f0c1d48fd5bd878041cb718f" prot="public" virt="non-virtual"><scope>yagit::core::math::global_gamma_index_params</scope><name>dose_difference_squared</name></member>
+      <member refid="structyagit_1_1core_1_1math_1_1global__gamma__index__params_1ae3f270fd11e74cdca616c9e2b0f69fe2" prot="public" virt="non-virtual"><scope>yagit::core::math::global_gamma_index_params</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

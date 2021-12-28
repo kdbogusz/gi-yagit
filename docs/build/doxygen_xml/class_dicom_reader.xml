@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_dicom_reader" kind="class" language="C++" prot="public">
+    <compoundname>DicomReader</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dicom_reader_1ae4a47f34255cab88bd6224e35536eaec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DicomReader::DicomReader</definition>
+        <argsstring>()</argsstring>
+        <name>DicomReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.h" line="34" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dicom_reader_1aca971aed3cdd35eddee49cb548c805f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; DicomReader::acquireImage</definition>
+        <argsstring>(gdcm::File &amp;file, int &amp;dims, double &amp;xStart, double &amp;xSpacing, int &amp;xNumber, double &amp;yStart, double &amp;ySpacing, int &amp;yNumber, double &amp;zStart, double &amp;zSpacing, int &amp;zNumber)</argsstring>
+        <name>acquireImage</name>
+        <param>
+          <type>gdcm::File &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>xStart</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>xSpacing</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>xNumber</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>yStart</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>ySpacing</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>yNumber</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>zStart</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>zSpacing</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>zNumber</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the image matrix and its parameters from DICOM file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Every parameter, except for the first one , will be filled by the function with the image spatial parameters. Their initial values are not important and will be lost.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the object in which GDCM library stores parsed DICOM file. The reference returned by <ref refid="wrapper_8h_1a71224bfcc6cb661a94706f42468df573" kindref="member">loadDicom()</ref> function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of dimensions of acquired image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x coordinate of the center of the most left voxel in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along x axis in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along x axis in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y coordinate of the center of the most top voxel in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ySpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along y axis in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along y axis in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>z coordinate of the center of the most front voxel in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zSpacing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance between centers of adjacent voxels along z axis in the image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of voxels along z axis in the image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the image matrix. Its size can be calculated using parameters: dims, xNumber, yNumber and zNumber. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.h" line="57" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.cpp" bodystart="39" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dicom_reader_1a4f33f3b96796c500a0d2130bbb938365" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double DicomReader::acquireStart</definition>
+        <argsstring>(gdcm::DataSet &amp;dataSet, int dim)</argsstring>
+        <name>acquireStart</name>
+        <param>
+          <type>gdcm::DataSet &amp;</type>
+          <declname>dataSet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.h" line="63" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.cpp" bodystart="155" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dicom_reader_1a4e87e4ae71cab0a10c03c67f352f06ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double DicomReader::acquireSpacing</definition>
+        <argsstring>(gdcm::DataSet &amp;dataSet, int dim)</argsstring>
+        <name>acquireSpacing</name>
+        <param>
+          <type>gdcm::DataSet &amp;</type>
+          <declname>dataSet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.h" line="65" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.cpp" bodystart="163" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.h" line="32" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_wrapper_cpp/dicom_reader.h" bodystart="31" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_dicom_reader_1aca971aed3cdd35eddee49cb548c805f1" prot="public" virt="non-virtual"><scope>DicomReader</scope><name>acquireImage</name></member>
+      <member refid="class_dicom_reader_1a4e87e4ae71cab0a10c03c67f352f06ff" prot="private" virt="non-virtual"><scope>DicomReader</scope><name>acquireSpacing</name></member>
+      <member refid="class_dicom_reader_1a4f33f3b96796c500a0d2130bbb938365" prot="private" virt="non-virtual"><scope>DicomReader</scope><name>acquireStart</name></member>
+      <member refid="class_dicom_reader_1ae4a47f34255cab88bd6224e35536eaec" prot="public" virt="non-virtual"><scope>DicomReader</scope><name>DicomReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

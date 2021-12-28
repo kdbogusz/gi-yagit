@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1data_1_1data__region" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::data::data_region</compoundname>
+    <includes local="no">common.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>Dimensions</declname>
+        <defname>Dimensions</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1data_1_1data__region_1a44271e6d369bcf419538a93382182f50" prot="public" static="no" mutable="no">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1offsets" kindref="compound">offsets</ref>&lt; Dimensions &gt;</type>
+        <definition>offsets&lt;Dimensions&gt; yagit::core::data::data_region&lt; Dimensions &gt;::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="160" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyagit_1_1core_1_1data_1_1data__region_1a650ffbea9dc90450abdfa04e08e6435c" prot="public" static="no" mutable="no">
+        <type><ref refid="structyagit_1_1core_1_1data_1_1sizes" kindref="compound">sizes</ref>&lt; Dimensions &gt;</type>
+        <definition>sizes&lt;Dimensions&gt; yagit::core::data::data_region&lt; Dimensions &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="161" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><emphasis>Dimensions</emphasis> -dimensional data region. Used for creating data views </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Dimensions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimensionality of the data region</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="159" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="158" bodyend="162"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1data_1_1data__region_1a44271e6d369bcf419538a93382182f50" prot="public" virt="non-virtual"><scope>yagit::core::data::data_region</scope><name>offset</name></member>
+      <member refid="structyagit_1_1core_1_1data_1_1data__region_1a650ffbea9dc90450abdfa04e08e6435c" prot="public" virt="non-virtual"><scope>yagit::core::data::data_region</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_2aca294af3eb55429c8fb516adbce119" kind="dir">
+    <compoundname>vectorized</compoundname>
+    <innerdir refid="dir_bff9626dbc3671794c5dca3a7179d962">openmp</innerdir>
+    <innerfile refid="math_2vectorized_2common_8hpp">math/vectorized/common.hpp</innerfile>
+    <innerfile refid="vectorized_2gamma__index__range_8hpp">vectorized/gamma_index_range.hpp</innerfile>
+    <innerfile refid="vectorized_2gamma__index__single_8hpp">vectorized/gamma_index_single.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/"/>
+  </compounddef>
+</doxygen>

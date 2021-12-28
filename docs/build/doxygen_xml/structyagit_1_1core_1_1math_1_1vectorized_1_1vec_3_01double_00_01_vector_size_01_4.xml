@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01double_00_01_vector_size_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::math::vectorized::vec&lt; double, VectorSize &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>unsigned</type>
+        <declname>VectorSize</declname>
+        <defname>VectorSize</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01double_00_01_vector_size_01_4_1a562f0fb43a5335c2b8f87c6cdd1e6fb2" prot="public" static="no">
+        <type>simdpp::float64&lt; VectorSize &gt;</type>
+        <definition>using yagit::core::math::vectorized::vec&lt; double, VectorSize &gt;::type =  simdpp::float64&lt;VectorSize&gt;</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="125" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" line="125" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/math/vectorized/common.hpp" bodystart="125" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1math_1_1vectorized_1_1vec_3_01double_00_01_vector_size_01_4_1a562f0fb43a5335c2b8f87c6cdd1e6fb2" prot="public" virt="non-virtual"><scope>yagit::core::math::vectorized::vec&lt; double, VectorSize &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_solver" kind="class" language="C++" prot="public">
+    <compoundname>Solver</compoundname>
+    <derivedcompoundref refid="class_solver1_d" prot="public" virt="non-virtual">Solver1D</derivedcompoundref>
+    <derivedcompoundref refid="class_solver2_d" prot="public" virt="non-virtual">Solver2D</derivedcompoundref>
+    <derivedcompoundref refid="class_solver3_d" prot="public" virt="non-virtual">Solver3D</derivedcompoundref>
+    <innerclass refid="struct_solver_1_1_voxel" prot="public">Solver::Voxel</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_solver_1a7d34939316b6d352530eb79d23f24b84" prot="public" static="no">
+        <type>struct Solver::Voxel</type>
+        <definition>typedef struct Solver::Voxel  Solver::Voxel</definition>
+        <argsstring></argsstring>
+        <name>Voxel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_solver_1ae94144a2f18648d39f22a2ddbe9da3d7" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Solver::percentage_</definition>
+        <argsstring></argsstring>
+        <name>percentage_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="135" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solver_1af302e7ce285eba4cf8a2459402b208ce" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Solver::dtaSquare_</definition>
+        <argsstring></argsstring>
+        <name>dtaSquare_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="136" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solver_1ad9a8e96d3ef4c20618b9e84e7a8d01c7" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Solver::ddSquare_</definition>
+        <argsstring></argsstring>
+        <name>ddSquare_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="137" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solver_1a395778766c7dce75e1e75b8aac7e7e17" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Solver::referenceValue_</definition>
+        <argsstring></argsstring>
+        <name>referenceValue_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="138" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solver_1a7c50f94e7da85172dc60addae1faa5a7" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Solver::limit_</definition>
+        <argsstring></argsstring>
+        <name>limit_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="139" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_solver_1ab3f56d37994ddcdeedbdfef8779b7c10" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Solver::local_</definition>
+        <argsstring></argsstring>
+        <name>local_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="140" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_solver_1a94f29be2d1ea3788487cc085da2de084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Solver::Solver</definition>
+        <argsstring>(double percentage, double dta, double referenceValue)</argsstring>
+        <name>Solver</name>
+        <param>
+          <type>double</type>
+          <declname>percentage</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>referenceValue</declname>
+        </param>
+        <briefdescription>
+<para>Constructs the base for GI solvers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>percentage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the DD parameter passed in %. Standard value is 3.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the DTA parameter passed in mm. Standard value is 3.0. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referenceValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value that is multiplied by the percentage to calculate the denominator of the dd component. Used only if local_ flag is not set. Standard value is the maximum value in reference image. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="49" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1adbf80fe76fa3e80799c18104f14e6d9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::doseDifference</definition>
+        <argsstring>(double ref, double tar) const</argsstring>
+        <name>doseDifference</name>
+        <param>
+          <type>double</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tar</declname>
+        </param>
+        <briefdescription>
+<para>Calculates dose difference component of Gamma Index. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>dd = (ref - tar)^2 / (DD * referenceValue)^2</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of currently analysed point in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of currently analysed point in the target image.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Calculated value of dd component. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="61" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a2ffea3fc4c2e5c043ce59e53d4218ff2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::distanceToAgreement</definition>
+        <argsstring>(double x, double y, double z) const</argsstring>
+        <name>distanceToAgreement</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Calculates distance to agreement component of Gamma Index. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>dta = (x^2 + y^2 + z^2) / DTA^2</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance, along x axis, between currently analysed reference and target point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance, along y axis, between currently analysed reference and target point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance, along z axis, between currently analysed reference and target point.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Calculated value of dta component. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="74" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a761b9a3d982e60916ee4f46371bb844e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::gammaEquation</definition>
+        <argsstring>(double ref, double tar, double x, double y, double z) const</argsstring>
+        <name>gammaEquation</name>
+        <param>
+          <type>double</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>tar</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Calculates square of gamma function. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>gamma_function = sqrt(dd + dta)</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of currently analysed point in the reference image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of currently analysed point in the target image. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance, along x axis, between currently analysed reference and target point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance, along y axis, between currently analysed reference and target point. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance, along z axis, between currently analysed reference and target point.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Square of gamma function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="89" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a02e5c2f22cbe374e976445d5e93f4ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solver::calculateDD</definition>
+        <argsstring>()</argsstring>
+        <name>calculateDD</name>
+        <briefdescription>
+<para>Recalculates ddSquare_ variable if value of percentage_, referenceValue_ or local_ change. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="96" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="54" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a9ad92edea74480136904e72635f006c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::percentage</definition>
+        <argsstring>() const</argsstring>
+        <name>percentage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="101" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a0c19366d46286621ee13d4862e8f06d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::dta</definition>
+        <argsstring>() const</argsstring>
+        <name>dta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="103" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a6e8017f4a2c7da58228aebba68d10aae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::referenceValue</definition>
+        <argsstring>() const</argsstring>
+        <name>referenceValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="105" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a7227dc4bf18836cc920c791400d8f0cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Solver::limit</definition>
+        <argsstring>() const</argsstring>
+        <name>limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="107" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1ab6b93b7ef6535a85812e1e360843e2db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Solver::local</definition>
+        <argsstring>() const</argsstring>
+        <name>local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="109" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a584de354af064b787a3b075cf66290ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solver::setReferenceValue</definition>
+        <argsstring>(double referenceValue)</argsstring>
+        <name>setReferenceValue</name>
+        <param>
+          <type>double</type>
+          <declname>referenceValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="114" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1af4544ff8964dbcad5f28c6f93a0bf5b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solver::setLimit</definition>
+        <argsstring>(double limit)</argsstring>
+        <name>setLimit</name>
+        <param>
+          <type>double</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="116" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_solver_1a29a542bfb3c75eea49874dd56fb01bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Solver::setLocal</definition>
+        <argsstring>(bool local)</argsstring>
+        <name>setLocal</name>
+        <param>
+          <type>bool</type>
+          <declname>local</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="118" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.cpp" bodystart="90" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" line="38" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/compat/solver.h" bodystart="37" bodyend="141"/>
+    <listofallmembers>
+      <member refid="class_solver_1a02e5c2f22cbe374e976445d5e93f4ad1" prot="public" virt="non-virtual"><scope>Solver</scope><name>calculateDD</name></member>
+      <member refid="class_solver_1ad9a8e96d3ef4c20618b9e84e7a8d01c7" prot="protected" virt="non-virtual"><scope>Solver</scope><name>ddSquare_</name></member>
+      <member refid="class_solver_1a2ffea3fc4c2e5c043ce59e53d4218ff2" prot="public" virt="non-virtual"><scope>Solver</scope><name>distanceToAgreement</name></member>
+      <member refid="class_solver_1adbf80fe76fa3e80799c18104f14e6d9a" prot="public" virt="non-virtual"><scope>Solver</scope><name>doseDifference</name></member>
+      <member refid="class_solver_1a0c19366d46286621ee13d4862e8f06d6" prot="public" virt="non-virtual"><scope>Solver</scope><name>dta</name></member>
+      <member refid="class_solver_1af302e7ce285eba4cf8a2459402b208ce" prot="protected" virt="non-virtual"><scope>Solver</scope><name>dtaSquare_</name></member>
+      <member refid="class_solver_1a761b9a3d982e60916ee4f46371bb844e" prot="public" virt="non-virtual"><scope>Solver</scope><name>gammaEquation</name></member>
+      <member refid="class_solver_1a7227dc4bf18836cc920c791400d8f0cc" prot="public" virt="non-virtual"><scope>Solver</scope><name>limit</name></member>
+      <member refid="class_solver_1a7c50f94e7da85172dc60addae1faa5a7" prot="protected" virt="non-virtual"><scope>Solver</scope><name>limit_</name></member>
+      <member refid="class_solver_1ab6b93b7ef6535a85812e1e360843e2db" prot="public" virt="non-virtual"><scope>Solver</scope><name>local</name></member>
+      <member refid="class_solver_1ab3f56d37994ddcdeedbdfef8779b7c10" prot="protected" virt="non-virtual"><scope>Solver</scope><name>local_</name></member>
+      <member refid="class_solver_1a9ad92edea74480136904e72635f006c2" prot="public" virt="non-virtual"><scope>Solver</scope><name>percentage</name></member>
+      <member refid="class_solver_1ae94144a2f18648d39f22a2ddbe9da3d7" prot="protected" virt="non-virtual"><scope>Solver</scope><name>percentage_</name></member>
+      <member refid="class_solver_1a6e8017f4a2c7da58228aebba68d10aae" prot="public" virt="non-virtual"><scope>Solver</scope><name>referenceValue</name></member>
+      <member refid="class_solver_1a395778766c7dce75e1e75b8aac7e7e17" prot="protected" virt="non-virtual"><scope>Solver</scope><name>referenceValue_</name></member>
+      <member refid="class_solver_1af4544ff8964dbcad5f28c6f93a0bf5b9" prot="public" virt="non-virtual"><scope>Solver</scope><name>setLimit</name></member>
+      <member refid="class_solver_1a29a542bfb3c75eea49874dd56fb01bc6" prot="public" virt="non-virtual"><scope>Solver</scope><name>setLocal</name></member>
+      <member refid="class_solver_1a584de354af064b787a3b075cf66290ec" prot="public" virt="non-virtual"><scope>Solver</scope><name>setReferenceValue</name></member>
+      <member refid="class_solver_1a94f29be2d1ea3788487cc085da2de084" prot="public" virt="non-virtual"><scope>Solver</scope><name>Solver</name></member>
+      <member refid="class_solver_1a7d34939316b6d352530eb79d23f24b84" prot="public" virt="non-virtual"><scope>Solver</scope><name>Voxel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

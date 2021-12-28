@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classyagit_1_1core_1_1data_1_1iwritable__image__region" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>yagit::core::data::iwritable_image_region</compoundname>
+    <basecompoundref refid="classyagit_1_1core_1_1data_1_1iimage__region" prot="public" virt="virtual">yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</basecompoundref>
+    <derivedcompoundref refid="classyagit_1_1core_1_1data_1_1iwritable__image" prot="public" virt="non-virtual">yagit::core::data::iwritable_image&lt; ElementType, Dimensions &gt;</derivedcompoundref>
+    <includes local="no">iwritable_image_region.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ElementType</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>Dimensions</declname>
+        <defname>Dimensions</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ad802e2a167de781aebd1cd7e3f9bf695" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;::~iwritable_image_region</definition>
+        <argsstring>()=default</argsstring>
+        <name>~iwritable_image_region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a9aa277a2d619f5cc8ca4a0faa0afdd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>error_code</type>
+        <definition>virtual error_code yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;::save</definition>
+        <argsstring>(const image_data&lt; ElementType, Dimensions &gt; &amp;data)=0</argsstring>
+        <name>save</name>
+        <param>
+          <type>const <ref refid="classyagit_1_1core_1_1data_1_1image__data" kindref="compound">image_data</ref>&lt; ElementType, Dimensions &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Implementable method responsible for data points saving</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Image data points to be saved.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Error code informing about error that occured during execution unless success</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae92e4d3bbb99248101f606da43e15c35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unique_ptr&lt; <ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kindref="compound">iwritable_image_region</ref>&lt; ElementType, Dimensions &gt; &gt;</type>
+        <definition>unique_ptr&lt;iwritable_image_region&lt;ElementType, Dimensions&gt; &gt; yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;::subregion</definition>
+        <argsstring>(const data_region&lt; Dimensions &gt; &amp;region, error_code &amp;ec) const</argsstring>
+        <name>subregion</name>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>region</declname>
+        </param>
+        <param>
+          <type>error_code &amp;</type>
+          <declname>ec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtains an <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref> corresponding to provided subregion.</para><para>Provided subregion should be interpreted locally i.e subregion is a subregion of <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref> not whole image subregion</para><para>Can return null in four cases:</para><para>- provided region is bigger (in size) than <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref> </para><para>- provided region&apos;s offset is outside <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref> </para><para>- provided region is invalid i.e one of subregion sizes is 0</para><para>- implementation doesn&apos;t allow for taking subregions of this <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subregion relative to <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref> containing subregion defined by region</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" line="41" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a5e177069a19fa44f55bb3f1aaa9fb133" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unique_ptr&lt; <ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kindref="compound">iwritable_image_region</ref>&lt; ElementType, Dimensions &gt; &gt;</type>
+        <definition>unique_ptr&lt;iwritable_image_region&lt;ElementType, Dimensions&gt; &gt; yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;::subregion</definition>
+        <argsstring>(const data_region&lt; Dimensions &gt; &amp;region) const</argsstring>
+        <name>subregion</name>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" line="45" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae82f6f09fe153d6cfe33ee4f213e1f48" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classyagit_1_1core_1_1data_1_1iwritable__image__region" kindref="compound">iwritable_image_region</ref>&lt; ElementType, Dimensions &gt; *</type>
+        <definition>virtual iwritable_image_region&lt;ElementType, Dimensions&gt;* yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;::create_subregion</definition>
+        <argsstring>(const data_region&lt; Dimensions &gt; &amp;region, error_code &amp;ec) const =0</argsstring>
+        <name>create_subregion</name>
+        <reimplements refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab5b92777c5a201aa2d644e8e81d687a4">create_subregion</reimplements>
+        <param>
+          <type>const <ref refid="structyagit_1_1core_1_1data_1_1data__region" kindref="compound">data_region</ref>&lt; Dimensions &gt; &amp;</type>
+          <declname>region</declname>
+        </param>
+        <param>
+          <type>error_code &amp;</type>
+          <declname>ec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtains an <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref> corresponding to provided subregion.</para><para>Provided subregion should be interpreted locally i.e subregion is a subregion of <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref> not whole image subregion</para><para>Can return null in four cases:</para><para>- provided region is bigger (in size) than <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref> </para><para>- provided region&apos;s offset is outside <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref> </para><para>- provided region is invalid i.e one of subregion sizes is 0</para><para>- implementation doesn&apos;t allow for taking subregions of this <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subregion relative to <ref refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" kindref="member">region()</ref></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error code</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>transfers ownership of <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref> containing subregion defined by region</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface extending <ref refid="classyagit_1_1core_1_1data_1_1iimage__region" kindref="compound">iimage_region</ref> functionality. Should allow user to save data. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ElementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data point element type</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Dimensions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dimensionality of image data point storage</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="142">
+        <label>yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage__region"/>
+      </node>
+      <node id="143">
+        <label>yagit::core::data::iwritable_image&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iwritable__image"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iwritable__image__region"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="145">
+        <label>yagit::core::data::iimage_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iimage__region"/>
+      </node>
+      <node id="144">
+        <label>yagit::core::data::iwritable_image_region&lt; ElementType, Dimensions &gt;</label>
+        <link refid="classyagit_1_1core_1_1data_1_1iwritable__image__region"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" line="17" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/data/image/iwritable_image_region.hpp" bodystart="15" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a435b45bc06115a45e272af7a655556cc" prot="protected" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>allocate_at_least_for_image_data</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae82f6f09fe153d6cfe33ee4f213e1f48" prot="protected" virt="pure-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>create_subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a8373fb474ffb60815265fdb477e1ed79" prot="public" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a931e544c67357bfbe36af6f73b58328e" prot="public" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1af7f747edd5681de4588f1a81e6596749" prot="protected" virt="pure-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>load</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a5edf59e72af5e2a0573592b4b6b93317" prot="public" virt="pure-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>preferred_data_format</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a4304c108144ba8d633a2509828b1307d" prot="public" virt="pure-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>region</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a9aa277a2d619f5cc8ca4a0faa0afdd8c" prot="public" virt="pure-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>save</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1abed1b3b06d1e677cb15be8613eeb2213" prot="public" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a24539a2dd775ffad080b91781cacc63f" prot="public" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1ab035f6185847a9528001ecd72277b82e" prot="protected" virt="pure-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>slice</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ae92e4d3bbb99248101f606da43e15c35" prot="public" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1a5e177069a19fa44f55bb3f1aaa9fb133" prot="public" virt="non-virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>subregion</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iimage__region_1a9d37f613f04dc4183fc6d891ba71cb22" prot="public" virt="virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>~iimage_region</name></member>
+      <member refid="classyagit_1_1core_1_1data_1_1iwritable__image__region_1ad802e2a167de781aebd1cd7e3f9bf695" prot="public" virt="virtual"><scope>yagit::core::data::iwritable_image_region</scope><name>~iwritable_image_region</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

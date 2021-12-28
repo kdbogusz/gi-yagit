@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structyagit_1_1core_1_1data_1_1allocation__result" kind="struct" language="C++" prot="public">
+    <compoundname>yagit::core::data::allocation_result</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename Pointer</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyagit_1_1core_1_1data_1_1allocation__result_1a584134d2bdef6c6552fac5fd0040133c" prot="public" static="no" mutable="no">
+        <type>Pointer</type>
+        <definition>Pointer yagit::core::data::allocation_result&lt; Pointer &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="67" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structyagit_1_1core_1_1data_1_1allocation__result_1a4b368ba40291f31b3b3cffb52d2b716b" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t yagit::core::data::allocation_result&lt; Pointer &gt;::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="68" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" line="66" column="1" bodyfile="/__w/gi-yagit/gi-yagit/gi_core/include/common.hpp" bodystart="65" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structyagit_1_1core_1_1data_1_1allocation__result_1a4b368ba40291f31b3b3cffb52d2b716b" prot="public" virt="non-virtual"><scope>yagit::core::data::allocation_result</scope><name>count</name></member>
+      <member refid="structyagit_1_1core_1_1data_1_1allocation__result_1a584134d2bdef6c6552fac5fd0040133c" prot="public" virt="non-virtual"><scope>yagit::core::data::allocation_result</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
