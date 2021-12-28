@@ -30,6 +30,18 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          
+      - name: Run build script for Sphinx pages
+        run: |
+          rm -f .gitignore
+          cd docs/
+          make clean
+          mkdir build
+          cd source/
+          doxygen
+          cd ../
+          make html
+        shell: bash
                   
       - name: Build and Commit
         uses: sphinx-notes/pages@2.0
