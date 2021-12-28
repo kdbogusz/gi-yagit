@@ -35,7 +35,7 @@ jobs:
           apt-get update
           apt-get install -y git rsync python3-pip graphviz doxygen
           cd docs/
-          pip3 install
+          pip3 install -r requirements.txt
           make clean
           mkdir build
           cd source/
