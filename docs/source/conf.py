@@ -93,6 +93,7 @@ html_theme = 'sphinx_book_theme'
 # documentation.
 #
 html_theme_options = {
+    "use_download_button": False,
     "repository_url": "https://github.com/DataMedSci/gi-yagit",
     "use_repository_button": True,
 }
@@ -121,7 +122,7 @@ htmlhelp_basename = 'gamma-indexdoc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
-latex_elements = {
+# latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
     # 'papersize': 'letterpaper',
@@ -137,7 +138,7 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
-}
+# }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
