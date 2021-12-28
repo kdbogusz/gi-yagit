@@ -45,7 +45,7 @@ jobs:
           cd ../
           make html
           
-          cp build/html .
+          cp -R build/html .
           rm -rf build/html
                     
           touch .nojekyll
