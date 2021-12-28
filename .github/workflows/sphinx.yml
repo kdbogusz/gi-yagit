@@ -45,9 +45,8 @@ jobs:
           cd ../
           make html
           
-          docroot=`mktemp -d`
-          rsync -av "build/html/" "${docroot}/"
-          pushd "${docroot}"
+          cp build/html .
+          rm -rf build/html
                     
           touch .nojekyll
           
