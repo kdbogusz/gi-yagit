@@ -35,5 +35,3 @@ set_target_properties(gi_additions
 )
 
 set_default_output_directories(gi_additions)
-
-install(TARGETS gi_additions ARCHIVE DESTINATION libs COMPONENT libraries)
