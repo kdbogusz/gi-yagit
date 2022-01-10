@@ -18,6 +18,7 @@ cmake_minimum_required(VERSION 3.8)
 project(gi_core)
 
 set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+set(CPACK_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION OFF)
 include(common)
 include(CPM)
 
@@ -84,5 +85,4 @@ set_default_output_directories(gi_core)
 add_subdirectory(tests)
 add_subdirectory(performance_analysis)
 
-set(CPACK_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION OFF)
 install(TARGETS gi_core ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/libs COMPONENT libraries)
