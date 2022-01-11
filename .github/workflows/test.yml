@@ -75,6 +75,7 @@ jobs:
       if: ${{ runner.os == 'Windows' }}
       run: |
         sed -i_bak -e '/ABSOLUTE path INSTALL DESTINATION forbidden (by caller)/d' D:/a/gi-yagit/gi-yagit/build/_deps/libsimdpp-build/cmake_install.cmake
+        cat D:/a/gi-yagit/gi-yagit/build/_deps/libsimdpp-build/cmake_install.cmake
         cd build/
         cpack -C Release
 
