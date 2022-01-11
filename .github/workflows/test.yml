@@ -80,6 +80,11 @@ jobs:
         cd build/
         cpack -C Release
 
+    - name: temp
+      run: |
+        cd build/
+        ls
+        
     - name: Upload Linux files
       if: ${{ runner.os == 'Linux' }}
       uses: actions/upload-artifact@v2
