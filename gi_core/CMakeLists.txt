@@ -85,4 +85,4 @@ set_default_output_directories(gi_core)
 add_subdirectory(tests)
 add_subdirectory(performance_analysis)
 
-install(TARGETS gi_core ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/libs COMPONENT libraries)
+install(TARGETS gi_core ARCHIVE DESTINATION libs COMPONENT libraries)
