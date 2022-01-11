@@ -90,14 +90,14 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: tarball
-        path: build/yAGITQt-1.1.1-Linux.tar.gz
+        path: build/yAGIT**
 
     - name: Upload Windows files
       if: ${{ runner.os == 'Windows' }}
       uses: actions/upload-artifact@v2
       with:
         name: msi
-        path: build/yAGITQt-1.1.1-win64.exe
+        path: build/yAGIT**
 
     - name: Run unit tests
       run: |
